@@ -22,8 +22,9 @@ body {
 /* Hero Section */
 .hero {
 	height: 300px;
-	background-color: $blue;
+	background-color: $title-gray;
 	@include hero;
+	
 }
 
 .content {
