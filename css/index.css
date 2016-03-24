@@ -1,12 +1,20 @@
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -74,15 +82,23 @@
 .col-12 {
   width: 100%; }
 
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -122,15 +138,23 @@
       .nav-bar li a:hover {
         color: #0080ff; }
 
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -188,15 +212,23 @@ article.contact {
     background-repeat: no-repeat;
     background-position: center; }
 
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Footer */
 .footer {
   width: 100%; }

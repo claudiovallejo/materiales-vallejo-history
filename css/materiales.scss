@@ -16,19 +16,31 @@
 }
 
 body {
+	// Imagery
 	background-color: $white;
 }
 
 /* Hero Section */
 .hero {
+	// Structure
 	height: 300px;
-	background-color: $title-gray;
+	margin-bottom: 75px;
+	// Imagery
+	background-image: url('../imagenes/headers/materiales.jpg');
+	background-repeat: no-repeat;
+	background-position: center left;
+	// Typography
 	@include hero;
-	
+
 }
 
 .content {
+	// Structure
 	text-align: center;
 	padding: 135px;
+}
 
+/* Product Navigation */
+.product-nav {
+	@include product-nav;
 }

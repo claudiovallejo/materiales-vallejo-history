@@ -1,12 +1,20 @@
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -74,15 +82,23 @@
 .col-12 {
   width: 100%; }
 
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -122,15 +138,23 @@
       .nav-bar li a:hover {
         color: #0080ff; }
 
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -188,15 +212,23 @@ article.contact {
     background-repeat: no-repeat;
     background-position: center; }
 
+/* Font Stacks */
+/* Font Weights */
+/* Colors */
+/* Text Sizing */
+/* Grid System */
+/* Spacers */
+/* Animation Timing */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
+/* Hero Section */
 /* Contact Section */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
-/* Products Mixins - - - - - - - - - */
+/* Product Mixins - - - - - - - - - */
 /* Footer */
 .footer {
   width: 100%; }
@@ -264,7 +296,10 @@ body {
 /* Hero Section */
 .hero {
   height: 300px;
-  background-color: #212121; }
+  margin-bottom: 75px;
+  background-image: url("../imagenes/headers/materiales.jpg");
+  background-repeat: no-repeat;
+  background-position: center left; }
   .hero h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -285,5 +320,26 @@ body {
 .content {
   text-align: center;
   padding: 135px; }
+
+/* Product Navigation */
+.product-nav ul {
+  padding: 0; }
+.product-nav li {
+  list-style: none;
+  margin-bottom: 25px; }
+.product-nav a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  color: #969696;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out 0.25s;
+  -moz-transition: color ease-in-out 0.25s;
+  -o-transition: color ease-in-out 0.25s;
+  transition: color ease-in-out 0.25s; }
+  .product-nav a:hover {
+    color: #0080ff; }
 
 /*# sourceMappingURL=materiales.css.map */

@@ -32,6 +32,33 @@
 	}
 }
 
+/* Hero Section */
+@mixin hero {
+	h1 {
+		// Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-32;
+		letter-spacing: $size-32 * $character;
+		line-height: $size-32;
+		color: $white;
+		// Structure
+		margin-bottom: 10px;
+	}
+
+	p {
+		// Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $default-line;
+		color: $white;
+		// Structure
+		padding: 0px 150px;
+	}
+}
+
 /* Contact Section */
 @mixin contact-section {
 	h2 {
@@ -118,29 +145,30 @@
 	background: linear-gradient(to top right, $gradient-gray, $white); /* Standard syntax */
 }
 
-/* Products Mixins - - - - - - - - - */
-@mixin hero {
-	h1 {
-		// Typography
-		font-family: $lato;
-		font-weight: $light;
-		font-size: $size-32;
-		letter-spacing: $size-32 * $character;
-		line-height: $size-32;
-		color: $white;
-		// Structure
-		margin-bottom: 10px;
+/* Product Mixins - - - - - - - - - */
+@mixin product-nav {
+	ul {
+		padding: 0;
 	}
 
-	p {
-		// Typography
-		font-family: $lato;
-		font-weight: $light;
-		font-size: $size-14;
-		letter-spacing: $size-14 * $character;
-		line-height: $default-line;
-		color: $white;
-		// Structure
-		padding: 0px 150px;
+	li {
+		list-style: none;
+		margin-bottom: 25px;
+
 	}
+
+	a {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-14;
+		letter-spacing: 0.5px;
+		line-height: $size-14;
+		color: $nav-gray;
+		text-decoration: none;
+		@include color-transition;
+		&:hover {
+			color: $blue;
+		}
+	}
+
 }
