@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixins";
+
+/* Footer */
+.footer {
+	width: 100%;
+
+	footer {
+		padding: 7.5px 0;
+		border-top: 1px solid $border-gray;
+		@include footer;
+
+		ul {
+			position: relative;
+			float: right;
+		}
+
+		li {
+			float: left;
+			list-style: none;
+			margin-left: 15px;
+		}
+
+		.separator {
+			width: 1px;
+			height: 19px;
+			background-color: $separator-gray;
+		}
+
+		.copyright {
+			position: relative;
+			top: 12px;
+		}
+
+	}
+}
