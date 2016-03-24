@@ -70,7 +70,7 @@
 		font-size: $size-12;
 		letter-spacing: $size-12 * $character;
 		line-height: $size-12;
-		color: $copyright-gray;
+		color: $author-gray;
 	}
 
 	a {
@@ -83,15 +83,15 @@
 		color: $text-gray;
 		@include color-transition;
 		&:hover {
-			color: $black;
+			color: $blue;
 		}
 	} 
 
 	a.author {
-		color: $copyright-gray;
+		color: $author-gray;
 		@include color-transition;
 		&:hover {
-			color: $text-gray;
+			color: $blue;
 		}
 	}
 }

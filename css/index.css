@@ -139,7 +139,7 @@ article.contact-sections {
   background-color: #ffffff; }
 
 #contact {
-  padding: 75px 25px;
+  padding: 100px 25px;
   text-align: center; }
   #contact h2 {
     font-family: "Lato", sans-serif;
@@ -195,17 +195,15 @@ article.contact-sections {
 .footer {
   width: 100%; }
   .footer footer {
-    max-width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 15px 0; }
+    padding: 7.5px 0;
+    border-top: 1px solid #f6f6f6; }
     .footer footer p {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       font-size: 12px;
       letter-spacing: 0.15px;
       line-height: 12px;
-      color: #969696; }
+      color: #b3b3b3; }
     .footer footer a {
       font-family: "Lato", sans-serif;
       font-weight: 300;
@@ -219,15 +217,15 @@ article.contact-sections {
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
       .footer footer a:hover {
-        color: #000000; }
+        color: #0080ff; }
     .footer footer a.author {
-      color: #969696;
+      color: #b3b3b3;
       -webkit-transition: color ease-in-out 0.25s;
       -moz-transition: color ease-in-out 0.25s;
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
       .footer footer a.author:hover {
-        color: #4a4a4a; }
+        color: #0080ff; }
     .footer footer ul {
       position: relative;
       float: right; }
@@ -236,9 +234,9 @@ article.contact-sections {
       list-style: none;
       margin-left: 15px; }
     .footer footer .separator {
-      position: relative;
-      top: 3.5px;
-      margin-left: 0px; }
+      width: 1px;
+      height: 19px;
+      background-color: #dadada; }
     .footer footer .copyright {
       position: relative;
       top: 12px; }
