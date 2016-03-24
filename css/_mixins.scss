@@ -1,4 +1,5 @@
-// Mixins
+/* Global Mixins   - - - - - - - - - */
+/* Navigation Hover Transitions */
 @mixin color-transition {
 	-webkit-transition: color $standard $fast;
 	-moz-transition: color $standard $fast;
@@ -6,6 +7,15 @@
 	transition: color $standard $fast;	
 }
 
+/* Margin Removal */
+@mixin remove-margin {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+/* Main Navigation */
 @mixin nav-link {
 	a {
 		font-family: $lato;
@@ -22,6 +32,7 @@
 	}
 }
 
+/* Contact Section */
 @mixin contact-section {
 	h2 {
 		font-family: $lato;
@@ -63,6 +74,7 @@
 	}
 }
 
+/* Footer */
 @mixin footer {
 	p {
 		font-family: $lato;
@@ -96,6 +108,8 @@
 	}
 }
 
+/* Index Mixins   - - - - - - - - - */
+/* Hero Background Gradient */
 @mixin standard-gradient {
 	background: $gradient-gray; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left bottom, $gradient-gray, $white); /* For Safari 5.1 to 6.0 */
@@ -104,9 +118,29 @@
 	background: linear-gradient(to top right, $gradient-gray, $white); /* Standard syntax */
 }
 
-@mixin remove-margin {
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
+/* Products Mixins - - - - - - - - - */
+@mixin hero {
+	h1 {
+		// Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-32;
+		letter-spacing: $size-32 * $character;
+		line-height: $size-32;
+		color: $white;
+		// Structure
+		margin-bottom: 10px;
+	}
+
+	p {
+		// Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $default-line;
+		color: $white;
+		// Structure
+		padding: 0px 150px;
+	}
 }

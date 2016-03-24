@@ -1,0 +1,67 @@
+/* Global Mixins   - - - - - - - - - */
+/* Navigation Hover Transitions */
+/* Margin Removal */
+/* Main Navigation */
+/* Contact Section */
+/* Footer */
+/* Index Mixins   - - - - - - - - - */
+/* Hero Background Gradient */
+/* Products Mixins - - - - - - - - - */
+/* Contact Sections */
+article.contact {
+  background-color: #ffffff; }
+
+#contact {
+  padding: 100px 25px;
+  text-align: center; }
+  #contact h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.225px;
+    line-height: 18px;
+    color: #212121;
+    padding: 15px 0 7.5px 0; }
+  #contact p {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    padding-bottom: 10px; }
+  #contact p.status {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 14px;
+    color: #25c315; }
+  #contact a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 14px;
+    color: #0080ff;
+    text-decoration: none; }
+  #contact .store-status {
+    position: relative; }
+  #contact .status-indicator {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 2.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #25c315; }
+  #contact .arrow {
+    display: inline-block;
+    margin-left: 4px;
+    width: 8px;
+    height: 7px;
+    background-image: url("../imagenes/iconos/arrow@1x.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+/*# sourceMappingURL=contact-sections.css.map */
