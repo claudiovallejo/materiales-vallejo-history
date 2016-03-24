@@ -46,11 +46,11 @@ body {
 }
 
 /* Slideshow */
-.slideshow {
-	position: absolute;
+.slider {
+	position: relative;
 	width: 100%;
 	height: 750px;
-	@include standard-gradient;
+	@include standard-gradient
 }
 
 
@@ -60,7 +60,8 @@ body {
 	background-color: $white;
 }
 
-.wrapper {
+/* Contact Sections */
+article.contact-sections {
 	background-color: $white;
 }
 
@@ -125,7 +126,7 @@ body {
 
 		.copyright {
 			position: relative;
-			top: 10px;
+			top: 12px;
 		}
 
 	}
