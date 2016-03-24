@@ -1,0 +1,112 @@
+// Mixins
+@mixin color-transition {
+	-webkit-transition: color $standard $fast;
+	-moz-transition: color $standard $fast;
+	-o-transition: color $standard $fast;
+	transition: color $standard $fast;	
+}
+
+@mixin nav-link {
+	a {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-14;
+		letter-spacing: 0.5px;
+		line-height: $size-14;
+		color: $nav-gray;
+		text-decoration: none;
+		@include color-transition;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+@mixin contact-section {
+	h2 {
+		font-family: $lato;
+		font-weight: $hairline;
+		font-size: $size-18;
+		letter-spacing: $size-18 * $character;
+		line-height: $size-18;
+		color: $title-gray;
+		padding: 15px 0 7.5px 0;
+	} 
+
+	p {
+		font-family: $lato;
+		font-weight: $hairline;
+		font-size: $size-14; 
+		letter-spacing: $size-14 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+		padding-bottom: 10px;
+	}
+
+	p.status {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $size-14;
+		color: $green;
+	}
+
+	a {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $size-14;
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
+@mixin footer {
+	p {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-12;
+		letter-spacing: $size-12 * $character;
+		line-height: $size-12;
+		color: $copyright-gray;
+	}
+
+	a {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-12; 
+		letter-spacing: $size-12 * $character; 
+		line-height: $size-12;
+		text-decoration: none;
+		color: $text-gray;
+		@include color-transition;
+		&:hover {
+			color: $black;
+		}
+	} 
+
+	a.author {
+		color: $copyright-gray;
+		@include color-transition;
+		&:hover {
+			color: $text-gray;
+		}
+	}
+}
+
+@mixin standard-gradient {
+	background: $gradient-gray; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left bottom, $gradient-gray, $white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top right, $gradient-gray, $white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top right, $gradient-gray, $white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top right, $gradient-gray, $white); /* Standard syntax */
+}
+
+@mixin remove-margin {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}

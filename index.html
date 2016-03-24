@@ -5,15 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,100,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 		<title> Materiales Vallejo | Materiales para Construcción </title>
 	</head>
 	<body>
 		<header>
 			<!-- Navigation Menu -->
-			<nav>
-				<section>
+			<div class="nav-bar">
+				<nav>
 					<a id="logo" href="index.html">
 						<img src="imagenes/logo/logo@1x.png">
 					</a>
@@ -44,116 +44,77 @@
 							</a>
 						</li>
 					</ul>
-				</section>
-			</nav>
+				</nav>
+			</div>
 		</header>
 
 		<!-- Slideshow -->
-		<article>
-
-			<!-- Slide Anillos -->
-		    <section>
-			    <div>
-			    	<h1>
-			    		Anillos a tu medida.
-			    	</h1>
-			    	<p>
-			    		Pide anillos por pieza y de cualquier dimensión y figura.
-			    	</p>
-			    	<a href="/materiales/anillos.html">
-			    		Ver Anillos
-			    	</a>
-			    	<img src="" alt="Anillos marca Deacero" title="Vendemos anillos Deacero por pieza hechos a la medida.">
-			    </div>
-		    </section>
-
-		    <!-- Slide Varillas -->
-		    <section>
-			    <div>
-			    	<h1>
-			    		Varillas de calidad.
-			    	</h1>
-			    	<p>
-			    		Pide varilla Ternium a menudeo, mayoreo o por contrato en pedidos de 200+ toneladas.
-			    	</p>
-			    	<a href="/materiales/varillas.html">
-			    		Ver Varillas
-			    	</a>
-			    	<img src="" alt="Varillas marca Ternium" title="Vendemos Varilla Ternium de todos los calibres en 9.15 metros o 12 metros por pieza o por kilo.">
-			    </div>
-		    </section>
-
-		    <!-- Slide Cemento -->
-		    <section>
-			    <div>
-			    	<h1>
-			    		Lo mejor en cemento.
-			    	</h1>
-			    	<p>
-			    		Pide Cemento Monterrey a menudeo o mayoreo en Bulto, Big Bag, Pipa o por contrato específico de obra.
-			    	</p>
-			    	<a href="/materiales/cementos.html">
-			    		Ver Cemento
-			    	</a>
-			    	<img src="" alt="Cementos Monterrey Gris. Cemento Monterrey Impercem. Cemento Monterrey Blanco." title="Vendemos Cemento Monterrey por Bulto, Pipa, Big Bag o por contrato específico de obra.">
-			    </div>
-		    </section>
-
-		</article>
+		<div class="slideshow"></div>
 
 		<!-- Contact Section -->
-		<section>
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<!-- Horarios -->
+					<div id="contact" class="col-4">
+						<img src="imagenes/iconos/horarios@1x.png">
+						<h2>
+							Horarios
+						</h2>
+						<p>
+							Entre semana de 8:00 - 1:00, 2:30 - 6:00<br>
+							y Sabados de 8:00 - 1:00.
+						</p>
+						<div class="store-status">
+							<p class="status"><span class="status-indicator"></span>Abierto</p>
+						</div>
+					</div>
 
-			<!-- Horarios -->
-			<div>
-				<img src="imagenes/iconos/horarios@1x.png">
-				<h4>
-					Horarios
-				</h4>
-				<p>
-					Entre semana de 8:00 - 1:00, 2:30 - 6:00<br>
-					y Sabados de 8:00 - 1:00.
-				</p>
-				<p>
-					Abierto
-				</p>
+					<!-- Teléfono -->
+					<div id="contact" class="col-4">
+						<img src="imagenes/iconos/marcanos@1x.png">
+						<h2>
+							Márcanos
+						</h2>
+						<p>
+							Cotiza o cuéntanos en que te podemos ayudar, estamos para servirte.
+						</p>
+						<a href="tel:+52(868)8161353">
+							+52 (868) 816 1353
+						</a>
+					</div>
+
+					<!-- Dirección -->
+					<div id="contact" class="col-4">
+						<img src="imagenes/iconos/direccion@1x.png">
+						<h2>
+							Dirección
+						</h2>
+						<p>
+							Calle 18 y Francisco González Villarreal<br>
+							Col. Buenavista / Matamoros, Tamaulipas
+						</p>
+						<a href="#">Ver en Google Maps<span class="arrow"></span></a>
+					</div>
+				</div>
 			</div>
-
-			<!-- Teléfono -->
-			<div>
-				<img src="imagenes/iconos/marcanos@1x.png">
-				<h4>
-					Márcanos
-				</h4>
-				<p>
-					Cotiza o cuéntanos en que te podemos ayudar, estamos para servirte.
-				</p>
-				<a href="tel:+52(868)8161353">
-					+52 (868) 816 1353
-				</a>
-			</div>
-
-			<!-- Dirección -->
-			<div>
-				<img src="imagenes/iconos/direccion@1x.png">
-				<h4>
-					Dirección
-				</h4>
-				<p>
-					Calle 18 y Francisco González Villarreal<br>
-					Col. Buenavista / Matamoros, Tamaulipas
-				</p>
-				<a href="#">Ver en Google Maps</a>
-			</div>
-
-		</section>
+		</div>
 
 		<!-- Footer -->
-		<footer>
-			<p>© 2016 Materiales Vallejo<p>
-			<a href="politicas.html">Política de Privacidad</a>
-			<p>  |  Diseñado en México <p>
-		</footer>
+		<div class="footer">
+			<footer>
+				<div class="copyright">
+					<p>© 2016 Materiales Vallejo<p>
+				</div>
+				<div class="legal">
+					<ul>
+						<li><a href="politicas.html">Política de Privacidad</a></li>
+						<li><p class="separator">|</p></li>
+						<li><a class="author" href="http://www.claudiovallejo.me">Diseñado en México<a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 
 	</body>
 </html>

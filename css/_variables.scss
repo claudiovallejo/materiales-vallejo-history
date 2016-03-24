@@ -1,0 +1,46 @@
+// Font Stacks
+$lato-url: "https://fonts.googleapis.com/css?family=Lato:100,400,300,700,900";
+$lato: 'Lato', sans-serif;
+
+// Font Weights
+$hairline: 100;
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$title-gray: #212121;
+$subtitle-gray: #b3b3b3;
+$text-gray: #4a4a4a;
+$nav-gray: #969696;
+$copyright-gray: #969696;
+$gradient-gray: #fbfbfb;
+$blue: #0080ff;
+$green: #25c315;
+$orange: #f5a623;
+$red: #d0021b;
+$shadow: rgba($black, 0.1);
+
+// Text Sizing
+$size-12: 12px;
+$size-14: 14px;
+$size-16: 16px;
+$size-18: 18px;
+$size-28: 28px;
+$size-32: 32px;
+$character: 0.0125;
+$default-line: 1.5;
+
+// Grid System 
+$columns: 12px;
+$col-width: $columns / 100;
+
+// Spacers
+$standard: 75px;
+
+// Animation Timing
+$standard: ease-in-out;
+$fast: 0.25s;

@@ -1,0 +1,131 @@
+@import "variables";
+@import "mixins";
+@import "grid";
+
+*, *:before, *:after {
+	@include remove-margin;
+}
+
+body {
+	background-color: $white;
+}
+
+/* Navigation */
+.nav-bar {
+	width: 100%;
+	background-color: $white;
+	position: fixed;
+	display: block;
+	padding-bottom: 25px;
+	top: 0px;
+	border-bottom: 1px solid $gradient-gray;
+	z-index: 2;
+
+	nav {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	#logo {
+		position: relative;
+		top: 13px;
+	}
+
+	ul {
+		position: relative;
+		top: 16px;
+		float: right;
+	}
+
+	li {
+		float: left;
+		list-style: none;
+		margin-left: 50px;
+		@include nav-link;
+	}
+}
+
+/* Slideshow */
+.slideshow {
+	position: relative;
+	width: 100%;
+	height: 750px;
+	@include standard-gradient;
+}
+
+/* Spacers */
+.spacer {
+	padding: 37.5px 0;
+	background-color: $white;
+}
+
+.wrapper {
+	background-color: $white;
+}
+
+#contact {
+	padding: 75px 25px;
+	text-align: center;
+	@include contact-section;
+
+	.store-status {
+		position: relative;
+	}
+
+	.status-indicator {
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 2.5px;
+		width: 5px;
+		height: 5px;
+		border-radius: 2.5px;
+		background-color: $green;
+	}
+
+	.arrow {
+			display: inline-block;
+			margin-left: 4px;
+			width: 8px;
+			height: 7px;
+			background-image: url("../imagenes/iconos/arrow@1x.png");
+			background-repeat: no-repeat;
+			background-position: center;
+	}
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+
+	footer {
+		max-width: 960px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 15px 0;
+		@include footer;
+
+		ul {
+			position: relative;
+			float: right;
+		}
+
+		li {
+			float: left;
+			list-style: none;
+			margin-left: 15px;
+		}
+
+		.separator {
+			position: relative;
+			top: 3.5px;
+			margin-left: 0px;
+		}
+
+		.copyright {
+			position: relative;
+			top: 10px;
+		}
+
+	}
+}
