@@ -19,6 +19,8 @@
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
+/* Feature List */
+/* Product Category Title */
 /* Product Cards */
 /* Product Cards */
 /* Grid System */
@@ -109,6 +111,8 @@
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
+/* Feature List */
+/* Product Category Title */
 /* Product Cards */
 /* Product Cards */
 /* Navigation */
@@ -172,6 +176,8 @@
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
+/* Feature List */
+/* Product Category Title */
 /* Product Cards */
 /* Product Cards */
 /* Contact Sections */
@@ -260,6 +266,8 @@ article.contact {
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
+/* Feature List */
+/* Product Category Title */
 /* Product Cards */
 /* Product Cards */
 /* Footer */
@@ -379,6 +387,50 @@ body {
   transition: color ease-in-out 0.25s; }
   .product-nav a:hover {
     color: #0080ff; }
+
+/* Product Features List */
+.feature-list {
+  overflow: hidden; }
+  .feature-list ul {
+    padding: 0;
+    margin: 0 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 50px; }
+  .feature-list li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    margin-right: 28px; }
+    .feature-list li:last-of-type {
+      float: right;
+      margin-right: 0; }
+  .feature-list li {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 14px;
+    color: #4a4a4a;
+    background-image: url("../imagenes/iconos/check@1x.png");
+    background-repeat: no-repeat;
+    background-position: left center; }
+
+/* Product Category Title */
+.category-title {
+  padding: 0 10px; }
+  .category-title h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin-bottom: 20px; }
 
 /* Card Column */
 .product-card {

@@ -191,6 +191,67 @@
 
 }
 
+/* Feature List */
+@mixin feature-structure {
+	ul {
+		padding: 0;
+		margin: 0 10px;
+		overflow: hidden;
+		border-bottom: 1px solid $feature-gray;
+		margin-bottom: 50px;
+	}
+
+	li {
+		position: relative;
+		display: inline-block;
+		float: left;
+		list-style: none;
+		margin-bottom: 15px;
+		padding-left: 18px;
+		margin-right: 28px;
+
+		&:last-of-type {
+			float: right;
+			margin-right: 0;
+
+		}
+	}
+
+}
+
+@mixin feature-typographies {
+
+	li {
+		//Typography
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $size-14;
+		color: $text-gray;
+		// Imagery
+		background-image: url('../imagenes/iconos/check@1x.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+	}
+
+}
+
+/* Product Category Title */
+@mixin category-typography {
+		// Typography
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-12;
+		letter-spacing: 1.5px;
+		line-height: $size-12;
+		text-transform: uppercase;
+		color: $text-gray;
+		// Structure
+		margin-bottom: 20px;
+
+}
+
 /* Product Cards */
 @mixin card-structure {
 	// height: $card-height;

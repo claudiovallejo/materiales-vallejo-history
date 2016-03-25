@@ -56,6 +56,23 @@ body {
 
 }
 
+/* Product Features List */
+.feature-list {
+	overflow: hidden;
+	@include feature-structure;
+	@include feature-typographies;
+
+}
+
+/* Product Category Title */
+.category-title {
+	padding: 0 10px;
+	
+	h1 {
+		@include category-typography;
+	}
+}
+
 /* Card Column */
 .product-card {
 	float: left;
