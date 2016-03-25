@@ -5,8 +5,11 @@
 /* Grid System */
 /* Spacers */
 /* Animation Timing */
+/* Heros */
+/* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
 /* Hero Section */
@@ -15,6 +18,9 @@
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
+/* Product Cards */
+/* Product Cards */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -23,11 +29,12 @@
   display: block;
   padding-bottom: 25px;
   top: 0px;
-  border-bottom: 1px solid #fbfbfb;
+  border-bottom: 1px solid #dadada;
   z-index: 2; }
   .nav-bar nav {
     max-width: 960px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 10px; }
   .nav-bar #logo {
     position: relative;
     top: 13px; }

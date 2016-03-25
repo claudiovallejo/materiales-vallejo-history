@@ -22,12 +22,14 @@ $separator-gray: #dadada;
 $border-gray: #f6f6f6;
 $gradient-gray: #fbfbfb;
 $blue: #0080ff;
+$opaque-blue: rgba(0,128,255,0.10);
 $green: #25c315;
 $orange: #f5a623;
 $red: #d0021b;
 $shadow: rgba($black, 0.1);
 
 /* Text Sizing */
+$size-10: 10px;
 $size-12: 12px;
 $size-14: 14px;
 $size-16: 16px;
@@ -47,3 +49,16 @@ $standard: 75px;
 /* Animation Timing */
 $standard: ease-in-out;
 $fast: 0.25s;
+$medium: 0.5s;
+
+/* Heros */
+$hero-height: 300px;
+$hero-margin: 75px;
+$content-padding: 135px;
+
+/* Product Cards */
+$card-height: 400px;
+$card-width: 300px;
+$card-padding: 20px;
+$card-radius: 5px;
+$card-shadow: 0px 2px 5px 0px rgba(0,0,0,0.10);

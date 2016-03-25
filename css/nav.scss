@@ -9,12 +9,13 @@
 	display: block;
 	padding-bottom: 25px;
 	top: 0px;
-	border-bottom: 1px solid $gradient-gray;
+	border-bottom: 1px solid $separator-gray;
 	z-index: 2;
 
 	nav {
 		max-width: 960px;
 		margin: 0 auto;
+		padding: 0 10px;
 	}
 
 	#logo {

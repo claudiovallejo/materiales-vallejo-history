@@ -6,7 +6,8 @@
 	width: 100%;
 
 	footer {
-		padding: 7.5px 0;
+		padding-top: 7.5px;
+		margin-bottom: 35px;
 		border-top: 1px solid $border-gray;
 		@include footer;
 
@@ -29,7 +30,7 @@
 
 		.copyright {
 			position: relative;
-			top: 12px;
+			top: 15px;
 		}
 
 	}

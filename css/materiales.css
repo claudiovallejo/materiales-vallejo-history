@@ -5,8 +5,11 @@
 /* Grid System */
 /* Spacers */
 /* Animation Timing */
+/* Heros */
+/* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
 /* Hero Section */
@@ -15,6 +18,9 @@
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
+/* Product Cards */
+/* Product Cards */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -89,8 +95,11 @@
 /* Grid System */
 /* Spacers */
 /* Animation Timing */
+/* Heros */
+/* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
 /* Hero Section */
@@ -99,6 +108,9 @@
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
+/* Product Cards */
+/* Product Cards */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -107,11 +119,12 @@
   display: block;
   padding-bottom: 25px;
   top: 0px;
-  border-bottom: 1px solid #fbfbfb;
+  border-bottom: 1px solid #dadada;
   z-index: 2; }
   .nav-bar nav {
     max-width: 960px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 10px; }
   .nav-bar #logo {
     position: relative;
     top: 13px; }
@@ -145,8 +158,11 @@
 /* Grid System */
 /* Spacers */
 /* Animation Timing */
+/* Heros */
+/* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
 /* Hero Section */
@@ -155,6 +171,9 @@
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
+/* Product Cards */
+/* Product Cards */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -219,8 +238,11 @@ article.contact {
 /* Grid System */
 /* Spacers */
 /* Animation Timing */
+/* Heros */
+/* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
 /* Hero Section */
@@ -229,11 +251,15 @@ article.contact {
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
+/* Product Cards */
+/* Product Cards */
 /* Footer */
 .footer {
   width: 100%; }
   .footer footer {
-    padding: 7.5px 0;
+    padding-top: 7.5px;
+    margin-bottom: 35px;
     border-top: 1px solid #f6f6f6; }
     .footer footer p {
       font-family: "Lato", sans-serif;
@@ -277,7 +303,7 @@ article.contact {
       background-color: #dadada; }
     .footer footer .copyright {
       position: relative;
-      top: 12px; }
+      top: 15px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -296,10 +322,9 @@ body {
 /* Hero Section */
 .hero {
   height: 300px;
-  margin-bottom: 75px;
   background-image: url("../imagenes/headers/materiales.jpg");
   background-repeat: no-repeat;
-  background-position: center left; }
+  background-position: bottom left; }
   .hero h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -321,6 +346,11 @@ body {
   text-align: center;
   padding: 135px; }
 
+/* Product Section - - - - - - - - - */
+.products {
+  padding: 75px 0;
+  background-color: #fbfbfb; }
+
 /* Product Navigation */
 .product-nav ul {
   padding: 0; }
@@ -341,5 +371,84 @@ body {
   transition: color ease-in-out 0.25s; }
   .product-nav a:hover {
     color: #0080ff; }
+
+/* Card Column */
+.product-card {
+  float: left;
+  padding: 0 10px;
+  width: 50%;
+  margin-bottom: 20px; }
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
+  .card h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    color: #212121;
+    margin-bottom: 45px; }
+  .card h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.0px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    margin-bottom: 5px; }
+  .card img {
+    margin-bottom: 50px; }
+  .card .product-details {
+    width: 100%;
+    overflow: hidden; }
+    .card .product-details p.detail-title {
+      width: 50%;
+      float: left;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.15px;
+      line-height: 12px;
+      color: #000000; }
+    .card .product-details p.detail-description {
+      width: 50%;
+      float: left;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.15px;
+      line-height: 12px;
+      color: #969696; }
+
+.detail-section {
+  margin-bottom: 19px; }
+
+.link-card {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid rgba(0, 128, 255, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  padding: 192px 0;
+  -webkit-transition: background-color ease-in-out 0.5s;
+  -moz-transition: background-color ease-in-out 0.5s;
+  -o-transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.5s;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #0080ff;
+  display: inline-block; }
+  .link-card:hover {
+    background-color: rgba(0, 128, 255, 0.1); }
 
 /*# sourceMappingURL=materiales.css.map */

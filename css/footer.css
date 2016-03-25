@@ -5,8 +5,11 @@
 /* Grid System */
 /* Spacers */
 /* Animation Timing */
+/* Heros */
+/* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
 /* Hero Section */
@@ -15,11 +18,15 @@
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
+/* Product Cards */
+/* Product Cards */
 /* Footer */
 .footer {
   width: 100%; }
   .footer footer {
-    padding: 7.5px 0;
+    padding-top: 7.5px;
+    margin-bottom: 35px;
     border-top: 1px solid #f6f6f6; }
     .footer footer p {
       font-family: "Lato", sans-serif;
@@ -63,6 +70,6 @@
       background-color: #dadada; }
     .footer footer .copyright {
       position: relative;
-      top: 12px; }
+      top: 15px; }
 
 /*# sourceMappingURL=footer.css.map */

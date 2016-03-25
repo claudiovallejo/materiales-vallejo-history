@@ -6,6 +6,13 @@
 	-o-transition: color $standard $fast;
 	transition: color $standard $fast;	
 }
+/* Background-color Hover Transitions */
+@mixin background-transition {
+	-webkit-transition: background-color $standard $medium;
+	-moz-transition: background-color $standard $medium;
+	-o-transition: background-color $standard $medium;
+	transition: background-color $standard $medium;	
+}
 
 /* Margin Removal */
 @mixin remove-margin {
@@ -146,6 +153,7 @@
 }
 
 /* Product Mixins - - - - - - - - - */
+/* Product Navigation */
 @mixin product-nav {
 	ul {
 		padding: 0;
@@ -172,3 +180,117 @@
 	}
 
 }
+
+/* Product Cards */
+@mixin card-structure {
+	// height: $card-height;
+	padding: $card-padding;
+	border-radius: $card-radius;
+	background-color: $white;
+	box-shadow: $card-shadow;
+
+}
+
+@mixin card-typographies {
+	h1 {
+		// Typography
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		color: $title-gray;
+		// Structure
+		margin-bottom: 45px;
+
+	}
+
+	h2 {
+		// Typography
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-10;
+		letter-spacing: 1.0px;
+		line-height: $size-10;
+		text-transform: uppercase;
+		color: $subtitle-gray;
+		// Structure
+		margin-bottom: 5px;
+
+	}
+
+	img {
+		margin-bottom: 50px;
+
+	}
+
+	.product-details {
+		width: 100%;
+		overflow: hidden;
+
+		p.detail-title {
+			//Structure
+			width: 50%;
+			float: left;
+			// Typography
+			font-family: $lato;
+			font-weight: $light;
+			font-size: $size-12;
+			letter-spacing: $size-12 * $character;
+			line-height: $size-12;
+			color: $black;
+
+		}
+
+		p.detail-description {
+			//Structure
+			width: 50%;
+			float: left;
+			// Typography
+			font-family: $lato;
+			font-weight: $light;
+			font-size: $size-12;
+			letter-spacing: $size-12 * $character;
+			line-height: $size-12;
+			color: $nav-gray;
+
+		}
+
+	}
+}
+
+/* Product Cards */
+@mixin link-card-structure {
+	height: $card-height;
+	width: $card-width;
+	padding: $card-padding;
+	border: 1px solid $opaque-blue;
+	border-radius: $card-radius;
+	text-align: center;
+	padding: 192px 0;
+	@include background-transition;
+	&:hover {
+		background-color: $opaque-blue;
+	}
+
+}
+
+@mixin link-card-typographies {
+	//Typography
+	font-family: $lato;
+	font-weight: $regular;
+	font-size: $size-16;
+	letter-spacing: $size-16 * $character;
+	line-height: $size-16;
+	text-decoration: none;
+	color: $blue;
+	//Structure
+	display: inline-block;
+
+}
+
+
+
+
+
+

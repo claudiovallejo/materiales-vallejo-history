@@ -9,26 +9,28 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
 
 *, *:before, *:after {
 	@include remove-margin;
+
 }
 
 body {
 	// Imagery
 	background-color: $white;
+
 }
 
 /* Hero Section */
 .hero {
 	// Structure
-	height: 300px;
-	margin-bottom: 75px;
+	height: $hero-height;
 	// Imagery
 	background-image: url('../imagenes/headers/materiales.jpg');
 	background-repeat: no-repeat;
-	background-position: center left;
+	background-position: bottom left;
 	// Typography
 	@include hero;
 
@@ -37,10 +39,55 @@ body {
 .content {
 	// Structure
 	text-align: center;
-	padding: 135px;
+	padding: $content-padding;
+
+}
+
+/* Product Section - - - - - - - - - */
+.products {
+	padding: 75px 0;
+	background-color: $gradient-gray;
+
 }
 
 /* Product Navigation */
 .product-nav {
 	@include product-nav;
+
 }
+
+/* Card Column */
+.product-card {
+	float: left;
+	padding: 0 10px;
+	width: 50%;
+	margin-bottom: 20px;
+
+}
+
+.card {
+	@include card-structure;
+	@include card-typographies;
+
+}
+
+.detail-section {
+	margin-bottom: 19px;
+}
+
+.link-card {
+	@include link-card-structure;
+	@include link-card-typographies;
+}
+
+
+
+
+
+
+
+
+
+
+
+
