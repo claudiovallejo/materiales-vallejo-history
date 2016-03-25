@@ -106,6 +106,16 @@
 		color: $blue;
 		text-decoration: none;
 	}
+
+	a.call {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $size-14;
+		color: $green;
+		text-decoration: none;
+	}
 }
 
 /* Footer */

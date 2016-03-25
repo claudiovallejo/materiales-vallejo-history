@@ -59,6 +59,14 @@ article.contact {
     line-height: 14px;
     color: #0080ff;
     text-decoration: none; }
+  #contact a.call {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 14px;
+    color: #25c315;
+    text-decoration: none; }
   #contact .store-status {
     position: relative; }
   #contact .status-indicator {
