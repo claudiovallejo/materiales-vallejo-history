@@ -427,6 +427,9 @@ body {
 
 .detail-section {
   margin-bottom: 19px; }
+  .detail-section sup {
+    vertical-align: top;
+    font-size: 0.75em; }
 
 .link-card {
   height: 400px;
