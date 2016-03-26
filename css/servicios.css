@@ -427,4 +427,18 @@ body {
   color: #ffffff;
   background-image: url("../imagenes/servicios/mayoreo/entregas-gratuitas.jpg"); }
 
+#precios-inmejorables {
+  color: #ffffff;
+  background-image: url("../imagenes/servicios/menudeo/precios-inmejorables.jpg"); }
+
+#formas-de-credito {
+  background-image: url("../imagenes/servicios/menudeo/formas-de-credito.jpg"); }
+
+#asesoria-de-materiales {
+  color: #ffffff;
+  background-image: url("../imagenes/servicios/menudeo/asesoria-de-materiales.jpg"); }
+
+#entregas-a-domicilio {
+  background-image: url("../imagenes/servicios/menudeo/entregas-gratuitas.jpg"); }
+
 /*# sourceMappingURL=servicios.css.map */
