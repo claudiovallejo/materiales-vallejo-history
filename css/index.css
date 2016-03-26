@@ -23,6 +23,9 @@
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -49,10 +52,12 @@
 /* Column Rules */
 [class*='col-'] {
   float: left;
-  padding: 0 10px; }
+  padding: 0 10px;
+  min-height: 1px; }
 
 [class*='col-']:last-of-type {
-  padding: 0; }
+  padding: 0;
+  min-height: 1px; }
 
 .col-1 {
   width: 8.33%; }
@@ -115,6 +120,9 @@
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -180,6 +188,9 @@
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -270,6 +281,9 @@ article.contact {
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Footer */
 .footer {
   width: 100%; }

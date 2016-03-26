@@ -23,6 +23,9 @@
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -49,10 +52,12 @@
 /* Column Rules */
 [class*='col-'] {
   float: left;
-  padding: 0 10px; }
+  padding: 0 10px;
+  min-height: 1px; }
 
 [class*='col-']:last-of-type {
-  padding: 0; }
+  padding: 0;
+  min-height: 1px; }
 
 .col-1 {
   width: 8.33%; }
@@ -115,6 +120,9 @@
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -180,6 +188,9 @@
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -270,6 +281,9 @@ article.contact {
 /* Product Category Title */
 /* Product Cards */
 /* Product Cards */
+/* Services - - - - - - - - - */
+/* Brand Section */
+/* Feature Sections */
 /* Footer */
 .footer {
   width: 100%; }
@@ -361,5 +375,56 @@ body {
 .content {
   text-align: center;
   padding: 135px; }
+
+/* Brands Section */
+.brands {
+  padding: 75px 0;
+  text-align: center; }
+  .brands h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 0.35px;
+    line-height: 28px;
+    color: #212121;
+    margin-bottom: 10px; }
+  .brands p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+    padding: 0 315px; }
+
+/* Features Sections */
+.features {
+  height: 415px;
+  padding: 165px 0; }
+  .features h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 0.35px;
+    line-height: 28px;
+    margin-bottom: 10px; }
+  .features p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 1.5; }
+
+#precios-de-fabrica {
+  color: #ffffff;
+  background-image: url("../imagenes/servicios/mayoreo/precios-de-fabrica.jpg"); }
+
+#planes-de-credito {
+  background-image: url("../imagenes/servicios/mayoreo/planes-de-credito.jpg"); }
+
+#entregas-gratuitas {
+  color: #ffffff;
+  background-image: url("../imagenes/servicios/mayoreo/entregas-gratuitas.jpg"); }
 
 /*# sourceMappingURL=servicios.css.map */

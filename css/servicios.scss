@@ -42,3 +42,33 @@ body {
 	padding: $content-padding;
 
 }
+
+/* Brands Section */
+.brands {
+	padding: 75px 0;
+	text-align: center;
+	@include brands;
+
+}
+
+/* Features Sections */
+.features {
+	height: 415px;
+	padding: 165px 0;
+	@include features;
+
+}
+
+#precios-de-fabrica {
+	color: $white;
+	background-image: url('../imagenes/servicios/mayoreo/precios-de-fabrica.jpg');
+}
+
+#planes-de-credito {
+	background-image: url('../imagenes/servicios/mayoreo/planes-de-credito.jpg');
+}
+
+#entregas-gratuitas {
+	color: $white;
+	background-image: url('../imagenes/servicios/mayoreo/entregas-gratuitas.jpg');
+}

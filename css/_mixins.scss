@@ -360,8 +360,67 @@
 
 }
 
+/* Services - - - - - - - - - */
+/* Brand Section */
+@mixin brands {
+	h1 {
+		//Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-28;
+		letter-spacing: $size-28 * $character;
+		line-height: $size-28;
+		color: $title-gray;
+		//Structure
+		margin-bottom: 10px;
+
+	}
+
+	p {
+		//Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+		//Structure
+		margin-bottom: 50px;
+		padding: 0 315px;
+
+	}
+
+	img {
 
 
+	}
+
+}
+
+/* Feature Sections */
+@mixin features {
+		h1 {
+		//Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-28;
+		letter-spacing: $size-28 * $character;
+		line-height: $size-28;
+		margin-bottom: 10px;
+
+	}
+
+	p {
+		//Typography
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $default-line;
+
+	}
+
+}
 
 
 
