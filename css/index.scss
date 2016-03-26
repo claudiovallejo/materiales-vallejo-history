@@ -38,33 +38,3 @@ body {
 article.contact-sections {
 	background-color: $white;
 }
-
-#contact {
-	padding: 100px 25px;
-	text-align: center;
-	@include contact-section;
-
-	.store-status {
-		position: relative;
-	}
-
-	.status-indicator {
-		display: inline-block;
-		margin-right: 5px;
-		margin-bottom: 2.5px;
-		width: 5px;
-		height: 5px;
-		border-radius: 2.5px;
-		background-color: $green;
-	}
-
-	.arrow {
-			display: inline-block;
-			margin-left: 4px;
-			width: 8px;
-			height: 7px;
-			background-image: url("../imagenes/iconos/arrow@1x.png");
-			background-repeat: no-repeat;
-			background-position: center;
-	}
-}

@@ -84,11 +84,12 @@ article.contact {
     background-color: #25c315; }
   #contact .arrow {
     display: inline-block;
-    margin-left: 4px;
+    margin-left: 2px;
     width: 8px;
-    height: 7px;
-    background-image: url("../imagenes/iconos/arrow@1x.png");
-    background-repeat: no-repeat;
-    background-position: center; }
+    height: 7px; }
+    #contact .arrow .svg {
+      stroke: #0080ff;
+      stroke-width: 0.5px;
+      fill: #0080ff; }
 
 /*# sourceMappingURL=contact-sections.css.map */
