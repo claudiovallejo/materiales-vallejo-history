@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "nav";
+@import "contact-sections";
+@import "footer";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+	@include remove-margin;
+
+}
+
+body {
+	// Imagery
+	background-color: $white;
+
+}
+
+/* Hero Section */
+.hero {
+	// Structure
+	height: $hero-height;
+	// Imagery
+	background-image: url('../imagenes/headers/mayoreo.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	// Typography
+	@include hero;
+
+}
+
+.content {
+	// Structure
+	text-align: center;
+	padding: $content-padding;
+
+}
