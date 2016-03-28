@@ -29,8 +29,13 @@ body {
 	height: $hero-height;
 	// Imagery
 	background-image: url('../imagenes/headers/materiales.jpg');
-	background-repeat: no-repeat;
-	background-position: bottom left;
+	background-position: 50% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
+	
 	// Typography
 	@include hero;
 

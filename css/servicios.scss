@@ -27,12 +27,30 @@ body {
 .hero {
 	// Structure
 	height: $hero-height;
-	// Imagery
-	background-image: url('../imagenes/headers/mayoreo.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
 	// Typography
 	@include hero;
+
+}
+
+#mayoreo {
+	// Imagery
+	background-image: url('../imagenes/headers/mayoreo.jpg');
+	background-position: 50% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#menudeo {
+	// Imagery
+	background-image: url('../imagenes/headers/menudeo.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 
@@ -61,34 +79,82 @@ body {
 
 #precios-de-fabrica {
 	color: $white;
+	// Imagery
 	background-image: url('../imagenes/servicios/mayoreo/precios-de-fabrica.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #planes-de-credito {
+	// Imagery
 	background-image: url('../imagenes/servicios/mayoreo/planes-de-credito.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #entregas-gratuitas {
 	color: $white;
+	// Imagery
 	background-image: url('../imagenes/servicios/mayoreo/entregas-gratuitas.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #precios-inmejorables {
 	color: $white;
+	// Imagery
 	background-image: url('../imagenes/servicios/menudeo/precios-inmejorables.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #formas-de-credito {
+	// Imagery
 	background-image: url('../imagenes/servicios/menudeo/formas-de-credito.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #asesoria-de-materiales {
 	color: $white;
+	//Imagery
 	background-image: url('../imagenes/servicios/menudeo/asesoria-de-materiales.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #entregas-a-domicilio {
+	// Imagery
 	background-image: url('../imagenes/servicios/menudeo/entregas-gratuitas.jpg');
+	background-position: 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	
 }
 
 
