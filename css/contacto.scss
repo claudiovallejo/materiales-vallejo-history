@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "nav.scss";
+@import "contact-sections.scss";
+@import "footer.scss";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	@include remove-margin;
+}
+
+body {
+	background-color: $white;
+}
+
+/* Contact Section */
+.contact {
+	width: 100%;
+	height: 750px;
+	padding: 75px 0;
+	@include standard-gradient
+}
