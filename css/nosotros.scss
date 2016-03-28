@@ -45,3 +45,41 @@ body {
 	padding: $content-padding;
 
 }
+
+/* About Us - - - - - - - - - */
+.about-us {
+	// Structure
+	padding: 125px 0;
+	@include about-us;
+
+}
+
+.construrama {
+	//Structure
+	text-align: center;
+	padding: 125px 0;
+	@include standard-gradient;
+
+	.title {
+		//Type
+		@include title;
+		//Structure
+		padding: 0 280px;
+		margin-bottom: 75px;
+
+	}
+
+	img {
+		//Structure
+		margin-bottom: 125px;
+
+	}
+
+}
+
+.construrama-info {
+	//Type
+	text-align: left;
+	@include about-us;
+
+}

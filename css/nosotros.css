@@ -26,6 +26,7 @@
 /* Services - - - - - - - - - */
 /* Brand Section */
 /* Feature Sections */
+/* About Us - - - - - - - - - */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -123,6 +124,7 @@
 /* Services - - - - - - - - - */
 /* Brand Section */
 /* Feature Sections */
+/* About Us - - - - - - - - - */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -191,6 +193,7 @@
 /* Services - - - - - - - - - */
 /* Brand Section */
 /* Feature Sections */
+/* About Us - - - - - - - - - */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -285,6 +288,7 @@ article.contact {
 /* Services - - - - - - - - - */
 /* Brand Section */
 /* Feature Sections */
+/* About Us - - - - - - - - - */
 /* Footer */
 .footer {
   width: 100%; }
@@ -379,5 +383,73 @@ body {
 .content {
   text-align: center;
   padding: 135px; }
+
+/* About Us - - - - - - - - - */
+.about-us {
+  padding: 125px 0; }
+  .about-us h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.225px;
+    line-height: 1.5;
+    color: #212121; }
+  .about-us p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 1.5;
+    color: #4a4a4a; }
+
+.construrama {
+  text-align: center;
+  padding: 125px 0;
+  background: #fbfbfb;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left bottom, #fbfbfb, #ffffff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, #fbfbfb, #ffffff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, #fbfbfb, #ffffff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, #fbfbfb, #ffffff);
+  /* Standard syntax */ }
+  .construrama .title {
+    padding: 0 280px;
+    margin-bottom: 75px; }
+    .construrama .title h1 {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 28px;
+      letter-spacing: 0.35px;
+      line-height: 1.5;
+      color: #212121; }
+    .construrama .title p {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      line-height: 1.5;
+      color: #4a4a4a; }
+  .construrama img {
+    margin-bottom: 125px; }
+
+.construrama-info {
+  text-align: left; }
+  .construrama-info h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.225px;
+    line-height: 1.5;
+    color: #212121; }
+  .construrama-info p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 1.5;
+    color: #4a4a4a; }
 
 /*# sourceMappingURL=nosotros.css.map */

@@ -423,5 +423,86 @@
 
 }
 
+/* About Us - - - - - - - - - */
+@mixin about-us {
+	h1 {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-18;
+		letter-spacing: $size-18 * $character;
+		line-height: $default-line;
+		color: $title-gray;
+
+	}
+
+	p {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-14;
+		letter-spacing: $size-14 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+
+	}
+
+}
+
+@mixin title {
+	h1 {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-28;
+		letter-spacing: $size-28 * $character;
+		line-height: $default-line;
+		color: $title-gray;
+
+	}
+
+	p {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
