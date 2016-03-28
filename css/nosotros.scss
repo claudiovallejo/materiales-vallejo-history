@@ -52,6 +52,32 @@ body {
 	padding: 125px 0;
 	@include about-us;
 
+	.gallery {
+		padding: 0 10px;
+
+		img {
+			float: left;
+
+		}
+
+		.image-1 {
+			margin-right: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		.image-2 {
+			margin-bottom: 20px;
+
+		}
+
+		.image-3 {
+			margin-right: 20px;
+
+		}
+
+	}
+
 }
 
 .construrama {

@@ -401,6 +401,17 @@ body {
     letter-spacing: 0.175px;
     line-height: 1.5;
     color: #4a4a4a; }
+  .about-us .gallery {
+    padding: 0 10px; }
+    .about-us .gallery img {
+      float: left; }
+    .about-us .gallery .image-1 {
+      margin-right: 20px;
+      margin-bottom: 20px; }
+    .about-us .gallery .image-2 {
+      margin-bottom: 20px; }
+    .about-us .gallery .image-3 {
+      margin-right: 20px; }
 
 .construrama {
   text-align: center;
