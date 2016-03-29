@@ -203,13 +203,10 @@
 	}
 
 	li {
-		position: relative;
-		display: inline-block;
 		float: left;
 		list-style: none;
 		margin-bottom: 15px;
-		padding-left: 18px;
-		margin-right: 28px;
+		margin-right: 32px;
 
 		&:last-of-type {
 			float: right;
@@ -230,10 +227,12 @@
 		letter-spacing: $size-14 * $character;
 		line-height: $size-14;
 		color: $text-gray;
-		// Imagery
+		/* // Imagery
 		background-image: url('../imagenes/iconos/check@1x.png');
 		background-repeat: no-repeat;
 		background-position: left center;
+		*/
+
 	}
 
 }

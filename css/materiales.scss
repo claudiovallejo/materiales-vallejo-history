@@ -67,6 +67,22 @@ body {
 	@include feature-structure;
 	@include feature-typographies;
 
+	.check-mark {
+		position: relative;
+		display: inline-block;
+		top: 2px;
+		width: 13px;
+		height: 13px;
+
+		.svg {
+			margin-top: 2px;
+			stroke: $blue;
+			stroke-width: 0.5px;
+			fill: $blue;
+
+		}
+	}
+
 }
 
 /* Product Category Title */

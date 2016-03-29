@@ -424,13 +424,10 @@ body {
     border-bottom: 1px solid #eaeaea;
     margin-bottom: 50px; }
   .feature-list li {
-    position: relative;
-    display: inline-block;
     float: left;
     list-style: none;
     margin-bottom: 15px;
-    padding-left: 18px;
-    margin-right: 28px; }
+    margin-right: 32px; }
     .feature-list li:last-of-type {
       float: right;
       margin-right: 0; }
@@ -441,9 +438,22 @@ body {
     letter-spacing: 0.175px;
     line-height: 14px;
     color: #4a4a4a;
-    background-image: url("../imagenes/iconos/check@1x.png");
+    /* // Imagery
+    background-image: url('../imagenes/iconos/check@1x.png');
     background-repeat: no-repeat;
-    background-position: left center; }
+    background-position: left center;
+    */ }
+  .feature-list .check-mark {
+    position: relative;
+    display: inline-block;
+    top: 2px;
+    width: 13px;
+    height: 13px; }
+    .feature-list .check-mark .svg {
+      margin-top: 2px;
+      stroke: #0080ff;
+      stroke-width: 0.5px;
+      fill: #0080ff; }
 
 /* Product Category Title */
 .category-title {
