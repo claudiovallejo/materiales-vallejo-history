@@ -474,6 +474,77 @@
 
 }
 
+/* Contact Us - - - - - - - - - */
+@mixin card-type {
+	h1 {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-22;
+		letter-spacing: $size-22 * $character;
+		line-height: $default-line;
+		color: $title-gray;
+		//Structure
+		padding-bottom: 5px;
+
+	}
+
+	p {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: 18px;
+		color: $text-gray;
+		//Structure
+		padding-bottom: 15px;
+
+	}
+
+	p.status {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		color: $green;
+
+	}
+
+	.status-indicator {
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 2.5px;
+		width: 6px;
+		height: 6px;
+		border-radius: 3px;
+		background-color: $green;
+
+	}
+
+	a {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		color: $blue;
+		text-decoration: none;
+
+	}
+
+	a.call {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		color: $green;
+		text-decoration: none;
+
+	}
+
+}
+
 
 
 
