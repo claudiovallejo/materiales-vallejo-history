@@ -14,6 +14,13 @@
 	transition: background-color $standard $medium;	
 }
 
+@mixin border-transition {
+	-webkit-transition: border-left $standard $fast;
+	-moz-transition: border-left $standard $fast;
+	-o-transition: border-left $standard $fast;
+	transition: border-left $standard $fast;	
+}
+
 /* Margin Removal */
 @mixin remove-margin {
 	-webkit-margin-before: 0;
@@ -166,28 +173,51 @@
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
 @mixin product-nav {
-	ul {
+	h1 {
+		//Type
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-18;
+		letter-spacing: $size-18 * $character;
+		line-height: $size-18;
+		color: $title-gray;
+		//Structure
+		margin-bottom: 25px;
+
+	}
+
+/*	ul {
 		padding: 0;
 	}
 
 	li {
 		list-style: none;
-		margin-bottom: 25px;
+		padding: 15px 0 15px 15px;
+		border-left: 2px solid $feature-gray;
 
-	}
+	}*/
 
 	a {
+		//Type
 		font-family: $lato;
 		font-weight: $regular;
 		font-size: $size-14;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.75px;
 		line-height: $size-14;
 		color: $nav-gray;
 		text-decoration: none;
 		@include color-transition;
+		@include border-transition;
+		//Structure
+		display: block;
+		padding: 15px 0 15px 15px;
+		border-left: 2px solid $feature-gray;
+		//Interactions
 		&:hover {
+			border-left: 2px solid $blue;
 			color: $blue;
 		}
+
 	}
 
 }
@@ -195,6 +225,7 @@
 /* Feature List */
 @mixin feature-structure {
 	ul {
+		//Structure
 		padding: 0;
 		margin: 0 10px;
 		overflow: hidden;
@@ -203,12 +234,14 @@
 	}
 
 	li {
+		//Structure
 		float: left;
 		list-style: none;
 		margin-bottom: 15px;
 		margin-right: 32px;
 
 		&:last-of-type {
+			//Structure
 			float: right;
 			margin-right: 0;
 
