@@ -367,7 +367,7 @@ body {
   position: relative;
   width: 100%;
   height: 750px;
-  padding: 170px 0;
+  padding-top: 50px;
   background: #fbfbfb;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left bottom, #fbfbfb, #ffffff);
@@ -411,6 +411,13 @@ body {
       stroke: #0080ff;
       stroke-width: 0.5px;
       fill: #0080ff; }
+
+.content {
+  padding-top: 250px; }
+
+.wrapper {
+  height: 100%;
+  width: 100%; }
 
 /* Spacers */
 .spacer {

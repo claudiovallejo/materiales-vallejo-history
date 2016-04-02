@@ -25,11 +25,20 @@ body {
 	position: relative;
 	width: 100%;
 	height: 750px;
-	padding: 170px 0;
+	padding-top: 50px;
 	@include standard-gradient;
 	//Type
 	@include slider-type;
 
+}
+
+.content {
+	padding-top: 250px;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
 }
 
 /* Spacers */
