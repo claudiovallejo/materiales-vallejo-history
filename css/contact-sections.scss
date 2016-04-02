@@ -23,6 +23,8 @@ article.contact {
 		height: 5px;
 		border-radius: 2.5px;
 		background-color: $green;
+		@include status-animation;
+		
 	}
 
 	.arrow {

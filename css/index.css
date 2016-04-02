@@ -14,6 +14,28 @@
 /* Main Navigation */
 /* Hero Section */
 /* Contact Section */
+/* Animation Keyframes */
+@-webkit-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-moz-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-o-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+/* Type */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
@@ -114,6 +136,28 @@
 /* Main Navigation */
 /* Hero Section */
 /* Contact Section */
+/* Animation Keyframes */
+@-webkit-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-moz-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-o-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+/* Type */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
@@ -185,6 +229,28 @@
 /* Main Navigation */
 /* Hero Section */
 /* Contact Section */
+/* Animation Keyframes */
+@-webkit-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-moz-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-o-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+/* Type */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
@@ -255,7 +321,11 @@ article.contact {
     width: 5px;
     height: 5px;
     border-radius: 2.5px;
-    background-color: #25c315; }
+    background-color: #25c315;
+    -webkit-animation: open-status 2s infinite;
+    -moz-animation: open-status 2s infinite;
+    -o-animation: open-status 2s infinite;
+    animation: open-status 2s infinite; }
   #contact .arrow {
     display: inline-block;
     margin-left: 2px;
@@ -282,6 +352,28 @@ article.contact {
 /* Main Navigation */
 /* Hero Section */
 /* Contact Section */
+/* Animation Keyframes */
+@-webkit-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-moz-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-o-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+/* Type */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */

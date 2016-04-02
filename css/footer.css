@@ -14,6 +14,28 @@
 /* Main Navigation */
 /* Hero Section */
 /* Contact Section */
+/* Animation Keyframes */
+@-webkit-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-moz-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@-o-keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+@keyframes open-status {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0.25; } }
+/* Type */
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */

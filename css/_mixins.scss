@@ -77,34 +77,70 @@
 }
 
 /* Contact Section */
+
+/* Animation Keyframes */
+@-webkit-keyframes open-status {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.25; }
+}
+@-moz-keyframes open-status {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.25; }
+}
+@-o-keyframes open-status {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.25; }
+}
+@keyframes open-status {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.25; }
+}
+
+@mixin status-animation {
+	//Animation
+	-webkit-animation: open-status 2s infinite;
+	-moz-animation: open-status 2s infinite;
+	-o-animation: open-status 2s infinite;
+	animation: open-status 2s infinite;
+}
+
+/* Type */
 @mixin contact-section {
 	h2 {
+		//Type
 		font-family: $lato;
 		font-weight: $hairline;
 		font-size: $size-18;
 		letter-spacing: $size-18 * $character;
 		line-height: $size-18;
 		color: $title-gray;
+		//Structure
 		padding: 15px 0 7.5px 0;
+
 	} 
 
 	p {
+		//Type
 		font-family: $lato;
 		font-weight: $hairline;
 		font-size: $size-14; 
 		letter-spacing: $size-14 * $character;
 		line-height: $default-line;
 		color: $text-gray;
+		//Structure
 		padding-bottom: 10px;
+
 	}
 
 	p.status {
+		//Type
 		font-family: $lato;
 		font-weight: $regular;
 		font-size: $size-14;
 		letter-spacing: $size-14 * $character;
 		line-height: $size-14;
 		color: $green;
+
 	}
 
 	a {
@@ -609,6 +645,7 @@
 		height: 6px;
 		border-radius: 3px;
 		background-color: $green;
+		@include status-animation;
 
 	}
 
@@ -635,6 +672,7 @@
 	}
 
 }
+
 
 
 
