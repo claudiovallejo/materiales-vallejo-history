@@ -17,6 +17,7 @@
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
+/* Slider Type */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
 /* Feature List */
@@ -116,6 +117,7 @@
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
+/* Slider Type */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
 /* Feature List */
@@ -186,6 +188,7 @@
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
+/* Slider Type */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
 /* Feature List */
@@ -282,6 +285,7 @@ article.contact {
 /* Footer */
 /* Index Mixins   - - - - - - - - - */
 /* Hero Background Gradient */
+/* Slider Type */
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
 /* Feature List */
@@ -363,6 +367,7 @@ body {
   position: relative;
   width: 100%;
   height: 750px;
+  padding: 350px 0;
   background: #fbfbfb;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left bottom, #fbfbfb, #ffffff);
@@ -373,6 +378,39 @@ body {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to top right, #fbfbfb, #ffffff);
   /* Standard syntax */ }
+  .slider h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.4px;
+    line-height: 32px;
+    color: #212121;
+    margin-bottom: 10px; }
+  .slider p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.225px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-bottom: 10px; }
+  .slider a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.225px;
+    line-height: 18px;
+    color: #0080ff;
+    text-decoration: none; }
+  .slider .arrow {
+    display: inline-block;
+    margin-left: 2px;
+    width: 10px;
+    height: 10px; }
+    .slider .arrow .svg {
+      stroke: #0080ff;
+      stroke-width: 0.5px;
+      fill: #0080ff; }
 
 /* Spacers */
 .spacer {

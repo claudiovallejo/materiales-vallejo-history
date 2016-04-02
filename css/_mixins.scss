@@ -59,6 +59,7 @@
 		color: $white;
 		// Structure
 		margin-bottom: 10px;
+
 	}
 
 	p {
@@ -71,6 +72,7 @@
 		color: $white;
 		// Structure
 		padding: 0px 150px;
+
 	}
 }
 
@@ -168,6 +170,63 @@
 	background: -o-linear-gradient(top right, $gradient-gray, $white); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(top right, $gradient-gray, $white); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to top right, $gradient-gray, $white); /* Standard syntax */
+}
+
+/* Slider Type */
+@mixin slider-type {
+	h1 {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-32;
+		letter-spacing: $size-32 * $character;
+		line-height: $size-32;
+		color: $title-gray;
+		//Structure
+		margin-bottom: 10px;
+
+	}
+
+	p {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-18;
+		letter-spacing: $size-18 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+		//Structure
+		margin-bottom: 10px;
+
+	}
+
+	a {
+		//Typography
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-18;
+		letter-spacing: $size-18 * $character;
+		line-height: $size-18;
+		color: $blue;
+		text-decoration: none;
+
+	}
+
+	.arrow {
+			display: inline-block;
+			margin-left: 2px;
+			width: 10px;
+			height: 10px;
+
+			.svg {
+				stroke: $blue;
+				stroke-width: 0.5px;
+				fill: $blue;
+			}
+	}
+
+
+
 }
 
 /* Product Mixins - - - - - - - - - */
