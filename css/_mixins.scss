@@ -5,7 +5,27 @@
 	-moz-transition: color $standard $fast;
 	-o-transition: color $standard $fast;
 	transition: color $standard $fast;	
+
 }
+
+/* SVG Background Color Transitions */
+@mixin background-color-transition {
+	-webkit-transition: background $standard $fast;
+	-moz-transition: background $standard $fast;
+	-o-transition: background $standard $fast;
+	transition: background $standard $fast;
+
+}
+
+/* SVG Clipping Mask */
+@mixin svg-clipping-mask($path) {
+    -webkit-clip-path: url($path);
+    clip-path: url($path);
+    -webkit-mask: url($path);
+    mask: url($path);
+
+}
+
 /* Background-color Hover Transitions */
 @mixin background-transition {
 	-webkit-transition: background-color $standard $medium;
@@ -74,6 +94,7 @@
 		padding: 0px 150px;
 
 	}
+
 }
 
 /* Contact Section */
@@ -144,24 +165,86 @@
 	}
 
 	a {
+		//Type
 		font-family: $lato;
 		font-weight: $regular;
 		font-size: $size-14;
 		letter-spacing: $size-14 * $character;
 		line-height: $size-14;
-		color: $blue;
 		text-decoration: none;
+
+		&.call {
+			//Type
+			color: $green;
+			//Transitions
+			@include color-transition;
+
+			&:hover {
+				color: $dark-green;
+
+			}
+
+		}
+
+		&.arrow {
+			//Type
+			color: $blue;
+			//Transitions
+			@include color-transition;
+
+			&:hover {
+				//Type
+				color: $dark-blue;
+
+			}
+
+			&:after {
+				//Structure
+				position:relative;
+				display:inline-block;
+		        width: 8px;
+		        height: 8px;
+				top: 0;
+				margin-left: 2px;
+		        content: '';
+		        background: $blue;
+		        //Transition
+		        @include background-color-transition;
+		        //SVG Mask
+		        @include svg-clipping-mask('../imagenes/test.svg');
+
+    		}
+
+    		&:hover:after {
+    			//Structure
+    			background: $dark-blue;
+
+    		}
+
+		}
+
 	}
 
-	a.call {
-		font-family: $lato;
-		font-weight: $regular;
-		font-size: $size-14;
-		letter-spacing: $size-14 * $character;
-		line-height: $size-14;
-		color: $green;
-		text-decoration: none;
+	.store-status {
+		//Structure
+		position: relative;
+
 	}
+
+	.status-indicator {
+		//Structure
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 2.5px;
+		width: 5px;
+		height: 5px;
+		border-radius: 2.5px;
+		background-color: $green;
+		//Animation
+		@include status-animation;
+		
+	}
+
 }
 
 /* Footer */
@@ -173,6 +256,7 @@
 		letter-spacing: $size-12 * $character;
 		line-height: $size-12;
 		color: $author-gray;
+
 	}
 
 	a {
@@ -184,18 +268,25 @@
 		text-decoration: none;
 		color: $text-gray;
 		@include color-transition;
+
 		&:hover {
 			color: $blue;
+
 		}
+
 	} 
 
 	a.author {
 		color: $author-gray;
 		@include color-transition;
+
 		&:hover {
 			color: $blue;
+
 		}
+
 	}
+
 }
 
 /* Index Mixins   - - - - - - - - - */
@@ -246,22 +337,44 @@
 		color: $blue;
 		text-decoration: none;
 
-	}
+		&.arrow {
+			//Type
+			color: $blue;
+			//Transitions
+			@include color-transition;
 
-	.arrow {
-			display: inline-block;
-			margin-left: 2px;
-			width: 10px;
-			height: 10px;
+			&:hover {
+				//Type
+				color: $dark-blue;
 
-			.svg {
-				stroke: $blue;
-				stroke-width: 0.5px;
-				fill: $blue;
 			}
+
+			&:after {
+				//Structure
+				position:relative;
+				display:inline-block;
+		        width: 10px;
+		        height: 10px;
+				top: 0;
+				margin-left: 2px;
+		        content: '';
+		        background: $blue;
+		        //Transition
+		        @include background-color-transition;
+		        //SVG Mask
+		        @include svg-clipping-mask('../imagenes/test.svg');
+
+    		}
+
+    		&:hover:after {
+    			//Structure
+    			background: $dark-blue;
+
+    		}
+
+		}
+
 	}
-
-
 
 }
 
@@ -468,23 +581,60 @@
 	text-align: center;
 	padding: 192px 0;
 	@include background-transition;
+
 	&:hover {
 		background-color: $opaque-blue;
+
+		& .arrow {
+			//Type
+			color: $dark-blue;
+
+			&:after {
+				//Structure
+				background: $dark-blue;
+
+    		}
+
+		}
+
 	}
 
 }
 
 @mixin link-card-typographies {
+
 	//Typography
-	font-family: $lato;
-	font-weight: $regular;
-	font-size: $size-16;
-	letter-spacing: $size-16 * $character;
-	line-height: $size-16;
-	text-decoration: none;
-	color: $blue;
-	//Structure
-	display: inline-block;
+	p {
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		text-decoration: none;
+		color: $blue;
+		//Structure
+		display: inline-block;
+		//Transitions
+		@include color-transition;
+
+		&:after {
+			//Structure
+			position:relative;
+			display:inline-block;
+	        width: 10px;
+	        height: 10px;
+			top: 0;
+			margin-left: 2px;
+	        content: '';
+	        background: $blue;
+	        //Transition
+	        @include background-color-transition;
+	        //SVG Mask
+	        @include svg-clipping-mask('../imagenes/test.svg');
+
+		}
+
+	}
 
 }
 

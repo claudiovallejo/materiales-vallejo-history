@@ -11,32 +11,4 @@ article.contact {
 	text-align: center;
 	@include contact-section;
 
-	.store-status {
-		position: relative;
-	}
-
-	.status-indicator {
-		display: inline-block;
-		margin-right: 5px;
-		margin-bottom: 2.5px;
-		width: 5px;
-		height: 5px;
-		border-radius: 2.5px;
-		background-color: $green;
-		@include status-animation;
-		
-	}
-
-	.arrow {
-			display: inline-block;
-			margin-left: 2px;
-			width: 8px;
-			height: 7px;
-
-			.svg {
-				stroke: $blue;
-				stroke-width: 0.5px;
-				fill: $blue;
-			}
-	}
 }

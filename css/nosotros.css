@@ -9,6 +9,8 @@
 /* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* SVG Background Color Transitions */
+/* SVG Clipping Mask */
 /* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
@@ -131,6 +133,8 @@
 /* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* SVG Background Color Transitions */
+/* SVG Clipping Mask */
 /* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
@@ -224,6 +228,8 @@
 /* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* SVG Background Color Transitions */
+/* SVG Clipping Mask */
 /* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
@@ -302,16 +308,42 @@ article.contact {
     font-size: 14px;
     letter-spacing: 0.175px;
     line-height: 14px;
-    color: #0080ff;
     text-decoration: none; }
-  #contact a.call {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.175px;
-    line-height: 14px;
-    color: #25c315;
-    text-decoration: none; }
+    #contact a.call {
+      color: #25c315;
+      -webkit-transition: color ease-in-out 0.25s;
+      -moz-transition: color ease-in-out 0.25s;
+      -o-transition: color ease-in-out 0.25s;
+      transition: color ease-in-out 0.25s; }
+      #contact a.call:hover {
+        color: #008027; }
+    #contact a.arrow {
+      color: #0080ff;
+      -webkit-transition: color ease-in-out 0.25s;
+      -moz-transition: color ease-in-out 0.25s;
+      -o-transition: color ease-in-out 0.25s;
+      transition: color ease-in-out 0.25s; }
+      #contact a.arrow:hover {
+        color: #0061c1; }
+      #contact a.arrow:after {
+        position: relative;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        top: 0;
+        margin-left: 2px;
+        content: '';
+        background: #0080ff;
+        -webkit-transition: background ease-in-out 0.25s;
+        -moz-transition: background ease-in-out 0.25s;
+        -o-transition: background ease-in-out 0.25s;
+        transition: background ease-in-out 0.25s;
+        -webkit-clip-path: url("../imagenes/test.svg");
+        clip-path: url("../imagenes/test.svg");
+        -webkit-mask: url("../imagenes/test.svg");
+        mask: url("../imagenes/test.svg"); }
+      #contact a.arrow:hover:after {
+        background: #0061c1; }
   #contact .store-status {
     position: relative; }
   #contact .status-indicator {
@@ -326,15 +358,6 @@ article.contact {
     -moz-animation: open-status 2s infinite;
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
-  #contact .arrow {
-    display: inline-block;
-    margin-left: 2px;
-    width: 8px;
-    height: 7px; }
-    #contact .arrow .svg {
-      stroke: #0080ff;
-      stroke-width: 0.5px;
-      fill: #0080ff; }
 
 /* Font Stacks */
 /* Font Weights */
@@ -347,6 +370,8 @@ article.contact {
 /* Product Cards */
 /* Global Mixins   - - - - - - - - - */
 /* Navigation Hover Transitions */
+/* SVG Background Color Transitions */
+/* SVG Clipping Mask */
 /* Background-color Hover Transitions */
 /* Margin Removal */
 /* Main Navigation */
