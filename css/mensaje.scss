@@ -19,11 +19,19 @@ body {
 	background-color: $white;
 }
 
+/* Grid Override */
+[class*='col-']:last-of-type {
+	padding: 0 10px;
+	min-height: 1px;
+}
+
 .message {
 	//Type
 	@include main-types;
 	//Structure
 	margin-top: 50px;
-	padding: 75px 0;
+	padding: 75px 0 300px 0;
+	//Form Type
+	@include form-types;
 
 }

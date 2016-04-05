@@ -51,41 +51,54 @@
 		<!-- Message Form -->
 		<section class="message">
 			<div class="wrapper">
-				<h1>
-					Estamos para servirte
-				</h1>
-				<h3 id="message">
-					Si tienes preguntas o buscas el precio de algun producto<br>
-					escríbenos un mensaje, te responderemos lo antes posible.
-				</h3>
-				<form>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1>
+								Estamos para servirte
+							</h1>
+							<h3 id="note">
+								Si tienes preguntas o buscas el precio de algun producto<br>
+								escríbenos un mensaje, te responderemos lo antes posible.
+							</h3>
+						</div>
+					</div>
+				</div>
+				<form id="message" method="get" action="mensaje.html">
 					<div class="container">
 						<div class="row">
 							<div class="col-6">
-								<label>
-									Nombre Completo
-									<br>
-									<input type="text" name="nombre-completo">
+								<label id="name">
+									<p id="label">
+										Nombre Completo
+									</p>
+									<input type="text" name="nombre-completo" placeholder="Nombre Completo">
 								</label>
 							</div>
 							<div class="col-6">
-								<label>
-									Correo Electrónico
-									<br>
-									<input type="email" name="correo-electronico">
+								<label id="email">
+									<p id="label">
+										Correo Electrónico
+									</p>
+									<input type="email" name="correo-electronico" placeholder="Correo Electrónico">
 								</label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-12">
 								<label for="mensaje">
-									Cuéntanos como te podemos ayudar
+									<p id="label">
+										Cuéntanos como te podemos ayudar
+									</p>
 								</label>
-								<br>
-								<textarea id="mensaje"></textarea>
+								<textarea id="mensaje" placeholder="Cuéntanos como te podemos ayudar"></textarea>
 							</div>
 						</div>
-						<input class="arrow" type="submit" value="Enviar mensaje">
+						<div class="row">
+							<div class="col-12">
+								<button class="arrow">Enviar Mensaje</button>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>

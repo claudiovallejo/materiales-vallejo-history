@@ -517,9 +517,14 @@ article.contact {
 body {
   background-color: #ffffff; }
 
+/* Grid Override */
+[class*='col-']:last-of-type {
+  padding: 0 10px;
+  min-height: 1px; }
+
 .message {
   margin-top: 50px;
-  padding: 75px 0; }
+  padding: 75px 0 300px 0; }
   .message h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -536,5 +541,89 @@ body {
     line-height: 1.5;
     color: #4a4a4a;
     margin-bottom: 45px; }
+  .message input, .message textarea {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    color: #4a4a4a;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    outline: none;
+    -webkit-transition: border ease-in-out 0.25s;
+    -moz-transition: border ease-in-out 0.25s;
+    -o-transition: border ease-in-out 0.25s;
+    transition: border ease-in-out 0.25s; }
+    .message input:focus, .message textarea:focus {
+      border: 1px solid #0080ff; }
+  .message input {
+    height: 42px;
+    margin-bottom: 30px; }
+  .message textarea {
+    height: 200px;
+    margin-bottom: 20px; }
+  .message *::-webkit-input-placeholder {
+    color: #b3b3b3; }
+  .message *:-mox-placeholder {
+    color: #b3b3b3; }
+  .message *::-moz-placeholder {
+    color: #b3b3b3; }
+  .message *:-ms-input-placeholder {
+    color: #b3b3b3; }
+  .message button {
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer; }
+  .message .arrow {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0080ff;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    text-decoration: none;
+    -webkit-transition: color ease-in-out 0.25s;
+    -moz-transition: color ease-in-out 0.25s;
+    -o-transition: color ease-in-out 0.25s;
+    transition: color ease-in-out 0.25s; }
+    .message .arrow:hover {
+      color: #0061c1; }
+    .message .arrow:after {
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      top: 1px;
+      margin-left: 4px;
+      content: '';
+      background: #0080ff;
+      -webkit-transition: background ease-in-out 0.25s;
+      -moz-transition: background ease-in-out 0.25s;
+      -o-transition: background ease-in-out 0.25s;
+      transition: background ease-in-out 0.25s;
+      -webkit-clip-path: url("../imagenes/test.svg");
+      clip-path: url("../imagenes/test.svg");
+      -webkit-mask: url("../imagenes/test.svg");
+      mask: url("../imagenes/test.svg"); }
+    .message .arrow:hover:after {
+      background: #0061c1; }
+  .message #label {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    line-height: 12px;
+    color: #969696;
+    margin-bottom: 7.5px;
+    -webkit-transition: color ease-in-out 0.25s;
+    -moz-transition: color ease-in-out 0.25s;
+    -o-transition: color ease-in-out 0.25s;
+    transition: color ease-in-out 0.25s; }
 
 /*# sourceMappingURL=mensaje.css.map */

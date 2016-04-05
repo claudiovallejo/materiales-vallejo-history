@@ -620,7 +620,7 @@
 			display:inline-block;
 	        width: 10px;
 	        height: 10px;
-			top: 0;
+			top: 1px;
 			margin-left: 2px;
 	        content: '';
 	        background: $blue;
@@ -809,7 +809,7 @@
 				display:inline-block;
 		        width: 10px;
 		        height: 10px;
-				top: 0;
+				top: 1px;
 				margin-left: 2px;
 		        content: '';
 		        background: $blue;
@@ -891,7 +891,7 @@
 				display:inline-block;
 		        width: 10px;
 		        height: 10px;
-				top: 0;
+				top: 1px;
 				margin-left: 2px;
 		        content: '';
 		        background: $blue;
@@ -937,6 +937,136 @@
 		color: $text-gray;
 		//Structure
 		margin-bottom: 45px;
+
+	}
+
+}
+
+@mixin form-types {
+	input, textarea {
+		//Type
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		color: $text-gray;
+		//Structure
+		width: 100%;
+		padding: 12px;
+		border: 1px solid $feature-gray;
+		border-radius: 3px;
+		outline: none;
+		@include border-transition;
+
+		&:focus {
+			border: 1px solid $blue;
+
+		}
+
+
+	}
+
+	input {
+		//Structure
+		height: 42px;
+		margin-bottom: 30px;
+
+	}
+
+	textarea {
+		height: 200px;
+		margin-bottom: 20px;
+
+	}
+
+	//Placeholder Text
+	*::-webkit-input-placeholder {
+		color: $author-gray;
+
+	}
+
+	*:-mox-placeholder {
+		color: $author-gray;
+
+	}
+
+	*::-moz-placeholder {
+		color: $author-gray;
+
+	}	
+
+	*:-ms-input-placeholder {
+		color: $author-gray;
+
+	}
+
+	button {
+		text-align: left;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		cursor: pointer;
+
+	}
+
+	.arrow {
+		//Type
+		position: relative;
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		color: $blue;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		text-decoration: none;
+		//Transitions
+		@include color-transition;
+
+		&:hover {
+			//Type
+			color: $dark-blue;
+
+		}
+
+		&:after {
+			//Structure
+			position:relative;
+			display:inline-block;
+	        width: 10px;
+	        height: 10px;
+			top: 1px;
+			margin-left: 4px;
+	        content: '';
+	        background: $blue;
+	        //Transition
+	        @include background-color-transition;
+	        //SVG Mask
+	        @include svg-clipping-mask('../imagenes/test.svg');
+
+		}
+
+		&:hover:after {
+			//Structure
+			background: $dark-blue;
+
+		}
+
+	}
+
+	//Labels
+	#label {
+		//Type
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-12;
+		letter-spacing: $size-12 * $character;
+		line-height: $size-12;
+		color: $nav-gray;	
+		//Structure
+		margin-bottom: 7.5px;
+		//Transitions
+		@include color-transition;
 
 	}
 

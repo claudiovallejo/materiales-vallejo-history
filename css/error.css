@@ -557,7 +557,7 @@ body {
         display: inline-block;
         width: 10px;
         height: 10px;
-        top: 0;
+        top: 1px;
         margin-left: 2px;
         content: '';
         background: #0080ff;
