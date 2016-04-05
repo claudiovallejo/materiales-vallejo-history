@@ -914,6 +914,34 @@
 
 }
 
+/* Message Form - - - - - - - - - */
+@mixin main-types {
+	h1 {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-36;
+		letter-spacing: $size-36 * $character;
+		line-height: $size-36;
+		color: $title-gray;
+		//Structure
+		margin-bottom: 15px;
+
+	}
+
+	h3 {
+		font-family: $lato;
+		font-weight: $hairline;
+		font-size: $size-22;
+		letter-spacing: $size-22 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+		//Structure
+		margin-bottom: 45px;
+
+	}
+
+}
+
 
 
 

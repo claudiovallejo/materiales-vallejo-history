@@ -519,8 +519,7 @@ body {
 
 .message {
   margin-top: 50px;
-  padding: 200px 200px;
-  text-align: center; }
+  padding: 75px 0; }
   .message h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -536,54 +535,6 @@ body {
     letter-spacing: 0.275px;
     line-height: 1.5;
     color: #4a4a4a;
-    margin-bottom: 25px; }
-  .message a {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 16px;
-    text-decoration: none; }
-    .message a.arrow {
-      color: #0080ff;
-      -webkit-transition: color ease-in-out 0.25s;
-      -moz-transition: color ease-in-out 0.25s;
-      -o-transition: color ease-in-out 0.25s;
-      transition: color ease-in-out 0.25s; }
-      .message a.arrow:hover {
-        color: #0061c1; }
-      .message a.arrow:after {
-        position: relative;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        top: 0;
-        margin-left: 2px;
-        content: '';
-        background: #0080ff;
-        -webkit-transition: background ease-in-out 0.25s;
-        -moz-transition: background ease-in-out 0.25s;
-        -o-transition: background ease-in-out 0.25s;
-        transition: background ease-in-out 0.25s;
-        -webkit-clip-path: url("../imagenes/test.svg");
-        clip-path: url("../imagenes/test.svg");
-        -webkit-mask: url("../imagenes/test.svg");
-        mask: url("../imagenes/test.svg"); }
-      .message a.arrow:hover:after {
-        background: #0061c1; }
-  .message ul {
-    position: relative;
-    top: 16px;
-    padding: 0; }
-  .message li {
-    display: inline-block;
-    list-style: none; }
-  .message li:nth-child(1) {
-    margin-right: 35px; }
+    margin-bottom: 45px; }
 
-#error {
-  width: 61px;
-  height: 61px;
-  margin-bottom: 35px; }
-
-/*# sourceMappingURL=error.css.map */
+/*# sourceMappingURL=mensaje.css.map */
