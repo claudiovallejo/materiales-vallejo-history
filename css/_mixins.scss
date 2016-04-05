@@ -36,10 +36,10 @@
 }
 
 @mixin border-transition {
-	-webkit-transition: border-left $standard $fast;
-	-moz-transition: border-left $standard $fast;
-	-o-transition: border-left $standard $fast;
-	transition: border-left $standard $fast;	
+	-webkit-transition: border $standard $fast;
+	-moz-transition: border $standard $fast;
+	-o-transition: border $standard $fast;
+	transition: border $standard $fast;	
 
 }
 
@@ -470,11 +470,6 @@
 		letter-spacing: $size-14 * $character;
 		line-height: $size-14;
 		color: $text-gray;
-		/* // Imagery
-		background-image: url('../imagenes/iconos/check@1x.png');
-		background-repeat: no-repeat;
-		background-position: left center;
-		*/
 
 	}
 

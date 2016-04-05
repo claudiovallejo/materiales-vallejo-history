@@ -563,10 +563,10 @@ body {
     -moz-transition: color ease-in-out 0.25s;
     -o-transition: color ease-in-out 0.25s;
     transition: color ease-in-out 0.25s;
-    -webkit-transition: border-left ease-in-out 0.25s;
-    -moz-transition: border-left ease-in-out 0.25s;
-    -o-transition: border-left ease-in-out 0.25s;
-    transition: border-left ease-in-out 0.25s;
+    -webkit-transition: border ease-in-out 0.25s;
+    -moz-transition: border ease-in-out 0.25s;
+    -o-transition: border ease-in-out 0.25s;
+    transition: border ease-in-out 0.25s;
     display: block;
     padding: 15px 0 15px 15px;
     border-left: 2px solid #eaeaea; }
@@ -597,12 +597,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.175px;
     line-height: 14px;
-    color: #4a4a4a;
-    /* // Imagery
-    background-image: url('../imagenes/iconos/check@1x.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    */ }
+    color: #4a4a4a; }
   .feature-list .check-mark {
     position: relative;
     display: inline-block;
