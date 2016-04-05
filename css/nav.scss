@@ -21,6 +21,17 @@
 	#logo {
 		position: relative;
 		top: 13px;
+		width: 236px;
+		height: 24px;
+		@include background-color-transition;
+		@include svg-clipping-mask('../imagenes/logo/logo.svg');
+		background: $text-gray;
+
+		&:hover {
+			background: $black;
+
+		}
+
 	}
 
 	ul {

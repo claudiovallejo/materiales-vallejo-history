@@ -69,7 +69,20 @@
     padding: 0 10px; }
   .nav-bar #logo {
     position: relative;
-    top: 13px; }
+    top: 13px;
+    width: 236px;
+    height: 24px;
+    -webkit-transition: background ease-in-out 0.25s;
+    -moz-transition: background ease-in-out 0.25s;
+    -o-transition: background ease-in-out 0.25s;
+    transition: background ease-in-out 0.25s;
+    -webkit-clip-path: url("../imagenes/logo/logo.svg");
+    clip-path: url("../imagenes/logo/logo.svg");
+    -webkit-mask: url("../imagenes/logo/logo.svg");
+    mask: url("../imagenes/logo/logo.svg");
+    background: #4a4a4a; }
+    .nav-bar #logo:hover {
+      background: #000000; }
   .nav-bar ul {
     position: relative;
     top: 16px;
