@@ -26,6 +26,7 @@ body {
 	padding: 125px 0 750px 0;
 	overflow: hidden;
 	@include standard-gradient
+
 }
 
 .contact-col {
@@ -36,6 +37,22 @@ body {
 	
 }
 
+.contact-col:nth-child(even) {
+	float: right;
+	padding: 0 20px;
+
+}
+
+.link-wrapper {
+	text-decoration: none;
+
+	&:hover .contact-card {
+		box-shadow: 0 1px 20px rgba(0,0,0,0.10);
+
+	}
+
+}
+
 .contact-card {
 	//Structure
 	text-align: center;
@@ -43,26 +60,57 @@ body {
 	width: 450px;
 	height: 323px;
 	margin-bottom: 20px;
+	margin-right: 0;
 	background-color: $white;
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.10);
 	@include card-type;
+	@include shadow-transition;
+	@include shadow-transition;
 
-}
+	&:hover {
 
-img.message {
-	padding-bottom: 9px;
-}
+		& .arrow {
+			//Type
+			color: $dark-blue;
 
-.arrow {
-		display: inline-block;
-		margin-left: 2px;
-		width: 9px;
-		height: 9px;
+			&:after {
+				//Structure
+    			background: $dark-blue;
 
-		.svg {
-			stroke: $blue;
-			stroke-width: 0.5px;
-			fill: $blue;
+			}
+
 		}
+
+		& .call {
+			color: $dark-green;
+
+		}
+
+	}
+
 }
 
+#horarios {
+	width: 23px;
+	height: 31px;
+
+}
+
+#marcanos {
+	width: 17px;
+	height: 31px;
+
+}
+
+#direccion {
+	width: 21px;
+	height: 31px;
+
+}
+
+#mensajes {
+	width: 31px;
+	height: 21px;
+	margin-top: 10px;
+
+}

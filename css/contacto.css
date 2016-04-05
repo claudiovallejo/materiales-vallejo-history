@@ -359,6 +359,23 @@ article.contact {
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
 
+#horarios {
+  width: 23px;
+  height: 31px; }
+
+#marcanos {
+  width: 17px;
+  height: 31px; }
+
+#direccion {
+  width: 21px;
+  height: 31px; }
+
+#mensajes {
+  width: 31px;
+  height: 21px;
+  margin-top: 10px; }
+
 /* Font Stacks */
 /* Font Weights */
 /* Colors */
@@ -418,7 +435,7 @@ article.contact {
 .footer {
   width: 100%; }
   .footer footer {
-    padding-top: 7.5px;
+    padding: 7.5px 10px 0;
     margin-bottom: 35px;
     border-top: 1px solid #f6f6f6; }
     .footer footer p {
@@ -502,21 +519,39 @@ body {
   width: 50%;
   margin-bottom: 20px; }
 
+.contact-col:nth-child(even) {
+  float: right;
+  padding: 0 20px; }
+
+.link-wrapper {
+  text-decoration: none; }
+  .link-wrapper:hover .contact-card {
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1); }
+
 .contact-card {
   text-align: center;
   padding: 95px 65px;
   width: 450px;
   height: 323px;
   margin-bottom: 20px;
+  margin-right: 0;
   background-color: #ffffff;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: box-shadow ease-in-out 0.25s;
+  -moz-transition: box-shadow ease-in-out 0.25s;
+  -o-transition: box-shadow ease-in-out 0.25s;
+  transition: box-shadow ease-in-out 0.25s;
+  -webkit-transition: box-shadow ease-in-out 0.25s;
+  -moz-transition: box-shadow ease-in-out 0.25s;
+  -o-transition: box-shadow ease-in-out 0.25s;
+  transition: box-shadow ease-in-out 0.25s; }
   .contact-card h1 {
     font-family: "Lato", sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 22px;
     letter-spacing: 0.275px;
     line-height: 1.5;
-    color: #212121;
+    color: #000000;
     padding-bottom: 5px; }
   .contact-card p {
     font-family: "Lato", sans-serif;
@@ -524,15 +559,46 @@ body {
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 18px;
-    color: #4a4a4a;
+    color: #969696;
+    -webkit-transition: color ease-in-out 0.25s;
+    -moz-transition: color ease-in-out 0.25s;
+    -o-transition: color ease-in-out 0.25s;
+    transition: color ease-in-out 0.25s;
     padding-bottom: 15px; }
-  .contact-card p.status {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 16px;
-    color: #25c315; }
+    .contact-card p.status {
+      font-weight: 400;
+      color: #25c315; }
+    .contact-card p.call {
+      font-weight: 400;
+      color: #25c315;
+      -webkit-transition: color ease-in-out 0.25s;
+      -moz-transition: color ease-in-out 0.25s;
+      -o-transition: color ease-in-out 0.25s;
+      transition: color ease-in-out 0.25s; }
+    .contact-card p.arrow {
+      font-weight: 400;
+      color: #0080ff;
+      -webkit-transition: color ease-in-out 0.25s;
+      -moz-transition: color ease-in-out 0.25s;
+      -o-transition: color ease-in-out 0.25s;
+      transition: color ease-in-out 0.25s; }
+      .contact-card p.arrow:after {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        top: 0;
+        margin-left: 2px;
+        content: '';
+        background: #0080ff;
+        -webkit-transition: background ease-in-out 0.25s;
+        -moz-transition: background ease-in-out 0.25s;
+        -o-transition: background ease-in-out 0.25s;
+        transition: background ease-in-out 0.25s;
+        -webkit-clip-path: url("../imagenes/test.svg");
+        clip-path: url("../imagenes/test.svg");
+        -webkit-mask: url("../imagenes/test.svg");
+        mask: url("../imagenes/test.svg"); }
   .contact-card .status-indicator {
     display: inline-block;
     margin-right: 5px;
@@ -545,34 +611,28 @@ body {
     -moz-animation: open-status 2s infinite;
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
-  .contact-card a {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 16px;
-    color: #0080ff;
-    text-decoration: none; }
-  .contact-card a.call {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 16px;
-    color: #25c315;
-    text-decoration: none; }
+  .contact-card:hover .arrow {
+    color: #0061c1; }
+    .contact-card:hover .arrow:after {
+      background: #0061c1; }
+  .contact-card:hover .call {
+    color: #008027; }
 
-img.message {
-  padding-bottom: 9px; }
+#horarios {
+  width: 23px;
+  height: 31px; }
 
-.arrow {
-  display: inline-block;
-  margin-left: 2px;
-  width: 9px;
-  height: 9px; }
-  .arrow .svg {
-    stroke: #0080ff;
-    stroke-width: 0.5px;
-    fill: #0080ff; }
+#marcanos {
+  width: 17px;
+  height: 31px; }
+
+#direccion {
+  width: 21px;
+  height: 31px; }
+
+#mensajes {
+  width: 31px;
+  height: 21px;
+  margin-top: 10px; }
 
 /*# sourceMappingURL=contacto.css.map */

@@ -140,4 +140,21 @@ article.contact {
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
 
+#horarios {
+  width: 23px;
+  height: 31px; }
+
+#marcanos {
+  width: 17px;
+  height: 31px; }
+
+#direccion {
+  width: 21px;
+  height: 31px; }
+
+#mensajes {
+  width: 31px;
+  height: 21px;
+  margin-top: 10px; }
+
 /*# sourceMappingURL=contact-sections.css.map */

@@ -28,10 +28,11 @@
 
 /* Background-color Hover Transitions */
 @mixin background-transition {
-	-webkit-transition: background-color $standard $medium;
-	-moz-transition: background-color $standard $medium;
-	-o-transition: background-color $standard $medium;
-	transition: background-color $standard $medium;	
+	-webkit-transition: background-color $standard $fast;
+	-moz-transition: background-color $standard $fast;
+	-o-transition: background-color $standard $fast;
+	transition: background-color $standard $fast;	
+
 }
 
 @mixin border-transition {
@@ -39,6 +40,7 @@
 	-moz-transition: border-left $standard $fast;
 	-o-transition: border-left $standard $fast;
 	transition: border-left $standard $fast;	
+
 }
 
 /* Margin Removal */
@@ -752,14 +754,22 @@
 }
 
 /* Contact Us - - - - - - - - - */
+@mixin shadow-transition {
+	-webkit-transition: box-shadow $standard $fast;
+	-moz-transition: box-shadow $standard $fast;
+	-o-transition: box-shadow $standard $fast;
+	transition: box-shadow $standard $fast;
+
+}
+
 @mixin card-type {
 	h1 {
 		font-family: $lato;
-		font-weight: $light;
+		font-weight: $hairline;
 		font-size: $size-22;
 		letter-spacing: $size-22 * $character;
 		line-height: $default-line;
-		color: $title-gray;
+		color: $black;
 		//Structure
 		padding-bottom: 5px;
 
@@ -771,19 +781,51 @@
 		font-size: $size-16;
 		letter-spacing: $size-16 * $character;
 		line-height: 18px;
-		color: $text-gray;
+		color: $nav-gray;
+		//Transition
+		@include color-transition;
 		//Structure
 		padding-bottom: 15px;
 
-	}
+		&.status {
+			font-weight: $regular;
+			color: $green;
+		}
 
-	p.status {
-		font-family: $lato;
-		font-weight: $regular;
-		font-size: $size-16;
-		letter-spacing: $size-16 * $character;
-		line-height: $size-16;
-		color: $green;
+		&.call {
+			//Type
+			font-weight: $regular;
+			color: $green;
+			//Transitions
+			@include color-transition;
+
+		}
+
+		&.arrow {
+			//Type
+			font-weight: $regular;
+			color: $blue;
+			//Transitions
+			@include color-transition;
+
+			&:after {
+				//Structure
+				position:relative;
+				display:inline-block;
+		        width: 10px;
+		        height: 10px;
+				top: 0;
+				margin-left: 2px;
+		        content: '';
+		        background: $blue;
+		        //Transition
+		        @include background-color-transition;
+		        //SVG Mask
+		        @include svg-clipping-mask('../imagenes/test.svg');
+
+    		}
+
+		}
 
 	}
 
@@ -796,28 +838,6 @@
 		border-radius: 3px;
 		background-color: $green;
 		@include status-animation;
-
-	}
-
-	a {
-		font-family: $lato;
-		font-weight: $regular;
-		font-size: $size-16;
-		letter-spacing: $size-16 * $character;
-		line-height: $size-16;
-		color: $blue;
-		text-decoration: none;
-
-	}
-
-	a.call {
-		font-family: $lato;
-		font-weight: $regular;
-		font-size: $size-16;
-		letter-spacing: $size-16 * $character;
-		line-height: $size-16;
-		color: $green;
-		text-decoration: none;
 
 	}
 

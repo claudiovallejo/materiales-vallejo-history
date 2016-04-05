@@ -359,6 +359,23 @@ article.contact {
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
 
+#horarios {
+  width: 23px;
+  height: 31px; }
+
+#marcanos {
+  width: 17px;
+  height: 31px; }
+
+#direccion {
+  width: 21px;
+  height: 31px; }
+
+#mensajes {
+  width: 31px;
+  height: 21px;
+  margin-top: 10px; }
+
 /* Font Stacks */
 /* Font Weights */
 /* Colors */
@@ -418,7 +435,7 @@ article.contact {
 .footer {
   width: 100%; }
   .footer footer {
-    padding-top: 7.5px;
+    padding: 7.5px 10px 0;
     margin-bottom: 35px;
     border-top: 1px solid #f6f6f6; }
     .footer footer p {
