@@ -838,6 +838,82 @@
 
 }
 
+/* Error - - - - - - - - - */
+@mixin error-type {
+	h1 {
+		font-family: $lato;
+		font-weight: $light;
+		font-size: $size-36;
+		letter-spacing: $size-36 * $character;
+		line-height: $size-36;
+		color: $title-gray;
+		//Structure
+		margin-bottom: 15px;
+
+	}
+
+	h3 {
+		font-family: $lato;
+		font-weight: $hairline;
+		font-size: $size-22;
+		letter-spacing: $size-22 * $character;
+		line-height: $default-line;
+		color: $text-gray;
+		//Structure
+		margin-bottom: 25px;
+
+	}
+
+	a {
+		//Type
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: $size-16;
+		text-decoration: none;
+
+		&.arrow {
+			//Type
+			color: $blue;
+			//Transitions
+			@include color-transition;
+
+			&:hover {
+				//Type
+				color: $dark-blue;
+
+			}
+
+			&:after {
+				//Structure
+				position:relative;
+				display:inline-block;
+		        width: 10px;
+		        height: 10px;
+				top: 0;
+				margin-left: 2px;
+		        content: '';
+		        background: $blue;
+		        //Transition
+		        @include background-color-transition;
+		        //SVG Mask
+		        @include svg-clipping-mask('../imagenes/test.svg');
+
+    		}
+
+    		&:hover:after {
+    			//Structure
+    			background: $dark-blue;
+
+    		}
+
+		}
+
+	}
+
+}
+
 
 
 

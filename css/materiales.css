@@ -53,6 +53,7 @@
 /* Feature Sections */
 /* About Us - - - - - - - - - */
 /* Contact Us - - - - - - - - - */
+/* Error - - - - - - - - - */
 /* Grid System */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -177,6 +178,7 @@
 /* Feature Sections */
 /* About Us - - - - - - - - - */
 /* Contact Us - - - - - - - - - */
+/* Error - - - - - - - - - */
 /* Navigation */
 .nav-bar {
   width: 100%;
@@ -285,6 +287,7 @@
 /* Feature Sections */
 /* About Us - - - - - - - - - */
 /* Contact Us - - - - - - - - - */
+/* Error - - - - - - - - - */
 /* Contact Sections */
 article.contact {
   background-color: #ffffff; }
@@ -444,6 +447,7 @@ article.contact {
 /* Feature Sections */
 /* About Us - - - - - - - - - */
 /* Contact Us - - - - - - - - - */
+/* Error - - - - - - - - - */
 /* Footer */
 .footer {
   width: 100%; }
