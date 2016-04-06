@@ -107,5 +107,7 @@
       transition: color ease-in-out 0.25s; }
       .nav-bar li a:hover {
         color: #0080ff; }
+      .nav-bar li a.active {
+        color: #0080ff; }
 
 /*# sourceMappingURL=nav.css.map */

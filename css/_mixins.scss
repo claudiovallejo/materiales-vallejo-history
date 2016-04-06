@@ -62,11 +62,19 @@
 		color: $nav-gray;
 		text-decoration: none;
 		@include color-transition;
+
 		&:hover {
 			color: $blue;
+
+		}
+
+		&.active {
+			color: $blue;
+			
 		}
 
 	}
+
 }
 
 /* Hero Section */
@@ -426,6 +434,13 @@
 		&:hover {
 			border-left: 2px solid $blue;
 			color: $blue;
+
+		}
+
+		&.active {
+			border-left: 2px solid $blue;
+			color: $blue;
+			
 		}
 
 	}

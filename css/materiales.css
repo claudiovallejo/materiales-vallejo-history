@@ -233,6 +233,8 @@
       transition: color ease-in-out 0.25s; }
       .nav-bar li a:hover {
         color: #0080ff; }
+      .nav-bar li a.active {
+        color: #0080ff; }
 
 /* Font Stacks */
 /* Font Weights */
@@ -592,6 +594,9 @@ body {
     padding: 15px 0 15px 15px;
     border-left: 2px solid #eaeaea; }
     .product-nav a:hover {
+      border-left: 2px solid #0080ff;
+      color: #0080ff; }
+    .product-nav a.active {
       border-left: 2px solid #0080ff;
       color: #0080ff; }
 
