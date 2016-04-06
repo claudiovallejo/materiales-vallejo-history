@@ -8,7 +8,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-2.2.2.js"></script>
 		<!-- <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script> -->
-		<title> Materiales Vallejo | Enviar Mensaje</title>
+		<title> Materiales Vallejo | Enviar Mensaje </title>
 
 	</head>
 	<body>
@@ -50,6 +50,28 @@
 			</div>
 		</header>
 
+		<!-- Message Sent  -->
+<!-- 		<div class="wrapper">
+			<section class="message">
+				<img id="error" src="imagenes/error.svg">
+				<h1>
+					Hemos recibido tu mensaje
+				</h1>
+				<h3>
+					Muchas gracias por tu mensaje, responderemos a tu mensaje lo antes posible. ¡Que tengas buen día!
+				</h3>
+				<div class="links">
+					<ul>
+						<li>
+							<a class="arrow" href="index.html">
+								Ir a Inicio
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div> -->
+
 		<!-- Message Form -->
 		<section class="message">
 			<div class="wrapper">
@@ -74,7 +96,7 @@
 									<p id="label">
 										Nombre Completo
 									</p>
-									<input type="text" name="nombre-completo" placeholder="Nombre Completo">
+									<input type="text" name="nombre-completo" placeholder="Nombre Completo" required="required" autofocus="autofocus">
 								</label>
 							</div>
 							<div class="col-6">
@@ -82,7 +104,7 @@
 									<p id="label">
 										Correo Electrónico
 									</p>
-									<input type="email" name="correo-electronico" placeholder="Correo Electrónico">
+									<input type="email" name="correo-electronico" placeholder="Correo Electrónico" required="required">
 								</label>
 							</div>
 						</div>
@@ -93,12 +115,12 @@
 										Cuéntanos como te podemos ayudar
 									</p>
 								</label>
-								<textarea id="mensaje" placeholder="Cuéntanos como te podemos ayudar"></textarea>
+								<textarea id="mensaje" placeholder="Cuéntanos como te podemos ayudar" required="required" data-minlength="10"></textarea>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-12">
-								<button class="arrow">Enviar Mensaje</button>
+								<button type="submit" class="arrow">Enviar Mensaje</button>
 							</div>
 						</div>
 					</div>
