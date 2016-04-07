@@ -524,10 +524,10 @@ body {
   padding: 0 10px;
   min-height: 1px; }
 
-.message {
+#success, #error {
   margin-top: 50px;
   padding: 75px 0 300px 0; }
-  .message h1 {
+  #success h1, #error h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 36px;
@@ -535,7 +535,7 @@ body {
     line-height: 36px;
     color: #212121;
     margin-bottom: 15px; }
-  .message h3 {
+  #success h3, #error h3 {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-size: 22px;
@@ -543,7 +543,7 @@ body {
     line-height: 1.5;
     color: #4a4a4a;
     margin-bottom: 45px; }
-  .message input, .message textarea {
+  #success input, #success textarea, #error input, #error textarea {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -559,29 +559,29 @@ body {
     -moz-transition: border ease-in-out 0.25s;
     -o-transition: border ease-in-out 0.25s;
     transition: border ease-in-out 0.25s; }
-    .message input:focus, .message textarea:focus {
+    #success input:focus, #success textarea:focus, #error input:focus, #error textarea:focus {
       border: 1px solid #0080ff; }
-  .message input {
+  #success input, #error input {
     height: 42px;
     margin-bottom: 30px; }
-  .message textarea {
+  #success textarea, #error textarea {
     height: 200px;
     margin-bottom: 20px; }
-  .message *::-webkit-input-placeholder {
+  #success *::-webkit-input-placeholder, #error *::-webkit-input-placeholder {
     color: #b3b3b3; }
-  .message *:-mox-placeholder {
+  #success *:-mox-placeholder, #error *:-mox-placeholder {
     color: #b3b3b3; }
-  .message *::-moz-placeholder {
+  #success *::-moz-placeholder, #error *::-moz-placeholder {
     color: #b3b3b3; }
-  .message *:-ms-input-placeholder {
+  #success *:-ms-input-placeholder, #error *:-ms-input-placeholder {
     color: #b3b3b3; }
-  .message button {
+  #success button, #error button {
     text-align: left;
     border: none;
     background-color: transparent;
     padding: 0;
     cursor: pointer; }
-  .message .arrow {
+  #success .arrow, #error .arrow {
     position: relative;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -594,9 +594,9 @@ body {
     -moz-transition: color ease-in-out 0.25s;
     -o-transition: color ease-in-out 0.25s;
     transition: color ease-in-out 0.25s; }
-    .message .arrow:hover {
+    #success .arrow:hover, #error .arrow:hover {
       color: #0061c1; }
-    .message .arrow:after {
+    #success .arrow:after, #error .arrow:after {
       position: relative;
       display: inline-block;
       width: 10px;
@@ -613,9 +613,9 @@ body {
       clip-path: url("../imagenes/test.svg");
       -webkit-mask: url("../imagenes/test.svg");
       mask: url("../imagenes/test.svg"); }
-    .message .arrow:hover:after {
+    #success .arrow:hover:after, #error .arrow:hover:after {
       background: #0061c1; }
-  .message #label {
+  #success #label, #error #label {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 12px;
@@ -627,5 +627,73 @@ body {
     -moz-transition: color ease-in-out 0.25s;
     -o-transition: color ease-in-out 0.25s;
     transition: color ease-in-out 0.25s; }
+
+.success {
+  margin-top: 50px;
+  padding: 200px 200px;
+  text-align: center;
+  display: none; }
+  .success h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.45px;
+    line-height: 36px;
+    color: #212121;
+    margin-bottom: 15px; }
+  .success h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    letter-spacing: 0.275px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-bottom: 25px; }
+  .success a {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    text-decoration: none; }
+    .success a.arrow {
+      color: #0080ff;
+      -webkit-transition: color ease-in-out 0.25s;
+      -moz-transition: color ease-in-out 0.25s;
+      -o-transition: color ease-in-out 0.25s;
+      transition: color ease-in-out 0.25s; }
+      .success a.arrow:hover {
+        color: #0061c1; }
+      .success a.arrow:after {
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        top: 1px;
+        margin-left: 2px;
+        content: '';
+        background: #0080ff;
+        -webkit-transition: background ease-in-out 0.25s;
+        -moz-transition: background ease-in-out 0.25s;
+        -o-transition: background ease-in-out 0.25s;
+        transition: background ease-in-out 0.25s;
+        -webkit-clip-path: url("../imagenes/test.svg");
+        clip-path: url("../imagenes/test.svg");
+        -webkit-mask: url("../imagenes/test.svg");
+        mask: url("../imagenes/test.svg"); }
+      .success a.arrow:hover:after {
+        background: #0061c1; }
+  .success ul {
+    position: relative;
+    top: 16px;
+    padding: 0; }
+  .success li {
+    display: inline-block;
+    list-style: none; }
+
+#icon {
+  width: 61px;
+  height: 61px;
+  margin-bottom: 35px; }
 
 /*# sourceMappingURL=mensaje.css.map */

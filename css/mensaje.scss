@@ -25,7 +25,7 @@ body {
 	min-height: 1px;
 }
 
-.message {
+#success, #error {
 	//Type
 	@include main-types;
 	//Structure
@@ -33,5 +33,36 @@ body {
 	padding: 75px 0 300px 0;
 	//Form Type
 	@include form-types;
+
+}
+
+.success {
+	//Type
+	@include error-type;
+	//Structure
+	margin-top: 50px;
+	padding: 200px 200px;
+	text-align: center;
+	display: none;
+
+	ul {
+		position: relative;
+		top: 16px;
+		padding: 0;
+
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+
+	}
+
+}
+
+#icon {
+	width: 61px;
+	height: 61px;
+	margin-bottom: 35px;
 
 }

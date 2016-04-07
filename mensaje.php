@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -50,15 +51,29 @@
 			</div>
 		</header>
 
+		<?php
+		//init variables
+		$cf = array();
+		$sr = false;
+
+		if(isset($_SESSION['cf_returndata'])) {
+
+			$cf = $_SESSION['cf_returndata'];
+			$sr = true;
+
+		}
+
+		?>
+
 		<!-- Message Sent  -->
-<!-- 		<div class="wrapper">
-			<section class="message">
-				<img id="error" src="imagenes/error.svg">
+		<div class="wrapper">
+			<section id="success" class="<? php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">
+				<img id="icon" src="imagenes/success.svg">
 				<h1>
 					Hemos recibido tu mensaje
 				</h1>
 				<h3>
-					Muchas gracias por tu mensaje, responderemos a tu mensaje lo antes posible. ¡Que tengas buen día!
+					Muchas gracias por contactarnos, responderemos a tu mensaje lo antes posible. ¡Que tengas buen día!
 				</h3>
 				<div class="links">
 					<ul>
@@ -70,7 +85,37 @@
 					</ul>
 				</div>
 			</section>
-		</div> -->
+		</div>
+
+		<!-- Temporary Error Message -->
+		<div class="wrapper">
+			<section id="error" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+				<img id="icon" src="imagenes/m-error.svg">
+				<h1>
+					Esta es una prueba de como no se llena una forma
+				</h1>
+				<?php
+
+					if(isset($cf['errors']) && count($cf['errors']) > 0) :
+						foreach($cf['errors'] as $error) :
+
+				?>
+				<h3><?php echo $error ?></h3>
+				<?php
+					endforeach;
+				endif;
+				?>
+				<div class="links">
+					<ul>
+						<li>
+							<a class="arrow" href="index.html">
+								Ir a Inicio
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
 
 		<!-- Message Form -->
 		<section class="message">
