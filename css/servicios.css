@@ -297,10 +297,10 @@
 article.contact {
   background-color: #ffffff; }
 
-#contact {
+#hours, #contact, #address {
   padding: 100px 25px;
   text-align: center; }
-  #contact h2 {
+  #hours h2, #contact h2, #address h2 {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-size: 18px;
@@ -308,7 +308,7 @@ article.contact {
     line-height: 18px;
     color: #212121;
     padding: 15px 0 7.5px 0; }
-  #contact p {
+  #hours p, #contact p, #address p {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-size: 14px;
@@ -316,37 +316,42 @@ article.contact {
     line-height: 1.5;
     color: #4a4a4a;
     padding-bottom: 10px; }
-  #contact p.status {
+  #hours #status, #contact #status, #address #status {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.175px;
-    line-height: 14px;
+    line-height: 14px; }
+  #hours .green, #contact .green, #address .green {
     color: #25c315; }
-  #contact a {
+  #hours .red, #contact .red, #address .red {
+    color: #d0021b; }
+  #hours .orange, #contact .orange, #address .orange {
+    color: #f5a623; }
+  #hours a, #contact a, #address a {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.175px;
     line-height: 14px;
     text-decoration: none; }
-    #contact a.call {
+    #hours a.call, #contact a.call, #address a.call {
       color: #25c315;
       -webkit-transition: color ease-in-out 0.25s;
       -moz-transition: color ease-in-out 0.25s;
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
-      #contact a.call:hover {
+      #hours a.call:hover, #contact a.call:hover, #address a.call:hover {
         color: #008027; }
-    #contact a.arrow {
+    #hours a.arrow, #contact a.arrow, #address a.arrow {
       color: #0080ff;
       -webkit-transition: color ease-in-out 0.25s;
       -moz-transition: color ease-in-out 0.25s;
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
-      #contact a.arrow:hover {
+      #hours a.arrow:hover, #contact a.arrow:hover, #address a.arrow:hover {
         color: #0061c1; }
-      #contact a.arrow:after {
+      #hours a.arrow:after, #contact a.arrow:after, #address a.arrow:after {
         position: relative;
         display: inline-block;
         width: 8px;
@@ -363,22 +368,27 @@ article.contact {
         clip-path: url("../imagenes/test.svg");
         -webkit-mask: url("../imagenes/test.svg");
         mask: url("../imagenes/test.svg"); }
-      #contact a.arrow:hover:after {
+      #hours a.arrow:hover:after, #contact a.arrow:hover:after, #address a.arrow:hover:after {
         background: #0061c1; }
-  #contact .store-status {
+  #hours .store-status, #contact .store-status, #address .store-status {
     position: relative; }
-  #contact .status-indicator {
+  #hours #status-indicator, #contact #status-indicator, #address #status-indicator {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 2.5px;
     width: 5px;
     height: 5px;
-    border-radius: 2.5px;
+    border-radius: 2.5px; }
+  #hours .green-status, #contact .green-status, #address .green-status {
     background-color: #25c315;
     -webkit-animation: open-status 2s infinite;
     -moz-animation: open-status 2s infinite;
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
+  #hours .red-status, #contact .red-status, #address .red-status {
+    background-color: #d0021b; }
+  #hours .orange-status, #contact .orange-status, #address .orange-status {
+    background-color: #f5a623; }
 
 #horarios {
   width: 23px;

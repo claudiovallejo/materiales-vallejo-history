@@ -6,7 +6,7 @@ article.contact {
 	background-color: $white;
 }
 
-#contact {
+#hours, #contact, #address {
 	padding: 100px 25px;
 	text-align: center;
 	@include contact-section;

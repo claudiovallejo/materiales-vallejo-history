@@ -25,7 +25,7 @@ body {
 	min-height: 1px;
 }
 
-#success, #error {
+.message {
 	//Type
 	@include main-types;
 	//Structure
@@ -36,7 +36,7 @@ body {
 
 }
 
-.success {
+#success, #error {
 	//Type
 	@include error-type;
 	//Structure

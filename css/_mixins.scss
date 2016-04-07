@@ -163,14 +163,31 @@
 
 	}
 
-	p.status {
+	#status {
 		//Type
 		font-family: $lato;
 		font-weight: $regular;
 		font-size: $size-14;
 		letter-spacing: $size-14 * $character;
 		line-height: $size-14;
+
+	}
+
+	.green {
+
 		color: $green;
+
+	}
+
+	.red {
+
+		color: $red;
+
+	}
+
+	.orange {
+
+		color: $orange;
 
 	}
 
@@ -241,7 +258,7 @@
 
 	}
 
-	.status-indicator {
+	#status-indicator {
 		//Structure
 		display: inline-block;
 		margin-right: 5px;
@@ -249,10 +266,27 @@
 		width: 5px;
 		height: 5px;
 		border-radius: 2.5px;
+		
+	}
+
+	.green-status {
+		//Color
 		background-color: $green;
 		//Animation
 		@include status-animation;
-		
+
+	}
+
+	.red-status {
+		//Color
+		background-color: $red;
+
+	}
+
+	.orange-status {
+		//Color
+		background-color: $orange;
+
 	}
 
 }
