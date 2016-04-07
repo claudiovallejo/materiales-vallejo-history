@@ -10,13 +10,21 @@ var statusIndicatorColor = document.getElementById('status-indicator');
 var statusName = statusNameColor.lastChild;
 
 //Open Hours
-var openHours = ((8 <= currentTime) && (currentTime < 13)) && ((14.5 <= currentTime) && (currentTime < 18));
+var morningHours = ((8 <= currentTime) && (currentTime < 13));
+var afternoonHours = ((14.5 <= currentTime) && (currentTime < 18));
 
 //Lunch Hours
 var lunchHours = (currentTime <= 13) && (currentTime < 14.5);
 
 //Status Setter
-if (openHours) {
+if (morningHours) {
+
+	//Status Indicator Selectors
+	statusNameColor.className = 'green';
+	statusName.textContent = 'Abierto';
+	statusIndicatorColor.className = 'green-status';
+
+} else if (afternoonHours) { 
 
 	//Status Indicator Selectors
 	statusNameColor.className = 'green';
