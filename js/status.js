@@ -1,21 +1,46 @@
 // Time Variables
 var today = new Date();
+var currentDay = today.getDay();
+console.log(currentDay);
 var currentHour = today.getHours();
 var currentMinutes = today.getMinutes();
 var currentTime = currentHour + (currentMinutes / 59);
+var workDay = '';
+var halfDay = '';
+var restDay = '';
+
+//Workday Logic
+if ((1 <= currentDay) && (currentDay <= 5)) {
+
+	workDay = true;
+	halfDay = false;
+	restDay = false;
+
+} else if (currentDay === 6) {
+
+	workDay = false;
+	halfDay = true;
+	restDay = false;
+
+} else if (currentDay === 0) {
+
+	workDay = false;
+	halfDay = false;
+	restDay = true;	
+
+}
 
 //DOM Object Variables
 var statusNameColor = document.getElementById('status');
 var statusIndicatorColor = document.getElementById('status-indicator');
 var statusName = statusNameColor.lastChild;
 
-//Open Hours
+//Hours of Operation
 var morningHours = ((8 <= currentTime) && (currentTime < 13));
 var afternoonHours = ((14.5 <= currentTime) && (currentTime < 18));
-//Lunch Hours
 var lunchHours = (currentTime <= 13) && (currentTime < 14.5);
 
-// URL Path Variables
+// URL Path Variables to insert correct Icon Path
 var currentURL = window.location.href;
 var productKey = "materiales/";
 var productPage = currentURL.indexOf(productKey) > -1;
@@ -30,22 +55,12 @@ var openContactInfo = {
 
 };
 
-//Lunch Contact Object
-var lunchContactInfo = {
-
-	image: {id: 'mensajes', srca: 'imagenes/iconos/mensajes.svg', srcb: '../imagenes/iconos/mensajes.svg'},
-	title: 'Déjanos un Mensaje',
-	description: 'Salimos a comer, pero escríbenos y cuéntanos en que te ayudamos.',
-	link: {class: 'arrow', href: 'mailto:matvallejo@outlook.com', content: 'Escribir Mensaje '}
-
-};
-
 //Closed Contact Object
 var closedContactInfo = {
 
 	image: {id: 'mensajes', srca: 'imagenes/iconos/mensajes.svg', srcb: '../imagenes/iconos/mensajes.svg'},
 	title: 'Déjanos un Mensaje',
-	description: 'Por el momento nuestra sucursal está cerrada, escríbenos y dinos en te ayudamos.',
+	description: 'Estamos para servirte, escríbenos para cotizarte o dinos en que te podemos ayudar.',
 	link: {class: 'arrow', href: 'mailto:matvallejo@outlook.com', content: 'Escribir Mensaje '}
 
 };
@@ -76,40 +91,86 @@ var contentSetter = function(contentObject) {
 };
 
 //Status Setter
-if (morningHours) {
+if (workDay) {
 
-	//Status Indicator Selectors
-	statusNameColor.className = 'green';
-	statusName.textContent = 'Abierto';
-	statusIndicatorColor.className = 'green-status';
-	//Content Setter Function
-	contentSetter(openContactInfo);
+	if (morningHours) {
 
-} else if (afternoonHours) { 
+		//Status Indicator Selectors
+		statusNameColor.className = 'green';
+		statusName.textContent = 'Abierto';
+		statusIndicatorColor.className = 'green-status';
+		//Content Setter Function
+		contentSetter(openContactInfo);
 
-	//Status Indicator Selectors
-	statusNameColor.className = 'green';
-	statusName.textContent = 'Abierto';
-	statusIndicatorColor.className = 'green-status';
-	//Content Setter Function
-	contentSetter(openContactInfo);
+	} else if (afternoonHours) { 
 
-} else if (lunchHours) {
+		//Status Indicator Selectors
+		statusNameColor.className = 'green';
+		statusName.textContent = 'Abierto';
+		statusIndicatorColor.className = 'green-status';
+		//Content Setter Function
+		contentSetter(openContactInfo);
 
-	//Status Indicator Selectors
-	statusNameColor.className = 'orange';
-	statusName.textContent = 'En la Comida';
-	statusIndicatorColor.className = 'orange-status';
-	//Content Setter Function
-	contentSetter(lunchContactInfo);
+	} else if (lunchHours) {
 
-} else {
+		//Status Indicator Selectors
+		statusNameColor.className = 'orange';
+		statusName.textContent = 'En la Comida';
+		statusIndicatorColor.className = 'orange-status';
+		//Content Setter Function
+		contentSetter(closedContactInfo);
 
-	//Status Indicator Selectors
-	statusNameColor.className = 'red';
-	statusName.textContent = 'Cerrado';
-	statusIndicatorColor.className = 'red-status';
-	//Content Setter Function
-	contentSetter(closedContactInfo);
+	} else {
+
+		//Status Indicator Selectors
+		statusNameColor.className = 'red';
+		statusName.textContent = 'Cerrado';
+		statusIndicatorColor.className = 'red-status';
+		//Content Setter Function
+		contentSetter(closedContactInfo);
+
+	}
+
+} else if (halfDay) {
+
+	if (morningHours) {
+
+		//Status Indicator Selectors
+		statusNameColor.className = 'green';
+		statusName.textContent = 'Abierto';
+		statusIndicatorColor.className = 'green-status';
+		//Content Setter Function
+		contentSetter(openContactInfo);
+
+	} else {
+
+		//Status Indicator Selectors
+		statusNameColor.className = 'red';
+		statusName.textContent = 'Cerrado';
+		statusIndicatorColor.className = 'red-status';
+		//Content Setter Function
+		contentSetter(closedContactInfo);
+
+	}
+
+} else if (restDay) {
+
+		//Status Indicator Selectors
+		statusNameColor.className = 'red';
+		statusName.textContent = 'Cerrado';
+		statusIndicatorColor.className = 'red-status';
+		//Content Setter Function
+		contentSetter(closedContactInfo);
 
 }
+
+
+
+
+
+
+
+
+
+
+
