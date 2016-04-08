@@ -26,7 +26,7 @@ if ((1 <= currentDay) && (currentDay <= 5)) {
 
 	workDay = false;
 	halfDay = false;
-	restDay = true;	
+	restDay = true;
 
 }
 
@@ -102,7 +102,7 @@ if (workDay) {
 		//Content Setter Function
 		contentSetter(openContactInfo);
 
-	} else if (afternoonHours) { 
+	} else if (afternoonHours) {
 
 		//Status Indicator Selectors
 		statusNameColor.className = 'green';
@@ -163,14 +163,3 @@ if (workDay) {
 		contentSetter(closedContactInfo);
 
 }
-
-
-
-
-
-
-
-
-
-
-
