@@ -563,7 +563,7 @@ body {
 
 .contact-card {
   text-align: center;
-  padding: 95px 65px;
+  padding: 80px 65px;
   width: 450px;
   height: 323px;
   margin-bottom: 20px;
@@ -587,7 +587,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 0.2px;
-    line-height: 18px;
+    line-height: 1.5;
     color: #969696;
     -webkit-transition: color ease-in-out 0.25s;
     -moz-transition: color ease-in-out 0.25s;
