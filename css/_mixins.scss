@@ -831,11 +831,6 @@
 		//Structure
 		padding-bottom: 15px;
 
-		&.status {
-			font-weight: $regular;
-			color: $green;
-		}
-
 		&.call {
 			//Type
 			font-weight: $regular;
@@ -873,15 +868,65 @@
 
 	}
 
-	.status-indicator {
+	#status {
+
+		font-family: $lato;
+		font-weight: $regular;
+		font-size: $size-16;
+		letter-spacing: $size-16 * $character;
+		line-height: 18px;
+		//Transition
+		@include color-transition;
+		//Structure
+		padding-bottom: 15px;
+
+	}
+
+	.green {
+
+		color: $green;
+
+	}
+
+	.red {
+
+		color: $red;
+
+	}
+
+	.orange {
+
+		color: $orange;
+
+	}
+
+	#status-indicator {
 		display: inline-block;
 		margin-right: 5px;
 		margin-bottom: 2.5px;
 		width: 6px;
 		height: 6px;
 		border-radius: 3px;
+
+	}
+
+	.green-status {
+		//Color
 		background-color: $green;
+		//Animation
 		@include status-animation;
+
+	}
+
+	.red-status {
+		//Color
+		background-color: $red;
+
+	}
+
+	.orange-status {
+		//Color
+		background-color: $orange;
 
 	}
 

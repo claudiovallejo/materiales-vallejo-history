@@ -561,7 +561,7 @@ body {
   .link-wrapper:hover .contact-card {
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1); }
 
-.contact-card {
+#hrs, #msg, #tlf, #ads {
   text-align: center;
   padding: 95px 65px;
   width: 450px;
@@ -573,12 +573,8 @@ body {
   -webkit-transition: box-shadow ease-in-out 0.25s;
   -moz-transition: box-shadow ease-in-out 0.25s;
   -o-transition: box-shadow ease-in-out 0.25s;
-  transition: box-shadow ease-in-out 0.25s;
-  -webkit-transition: box-shadow ease-in-out 0.25s;
-  -moz-transition: box-shadow ease-in-out 0.25s;
-  -o-transition: box-shadow ease-in-out 0.25s;
   transition: box-shadow ease-in-out 0.25s; }
-  .contact-card h1 {
+  #hrs h1, #msg h1, #tlf h1, #ads h1 {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-size: 22px;
@@ -586,7 +582,7 @@ body {
     line-height: 1.5;
     color: #000000;
     padding-bottom: 5px; }
-  .contact-card p {
+  #hrs p, #msg p, #tlf p, #ads p {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -598,24 +594,21 @@ body {
     -o-transition: color ease-in-out 0.25s;
     transition: color ease-in-out 0.25s;
     padding-bottom: 15px; }
-    .contact-card p.status {
-      font-weight: 400;
-      color: #25c315; }
-    .contact-card p.call {
+    #hrs p.call, #msg p.call, #tlf p.call, #ads p.call {
       font-weight: 400;
       color: #25c315;
       -webkit-transition: color ease-in-out 0.25s;
       -moz-transition: color ease-in-out 0.25s;
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
-    .contact-card p.arrow {
+    #hrs p.arrow, #msg p.arrow, #tlf p.arrow, #ads p.arrow {
       font-weight: 400;
       color: #0080ff;
       -webkit-transition: color ease-in-out 0.25s;
       -moz-transition: color ease-in-out 0.25s;
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
-      .contact-card p.arrow:after {
+      #hrs p.arrow:after, #msg p.arrow:after, #tlf p.arrow:after, #ads p.arrow:after {
         position: relative;
         display: inline-block;
         width: 10px;
@@ -632,23 +625,45 @@ body {
         clip-path: url("../imagenes/test.svg");
         -webkit-mask: url("../imagenes/test.svg");
         mask: url("../imagenes/test.svg"); }
-  .contact-card .status-indicator {
+  #hrs #status, #msg #status, #tlf #status, #ads #status {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    -webkit-transition: color ease-in-out 0.25s;
+    -moz-transition: color ease-in-out 0.25s;
+    -o-transition: color ease-in-out 0.25s;
+    transition: color ease-in-out 0.25s;
+    padding-bottom: 15px; }
+  #hrs .green, #msg .green, #tlf .green, #ads .green {
+    color: #25c315; }
+  #hrs .red, #msg .red, #tlf .red, #ads .red {
+    color: #d0021b; }
+  #hrs .orange, #msg .orange, #tlf .orange, #ads .orange {
+    color: #f5a623; }
+  #hrs #status-indicator, #msg #status-indicator, #tlf #status-indicator, #ads #status-indicator {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 2.5px;
     width: 6px;
     height: 6px;
-    border-radius: 3px;
+    border-radius: 3px; }
+  #hrs .green-status, #msg .green-status, #tlf .green-status, #ads .green-status {
     background-color: #25c315;
     -webkit-animation: open-status 2s infinite;
     -moz-animation: open-status 2s infinite;
     -o-animation: open-status 2s infinite;
     animation: open-status 2s infinite; }
-  .contact-card:hover .arrow {
+  #hrs .red-status, #msg .red-status, #tlf .red-status, #ads .red-status {
+    background-color: #d0021b; }
+  #hrs .orange-status, #msg .orange-status, #tlf .orange-status, #ads .orange-status {
+    background-color: #f5a623; }
+  #hrs:hover .arrow, #msg:hover .arrow, #tlf:hover .arrow, #ads:hover .arrow {
     color: #0061c1; }
-    .contact-card:hover .arrow:after {
+    #hrs:hover .arrow:after, #msg:hover .arrow:after, #tlf:hover .arrow:after, #ads:hover .arrow:after {
       background: #0061c1; }
-  .contact-card:hover .call {
+  #hrs:hover .call, #msg:hover .call, #tlf:hover .call, #ads:hover .call {
     color: #008027; }
 
 #horarios {

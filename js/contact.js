@@ -5,6 +5,7 @@ var currentMinutes = today.getMinutes();
 var currentTime = currentHour + (currentMinutes / 59);
 
 //DOM Object Variables
+var cardContainer = document.getElementById('cards');
 var statusNameColor = document.getElementById('status');
 var statusIndicatorColor = document.getElementById('status-indicator');
 var statusName = statusNameColor.lastChild;
@@ -15,60 +16,53 @@ var afternoonHours = ((14.5 <= currentTime) && (currentTime < 18));
 //Lunch Hours
 var lunchHours = (currentTime <= 13) && (currentTime < 14.5);
 
-// URL Path Variables
-var currentURL = window.location.href;
-var productKey = "materiales/";
-var productPage = currentURL.indexOf(productKey) > -1;
+//Message Content
+var messageContent = {
 
-//Open Contact Object
-var openContactInfo = {
+	image: {id: 'mensajes', src: 'imagenes/iconos/mensajes.svg'},
+	title: 'Déjanos un Mensaje',
+	description: 'Estamos para servirte, escríbenos para cotizarte o dinos en que te podemos ayudar.',
+	link: {class: 'call', href: 'mailto:matvallejo@outlook.com', content: 'Escribir Mensaje '}
 
-	image: {id: 'marcanos', srca: 'imagenes/iconos/marcanos.svg', srcb: '../imagenes/iconos/marcanos.svg'},
-	title: 'Márcanos',
-	description: 'Cotiza o cuéntanos en que te podemos ayudar, estamos para servirte.',
+};
+
+//Phone Content
+var phoneContent = {
+
+	image: {id: 'marcanos', src: 'imagenes/iconos/marcanos.svg'},
+	title: 'Déjanos un Mensaje',
+	description: {open: 'Estamos para servirte, escríbenos para cotizarte o dinos en que te podemos ayudar.', lunch: 'Salimos a comer, pero escríbenos y cuéntanos en que te ayudamos.', closed: 'Por el momento nuestra sucursal está cerrada, escríbenos y dinos en te ayudamos.'},
 	link: {class: 'call', href: 'tel:+52(868)8161353', content: '+52 (868) 816 1353'}
 
 };
 
-//Lunch Contact Object
-var lunchContactInfo = {
-
-	image: {id: 'mensajes', srca: 'imagenes/iconos/mensajes.svg', srcb: '../imagenes/iconos/mensajes.svg'},
-	title: 'Déjanos un Mensaje',
-	description: 'Salimos a comer, pero escríbenos y cuéntanos en que te ayudamos.',
-	link: {class: 'arrow', href: 'mailto:matvallejo@outlook.com', content: 'Escribir Mensaje '}
-
-};
-
-//Closed Contact Object
-var closedContactInfo = {
-
-	image: {id: 'mensajes', srca: 'imagenes/iconos/mensajes.svg', srcb: '../imagenes/iconos/mensajes.svg'},
-	title: 'Déjanos un Mensaje',
-	description: 'Por el momento nuestra sucursal está cerrada, escríbenos y dinos en te ayudamos.',
-	link: {class: 'arrow', href: 'mailto:matvallejo@outlook.com', content: 'Escribir Mensaje '}
-
-};
-
 //Content Setter Function
-var contentSetter = function(contentObject) {
+var contentSetter = function(contentObject, id, status) {
 
-	source = '';
+	var description = '';
 
-	if (productPage) {
+	if (status === 'default') {
 
-		source = contentObject.image.srcb;
+		description = contentObject.description;
 
-	} else {
+	} else if (status === 'open') {
 
-		source = contentObject.image.srca;
+		description = contentObject.description.open;
+
+	} else if (status === 'lunch') {
+
+		description = contentObject.description.lunch;
+
+	} else if (status === 'closed') {
+
+		descripition = contentObject.description.closed;
 
 	}
 
-	container = document.getElementById('contact');
-	content = '<img id=\"' + contentObject.image.id + '\" src=\"' + source + '\">';
+	container = document.getElementById(id);
+	content = '<img id=\"' + contentObject.image.id + '\" src=\"' + contentObject.image.src + '\">';
 	content += '<h2>' + contentObject.title + '</h2>';
-	content += '<p>' + contentObject.description + '</p>';
+	content += '<p>' + description + '</p>';
 	content += '<a class=\"' + contentObject.link.class + '\" href=\"' + contentObject.link.href + '\">' + contentObject.link.content + '</a>';
 	container.innerHTML = content;
 	return container.innerHTML;
@@ -83,7 +77,7 @@ if (morningHours) {
 	statusName.textContent = 'Abierto';
 	statusIndicatorColor.className = 'green-status';
 	//Content Setter Function
-	contentSetter(openContactInfo);
+	
 
 } else if (afternoonHours) { 
 
@@ -92,7 +86,7 @@ if (morningHours) {
 	statusName.textContent = 'Abierto';
 	statusIndicatorColor.className = 'green-status';
 	//Content Setter Function
-	contentSetter(openContactInfo);
+	
 
 } else if (lunchHours) {
 
@@ -101,7 +95,7 @@ if (morningHours) {
 	statusName.textContent = 'En la Comida';
 	statusIndicatorColor.className = 'orange-status';
 	//Content Setter Function
-	contentSetter(lunchContactInfo);
+	
 
 } else {
 
@@ -110,6 +104,5 @@ if (morningHours) {
 	statusName.textContent = 'Cerrado';
 	statusIndicatorColor.className = 'red-status';
 	//Content Setter Function
-	contentSetter(closedContactInfo);
 
 }
