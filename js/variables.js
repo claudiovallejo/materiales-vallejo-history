@@ -1,4 +1,4 @@
-//Global Variables for Contact Information Script
+//Global Variables for Contact Sections Script
 
 // Time Variables
 var today = new Date();
