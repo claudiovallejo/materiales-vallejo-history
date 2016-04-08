@@ -56,7 +56,7 @@ if (!(halfDay) && !(holiday)) {
 //Hours of Operation
 var morningHours = ((8 <= currentTime) && (currentTime < 13));
 var afternoonHours = ((14.5 <= currentTime) && (currentTime < 18));
-var lunchBreak = (currentTime <= 13) && (currentTime < 14.5);
+var lunchBreak = (13 <= currentTime) && (currentTime < 14.5);
 
 // URL Path Variables to insert correct Icon Path
 var currentURL = window.location.href;

@@ -39,6 +39,10 @@ var contentSetter = function(contentObject) {
 
 };
 
+console.log(workDay);
+console.log(currentTime);
+console.log(lunchBreak);
+
 //Status Setter
 if (workDay) {
 
@@ -58,7 +62,7 @@ if (workDay) {
 		//Content Setter Function
 		contentSetter(openContactInfo);
 
-	} else if (lunchHours) {
+	} else if (lunchBreak) {
 		//Status Indicator Selectors
 		statusNameColor.className = 'orange';
 		statusName.textContent = 'En la Comida';
@@ -97,7 +101,7 @@ if (workDay) {
 	}
 
 } else if (restDay || holiday) {
-	
+
 		//Status Indicator Selectors
 		statusNameColor.className = 'red';
 		statusName.textContent = 'Cerrado';
