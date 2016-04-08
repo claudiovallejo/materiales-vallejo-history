@@ -4,7 +4,7 @@
 	-webkit-transition: color $standard $fast;
 	-moz-transition: color $standard $fast;
 	-o-transition: color $standard $fast;
-	transition: color $standard $fast;	
+	transition: color $standard $fast;
 
 }
 
@@ -31,7 +31,7 @@
 	-webkit-transition: background-color $standard $fast;
 	-moz-transition: background-color $standard $fast;
 	-o-transition: background-color $standard $fast;
-	transition: background-color $standard $fast;	
+	transition: background-color $standard $fast;
 
 }
 
@@ -39,7 +39,7 @@
 	-webkit-transition: border $standard $fast;
 	-moz-transition: border $standard $fast;
 	-o-transition: border $standard $fast;
-	transition: border $standard $fast;	
+	transition: border $standard $fast;
 
 }
 
@@ -70,7 +70,7 @@
 
 		&.active {
 			color: $blue;
-			
+
 		}
 
 	}
@@ -148,13 +148,13 @@
 		//Structure
 		padding: 15px 0 7.5px 0;
 
-	} 
+	}
 
 	p {
 		//Type
 		font-family: $lato;
 		font-weight: $hairline;
-		font-size: $size-14; 
+		font-size: $size-14;
 		letter-spacing: $size-14 * $character;
 		line-height: $default-line;
 		color: $text-gray;
@@ -266,7 +266,7 @@
 		width: 5px;
 		height: 5px;
 		border-radius: 2.5px;
-		
+
 	}
 
 	.green-status {
@@ -306,8 +306,8 @@
 	a {
 		font-family: $lato;
 		font-weight: $light;
-		font-size: $size-12; 
-		letter-spacing: $size-12 * $character; 
+		font-size: $size-12;
+		letter-spacing: $size-12 * $character;
 		line-height: $size-12;
 		text-decoration: none;
 		color: $text-gray;
@@ -318,7 +318,7 @@
 
 		}
 
-	} 
+	}
 
 	a.author {
 		color: $author-gray;
@@ -474,7 +474,7 @@
 		&.active {
 			border-left: 2px solid $blue;
 			color: $blue;
-			
+
 		}
 
 	}
@@ -840,6 +840,13 @@
 
 		}
 
+		&.closed {
+			//Type
+			font-weight: $regular;
+			color: $text-gray;
+
+		}
+
 		&.arrow {
 			//Type
 			font-weight: $regular;
@@ -1088,7 +1095,7 @@
 	*::-moz-placeholder {
 		color: $author-gray;
 
-	}	
+	}
 
 	*:-ms-input-placeholder {
 		color: $author-gray;
@@ -1156,7 +1163,7 @@
 		font-size: $size-12;
 		letter-spacing: $size-12 * $character;
 		line-height: $size-12;
-		color: $nav-gray;	
+		color: $nav-gray;
 		//Structure
 		margin-bottom: 7.5px;
 		//Transitions
@@ -1165,37 +1172,3 @@
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

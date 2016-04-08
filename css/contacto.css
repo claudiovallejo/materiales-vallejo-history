@@ -601,6 +601,9 @@ body {
       -moz-transition: color ease-in-out 0.25s;
       -o-transition: color ease-in-out 0.25s;
       transition: color ease-in-out 0.25s; }
+    .contact-card p.closed {
+      font-weight: 400;
+      color: #4a4a4a; }
     .contact-card p.arrow {
       font-weight: 400;
       color: #0080ff;

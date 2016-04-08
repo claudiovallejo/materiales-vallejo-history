@@ -34,7 +34,7 @@ body {
 	padding: 0 10px;
 	width: 50%;
 	margin-bottom: 20px;
-	
+
 }
 
 .contact-col:nth-child(even) {
@@ -67,13 +67,12 @@ body {
 	@include shadow-transition;
 
 	&:hover {
-
 		& .arrow {
 			//Type
 			color: $dark-blue;
 
 			&:after {
-				//Structure
+					//Structure
     			background: $dark-blue;
 
 			}
@@ -89,6 +88,7 @@ body {
 
 }
 
+//Icons
 #horarios {
 	width: 23px;
 	height: 31px;
