@@ -23,24 +23,6 @@ body {
 
 }
 
-/* Hero Section */
-.hero {
-	// Structure
-	height: $hero-height;
-	// Imagery
-	background-image: url('../imagenes/headers/materiales.jpg');
-	background-position: 50% 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-
-	// Typography
-	@include hero;
-
-}
-
 .content {
 	// Structure
 	text-align: center;
@@ -50,8 +32,8 @@ body {
 
 /* Product Section - - - - - - - - - */
 .products {
-	padding: 175px 0 75px;
-	background-color: $gradient-gray;
+	padding: 175px 0 100px;
+	background-color: $white;
 
 }
 
