@@ -33,6 +33,7 @@ body {
 .parent {
 	//Structure
 	position: relative;
+	height: 100%;
 
 }
 
@@ -45,11 +46,19 @@ body {
 
 }
 
+// #anillos {
+//
+// 	background-image: url('../imagenes/ringAd.png');
+// 	background-repeat: none;
+//
+// }
+
 .img {
 	//Structure
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	cursor: pointer;
 
 }
