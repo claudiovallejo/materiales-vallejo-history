@@ -561,7 +561,7 @@ body {
 
 /* Product Section - - - - - - - - - */
 .products {
-  padding: 75px 0;
+  padding: 175px 0 75px;
   background-color: #fbfbfb; }
 
 /* Product Navigation */
@@ -648,7 +648,7 @@ body {
 
 /* Product Category Title */
 .category-title {
-  padding: 0 10px; }
+  padding: 6px 10px 0; }
   .category-title h1 {
     font-family: "Lato", sans-serif;
     font-weight: 400;

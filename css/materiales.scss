@@ -34,8 +34,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	
-	
+
+
 	// Typography
 	@include hero;
 
@@ -50,7 +50,7 @@ body {
 
 /* Product Section - - - - - - - - - */
 .products {
-	padding: 75px 0;
+	padding: 175px 0 75px;
 	background-color: $gradient-gray;
 
 }
@@ -87,8 +87,8 @@ body {
 
 /* Product Category Title */
 .category-title {
-	padding: 0 10px;
-	
+	padding: 6px 10px 0;
+
 	h1 {
 		@include category-typography;
 	}
@@ -122,17 +122,5 @@ body {
 .link-card {
 	@include link-card-structure;
 	@include link-card-typographies;
-	
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
