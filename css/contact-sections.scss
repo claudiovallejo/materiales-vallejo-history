@@ -43,3 +43,16 @@ article.contact {
 	margin-top: 10px;
 
 }
+
+@media screen and (max-width: $desktop) {
+	#hours, #contact, #address {
+		padding: 50px 250px;
+
+	}
+
+	#address {
+		padding-bottom: 100px;
+
+	}
+
+}

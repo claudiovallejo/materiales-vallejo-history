@@ -125,6 +125,13 @@
 .col-12 {
   width: 100%; }
 
+@media screen and (max-width: 1020px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 25px; }
+
+  .col-4 {
+    width: 100%; } }
 /* Font Stacks */
 /* Font Weights */
 /* Media Query Screen Sizes */
@@ -272,7 +279,7 @@
   li {
     float: none !important;
     display: inline;
-    padding: 10px 25px;
+    padding: 10px 30px;
     margin: 0 !important; }
 
   a {
@@ -453,6 +460,12 @@ article.contact {
   height: 21px;
   margin-top: 10px; }
 
+@media screen and (max-width: 1020px) {
+  #hours, #contact, #address {
+    padding: 50px 250px; }
+
+  #address {
+    padding-bottom: 100px; } }
 /* Font Stacks */
 /* Font Weights */
 /* Media Query Screen Sizes */
