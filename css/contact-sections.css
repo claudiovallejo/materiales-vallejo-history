@@ -177,6 +177,9 @@ article.contact {
   #hours, #contact, #address {
     padding: 50px 250px; }
 
+  #hours {
+    padding-top: 100px; }
+
   #address {
     padding-bottom: 100px; } }
 
