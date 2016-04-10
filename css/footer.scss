@@ -6,32 +6,89 @@
 	width: 100%;
 
 	footer {
-		padding: 7.5px 10px 0;
+		padding: 7.5px 0;
 		margin-bottom: 35px;
 		border-top: 1px solid $feature-gray;
 		@include footer;
 
+		.legal {
+			float: right;
+
+		}
+
 		ul {
 			position: relative;
-			float: right;
+
 		}
 
 		li {
 			float: left;
 			list-style: none;
 			margin-left: 15px;
+
 		}
 
 		.separator {
 			width: 1px;
 			height: 19px;
 			background-color: $separator-gray;
+
 		}
 
 		.copyright {
 			position: relative;
 			top: 15px;
+
 		}
 
 	}
+}
+
+@media screen and (max-width: $desktop) {
+
+	footer {
+		padding: 7.5px 0 !important;
+		margin: 0 !important;
+		overflow: hidden;
+
+	}
+
+	.copyright {
+		display: inline-block;
+		float: left;
+
+	}
+
+
+	.legal {
+		float: right;
+
+		ul {
+			float: right;
+			padding-top: 5px;
+			margin-bottom: 15px;
+
+		}
+
+		li {
+			display: inline-block;
+			padding: 0;
+			margin-left: 15px !important;
+
+			a {
+				padding: 0;
+
+			}
+
+			.separator {
+				position: relative;
+				top: 5px;
+
+			}
+
+		}
+
+	}
+
+
 }
