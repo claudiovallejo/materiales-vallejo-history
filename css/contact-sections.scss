@@ -45,8 +45,9 @@ article.contact {
 }
 
 @media screen and (max-width: $desktop) {
+
 	#hours, #contact, #address {
-		padding: 50px 250px;
+		padding: 50px 0;
 
 	}
 

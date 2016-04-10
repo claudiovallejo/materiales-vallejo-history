@@ -462,7 +462,7 @@ article.contact {
 
 @media screen and (max-width: 1020px) {
   #hours, #contact, #address {
-    padding: 50px 250px; }
+    padding: 50px 0; }
 
   #hours {
     padding-top: 100px; }
@@ -704,5 +704,19 @@ body {
 /* Contact Sections */
 article.contact-sections {
   background-color: #ffffff; }
+
+@media screen and (max-width: 1020px) {
+  .slider {
+    margin-top: 115px; }
+
+  .content {
+    left: 45px;
+    bottom: 25px;
+    width: 100%;
+    padding: 450px 0 25px 0; }
+
+  .img {
+    top: 50px;
+    right: 0; } }
 
 /*# sourceMappingURL=index.css.map */

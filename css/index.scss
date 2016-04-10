@@ -9,14 +9,17 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
 
 *, *:before, *:after {
 	@include remove-margin;
+
 }
 
 body {
 	background-color: $white;
+
 }
 
 /* Slideshow */
@@ -58,6 +61,32 @@ body {
 
 /* Contact Sections */
 article.contact-sections {
+	//Structure
 	background-color: $white;
+
+}
+
+@media screen and (max-width: $desktop) {
+	.slider {
+		//Structure
+		margin-top: 115px;
+
+	}
+
+	.content {
+		//Structure
+		left: 45px;
+		bottom: 25px;
+		width: 100%;
+		padding: 450px 0 25px 0;
+
+	}
+
+	.img {
+		//Structure
+		top: 50px;
+		right: 0;
+
+	}
 
 }

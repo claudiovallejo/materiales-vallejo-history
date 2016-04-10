@@ -13,7 +13,7 @@ var closedContactInfo = {
 
 	image: {id: 'mensajes', srca: 'imagenes/iconos/mensajes.svg', srcb: '../imagenes/iconos/mensajes.svg'},
 	title: 'Déjanos un Mensaje',
-	description: 'Estamos para servirte, escríbenos para cotizarte o dinos en que te podemos ayudar.',
+	description: 'Estamos para servirte, escríbenos para<br> cotizarte o dinos en que te podemos ayudar.',
 	link: {class: 'arrow', href: 'mailto:matvallejo@outlook.com', content: 'Escribir Mensaje '}
 
 };
