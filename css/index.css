@@ -1,5 +1,6 @@
 /* Font Stacks */
 /* Font Weights */
+/* Media Query Screen Sizes */
 /* Colors */
 /* Text Sizing */
 /* Grid System */
@@ -126,6 +127,7 @@
 
 /* Font Stacks */
 /* Font Weights */
+/* Media Query Screen Sizes */
 /* Colors */
 /* Text Sizing */
 /* Grid System */
@@ -195,6 +197,8 @@
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px; }
+  .nav-bar .logo-bar {
+    display: inline-block; }
   .nav-bar #logo {
     position: relative;
     top: 13px;
@@ -236,8 +240,47 @@
       .nav-bar li a.active {
         color: #0080ff; }
 
+@media screen and (max-width: 1020px) {
+  nav {
+    width: 100%;
+    padding: 0 !important;
+    text-align: center !important; }
+
+  .logo-bar {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0 30px !important;
+    border-bottom: 1px solid #dadada; }
+
+  .logo {
+    position: static !important;
+    padding: 0 auto; }
+
+  #logo {
+    position: static;
+    padding: 0 auto; }
+
+  ul {
+    display: block;
+    overflow: hidden;
+    float: none !important;
+    text-align: center !important;
+    margin-bottom: 10px;
+    padding: 0; }
+
+  li {
+    float: none !important;
+    display: inline;
+    padding: 10px 25px;
+    margin: 0 !important; }
+
+  a {
+    display: inline-block;
+    text-align: center; } }
 /* Font Stacks */
 /* Font Weights */
+/* Media Query Screen Sizes */
 /* Colors */
 /* Text Sizing */
 /* Grid System */
@@ -412,6 +455,7 @@ article.contact {
 
 /* Font Stacks */
 /* Font Weights */
+/* Media Query Screen Sizes */
 /* Colors */
 /* Text Sizing */
 /* Grid System */
@@ -605,7 +649,7 @@ body {
 .content {
   position: relative;
   width: 40%;
-  padding: 200px 0;
+  padding: 200px 0 200px 10px;
   z-index: 2; }
 
 .img {
@@ -614,11 +658,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer; }
-
-/* Spacers */
-.spacer {
-  padding: 37.5px 0;
-  background-color: #ffffff; }
 
 /* Contact Sections */
 article.contact-sections {

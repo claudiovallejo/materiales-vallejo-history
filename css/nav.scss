@@ -16,6 +16,12 @@
 		max-width: 960px;
 		margin: 0 auto;
 		padding: 0 10px;
+
+	}
+
+	.logo-bar {
+		display: inline-block;
+
 	}
 
 	#logo {
@@ -38,6 +44,7 @@
 		position: relative;
 		top: 16px;
 		float: right;
+
 	}
 
 	li {
@@ -47,5 +54,63 @@
 		@include nav-link;
 
 	}
-	
+
+}
+
+//Media Queries
+@media screen and (max-width: $desktop) {
+
+		nav {
+			width: 100%;
+			padding: 0 !important;
+			text-align: center !important;
+
+		}
+
+		.logo-bar {
+			display: block;
+			overflow: hidden;
+			width: 100%;
+			padding: 10px 0 30px !important;
+			border-bottom: 1px solid $separator-gray;
+
+		}
+
+		.logo {
+			position: static !important;
+			padding: 0 auto;
+
+		}
+
+
+		#logo {
+			position: static;
+			padding: 0 auto;
+
+		}
+
+		ul {
+			display: block;
+			overflow: hidden;
+			float: none !important;
+			text-align: center !important;
+			margin-bottom: 10px;
+			padding: 0;
+
+		}
+
+		li {
+			float: none !important;
+			display: inline;
+			padding: 10px 25px;
+			margin: 0 !important;
+
+		}
+
+		a {
+			display: inline-block;
+			text-align: center;
+
+		}
+
 }

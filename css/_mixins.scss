@@ -174,19 +174,16 @@
 	}
 
 	.green {
-
 		color: $green;
 
 	}
 
 	.red {
-
 		color: $red;
 
 	}
 
 	.orange {
-
 		color: $orange;
 
 	}
@@ -231,8 +228,8 @@
 				display:inline-block;
 		        width: 8px;
 		        height: 8px;
-				top: 0;
-				margin-left: 2px;
+						top: 0;
+						margin-left: 2px;
 		        content: '';
 		        background: $blue;
 		        //Transition

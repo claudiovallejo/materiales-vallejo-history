@@ -41,17 +41,10 @@ body {
 	//Structure
 	position: relative;
 	width: 40%;
-	padding: 200px 0;
+	padding: 200px 0 200px 10px;
 	z-index: 2;
 
 }
-
-// #anillos {
-//
-// 	background-image: url('../imagenes/ringAd.png');
-// 	background-repeat: none;
-//
-// }
 
 .img {
 	//Structure
@@ -63,13 +56,8 @@ body {
 
 }
 
-/* Spacers */
-.spacer {
-	padding: 37.5px 0;
-	background-color: $white;
-}
-
 /* Contact Sections */
 article.contact-sections {
 	background-color: $white;
+
 }
