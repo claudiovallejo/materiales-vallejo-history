@@ -154,27 +154,49 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	
+
 }
 
+@media screen and (max-width: $desktop) {
+	/* Hero Section */
+	.hero {
+		// Structure
+		height: $hero-height;
+		margin-top: 75px;
+		// Typography
+		p {
+			padding: 0 100px;
+		}
 
+	}
 
+	/* Brands Section */
+	.brands {
+		padding: 75px 0;
+		text-align: center;
+		p {
+			padding: 0 150px;
 
+		}
 
+		.col-4 {
+			width: 50%;
 
+		}
 
+	}
 
+	/* Features Sections */
+	.features {
+		height: 415px;
+		padding: 165px 0;
+		text-align: center;
 
+		p {
+			padding: 0 185px;
 
+		}
 
+	}
 
-
-
-
-
-
-
-
-
-
-
+}

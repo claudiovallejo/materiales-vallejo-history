@@ -758,4 +758,29 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
+@media screen and (max-width: 1020px) {
+  /* Hero Section */
+  .hero {
+    height: 300px;
+    margin-top: 75px; }
+    .hero p {
+      padding: 0 100px; }
+
+  /* Brands Section */
+  .brands {
+    padding: 75px 0;
+    text-align: center; }
+    .brands p {
+      padding: 0 150px; }
+    .brands .col-4 {
+      width: 50%; }
+
+  /* Features Sections */
+  .features {
+    height: 415px;
+    padding: 165px 0;
+    text-align: center; }
+    .features p {
+      padding: 0 185px; } }
+
 /*# sourceMappingURL=servicios.css.map */
