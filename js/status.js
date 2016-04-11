@@ -82,7 +82,7 @@ if (workDay) {
 
 } else if (halfDay) {
 
-	if (morningHours) {
+	if (saturdayHours) {
 		//Status Indicator Selectors
 		statusNameColor.className = 'green';
 		statusName.textContent = 'Abierto';
