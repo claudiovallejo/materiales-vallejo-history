@@ -252,39 +252,34 @@
     width: 100%;
     padding: 0 !important;
     text-align: center !important; }
-
-  .logo-bar {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    padding: 10px 0 30px !important;
-    border-bottom: 1px solid #dadada; }
-
-  .logo {
-    position: static !important;
-    padding: 0 auto; }
-
-  #logo {
-    position: static;
-    padding: 0 auto; }
-
-  ul {
-    display: block;
-    overflow: hidden;
-    float: none !important;
-    text-align: center !important;
-    margin-bottom: 10px;
-    padding: 0; }
-
-  li {
-    float: none !important;
-    display: inline;
-    padding: 10px 30px;
-    margin: 0 !important; }
-
-  a {
-    display: inline-block;
-    text-align: center; } }
+    nav .logo-bar {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      padding: 10px 0 30px !important;
+      border-bottom: 1px solid #dadada; }
+    nav .logo {
+      position: static !important;
+      padding: 0 auto; }
+    nav #logo {
+      position: static;
+      padding: 0 auto; }
+    nav ul {
+      display: block;
+      overflow: hidden;
+      float: none !important;
+      text-align: center !important;
+      margin-bottom: 8px;
+      padding: 0; }
+    nav li {
+      float: none !important;
+      display: inline;
+      padding: 10px 30px;
+      margin: 0 !important; }
+    nav a {
+      display: inline-block;
+      text-align: center;
+      font-size: 16px; } }
 /* Font Stacks */
 /* Font Weights */
 /* Media Query Screen Sizes */
@@ -628,50 +623,42 @@ body {
   background-color: #ffffff; }
 
 /* Product Navigation */
-.product-nav {
-  /*	ul {
-  		padding: 0;
-  	}
-  
-  	li {
-  		list-style: none;
-  		padding: 15px 0 15px 15px;
-  		border-left: 2px solid $feature-gray;
-  
-  	}*/ }
-  .product-nav h1 {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.225px;
-    line-height: 18px;
-    color: #212121;
-    margin-bottom: 25px; }
-  .product-nav a {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.75px;
-    line-height: 14px;
-    color: #969696;
-    text-decoration: none;
-    -webkit-transition: color ease-in-out 0.25s;
-    -moz-transition: color ease-in-out 0.25s;
-    -o-transition: color ease-in-out 0.25s;
-    transition: color ease-in-out 0.25s;
-    -webkit-transition: border ease-in-out 0.25s;
-    -moz-transition: border ease-in-out 0.25s;
-    -o-transition: border ease-in-out 0.25s;
-    transition: border ease-in-out 0.25s;
-    display: block;
-    padding: 15px 0 15px 15px;
-    border-left: 2px solid #eaeaea; }
-    .product-nav a:hover {
-      border-left: 2px solid #0080ff;
-      color: #0080ff; }
-    .product-nav a.active {
-      border-left: 2px solid #0080ff;
-      color: #0080ff; }
+.product-nav h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.225px;
+  line-height: 18px;
+  color: #212121;
+  margin-bottom: 25px; }
+.product-nav a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  line-height: 14px;
+  color: #969696;
+  text-decoration: none;
+  -webkit-transition: color ease-in-out 0.25s;
+  -moz-transition: color ease-in-out 0.25s;
+  -o-transition: color ease-in-out 0.25s;
+  transition: color ease-in-out 0.25s;
+  -webkit-transition: border ease-in-out 0.25s;
+  -moz-transition: border ease-in-out 0.25s;
+  -o-transition: border ease-in-out 0.25s;
+  transition: border ease-in-out 0.25s;
+  display: block;
+  padding: 15px 0 15px 15px;
+  border-left: 2px solid #eaeaea; }
+  .product-nav a:hover {
+    border-left: 2px solid #0080ff;
+    color: #0080ff; }
+  .product-nav a.active {
+    border-left: 2px solid #0080ff;
+    color: #0080ff; }
+
+.mobile-product-nav {
+  display: none; }
 
 /* Product Features List */
 .feature-list {
@@ -839,6 +826,74 @@ body {
 @media screen and (max-width: 1020px) {
   .col-8 {
     width: 100%; }
+
+  .product-nav {
+    display: none; }
+
+  .mobile-product-nav {
+    display: block;
+    overflow: scroll;
+    position: fixed;
+    top: 121px;
+    z-index: 4;
+    width: 100%;
+    height: 50px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #dadada; }
+    .mobile-product-nav ul {
+      display: block;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      text-align: center;
+      -webkit-overflow-scrolling: touch;
+      padding: 15px 50px 15px 0; }
+    .mobile-product-nav ul::-webkit-scrollbar {
+      display: none; }
+    .mobile-product-nav .white-gradient {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 115px;
+      background: #ffffff;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0));
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+      /* Standard syntax */ }
+    .mobile-product-nav li {
+      float: none !important;
+      display: inline;
+      padding: 10px 30px;
+      margin: 0 !important; }
+      .mobile-product-nav li a {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 14px;
+        color: #969696;
+        text-decoration: none;
+        -webkit-transition: color ease-in-out 0.25s;
+        -moz-transition: color ease-in-out 0.25s;
+        -o-transition: color ease-in-out 0.25s;
+        transition: color ease-in-out 0.25s;
+        display: inline-block;
+        text-align: center; }
+        .mobile-product-nav li a:hover {
+          color: #0080ff; }
+        .mobile-product-nav li a:active {
+          color: #0080ff; }
+        .mobile-product-nav li a.active {
+          color: #0080ff; }
+
+  .products {
+    padding: 250px 0 100px; }
 
   .product-card a {
     position: relative;
