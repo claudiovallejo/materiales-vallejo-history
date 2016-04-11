@@ -722,4 +722,55 @@ body {
     line-height: 1.5;
     color: #4a4a4a; }
 
+.mobile-about-us {
+  display: none; }
+
+/* Tablet Version */
+@media screen and (max-width: 1020px) {
+  /* Grid */
+  .col-4 {
+    width: 33.33%; }
+
+  /* Hero Section */
+  .hero {
+    height: 300px;
+    margin-top: 75px; }
+    .hero p {
+      padding: 0 125px; }
+
+  .about-us {
+    display: none; }
+
+  .mobile-about-us {
+    display: block;
+    padding: 125px 20px;
+    min-width: 1020px; }
+    .mobile-about-us h1 {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 0.225px;
+      line-height: 1.5;
+      color: #212121; }
+    .mobile-about-us p {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0.175px;
+      line-height: 1.5;
+      color: #4a4a4a; }
+    .mobile-about-us .gallery {
+      padding: 0 10px;
+      overflow-x: scroll;
+      overflow-y: hidden; }
+      .mobile-about-us .gallery img {
+        float: left; }
+      .mobile-about-us .gallery .image-1 {
+        margin-right: 20px;
+        margin-bottom: 20px; }
+      .mobile-about-us .gallery .image-2 {
+        margin-bottom: 20px; }
+      .mobile-about-us .gallery .image-3 {
+        margin-right: 20px; } }
+
 /*# sourceMappingURL=nosotros.css.map */

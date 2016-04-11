@@ -109,3 +109,72 @@ body {
 	@include about-us;
 
 }
+
+.mobile-about-us {
+	display: none;
+
+}
+
+/* Tablet Version */
+@media screen and (max-width: $desktop) {
+	/* Grid */
+	.col-4 {
+		width: 33.33%;
+
+	}
+
+	/* Hero Section */
+	.hero {
+		// Structure
+		height: $hero-height;
+		margin-top: 75px;
+		// Typography
+		p {
+			padding: 0 125px;
+		}
+
+	}
+
+	.about-us {
+		display: none;
+
+	}
+
+	.mobile-about-us {
+		// Structure
+		display: block;
+		padding: 125px 20px;
+		min-width: $desktop;
+		@include about-us;
+
+		.gallery {
+			padding: 0 10px;
+			overflow-x: scroll;
+			overflow-y: hidden;
+
+			img {
+				float: left;
+
+			}
+
+			.image-1 {
+				margin-right: 20px;
+				margin-bottom: 20px;
+
+			}
+
+			.image-2 {
+				margin-bottom: 20px;
+
+			}
+
+			.image-3 {
+				margin-right: 20px;
+
+			}
+
+		}
+
+	}
+
+}
