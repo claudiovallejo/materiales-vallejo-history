@@ -779,10 +779,11 @@ body {
 @media screen and (max-width: 1020px) {
   .contact {
     height: 100%;
-    padding: 165px 0 0 0; }
+    padding: 150px 0 0 0; }
 
   .contact-card {
     width: 100%;
-    padding: 80px 45px; } }
+    padding: 80px 45px;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=contacto.css.map */
