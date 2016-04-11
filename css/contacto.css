@@ -616,8 +616,7 @@ body {
 /* Contact Section */
 .contact {
   width: 100%;
-  height: 750px;
-  padding: 125px 0 750px 0;
+  padding: 125px 0 35px 0;
   overflow: hidden;
   background: #fbfbfb;
   /* For browsers that do not support gradients */
@@ -752,6 +751,12 @@ body {
       background: #0061c1; }
   .contact-card:hover .call {
     color: #008027; }
+  .contact-card:active .arrow {
+    color: #0061c1; }
+    .contact-card:active .arrow:after {
+      background: #0061c1; }
+  .contact-card:active .call {
+    color: #008027; }
 
 #horarios {
   width: 23px;
@@ -769,5 +774,15 @@ body {
   width: 31px;
   height: 21px;
   margin-top: 10px; }
+
+/* Tablet Version */
+@media screen and (max-width: 1020px) {
+  .contact {
+    height: 100%;
+    padding: 165px 0 0 0; }
+
+  .contact-card {
+    width: 100%;
+    padding: 80px 45px; } }
 
 /*# sourceMappingURL=contacto.css.map */

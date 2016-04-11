@@ -22,8 +22,7 @@ body {
 /* Contact Section */
 .contact {
 	width: 100%;
-	height: 750px;
-	padding: 125px 0 750px 0;
+	padding: 125px 0 35px 0;
 	overflow: hidden;
 	@include standard-gradient
 
@@ -86,6 +85,25 @@ body {
 
 	}
 
+	&:active {
+		& .arrow {
+			//Type
+			color: $dark-blue;
+
+			&:after {
+				//Structure
+				background: $dark-blue;
+
+			}
+
+		}
+		& .call {
+			color: $dark-green;
+
+		}
+
+	}
+
 }
 
 //Icons
@@ -111,5 +129,21 @@ body {
 	width: 31px;
 	height: 21px;
 	margin-top: 10px;
+
+}
+
+/* Tablet Version */
+@media screen and (max-width: $desktop) {
+	.contact {
+		height: 100%;
+		padding: 165px 0 0 0;
+
+	}
+
+	.contact-card {
+		width: 100%;
+		padding: 80px 45px;
+
+	}
 
 }
