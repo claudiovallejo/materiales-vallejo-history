@@ -626,7 +626,7 @@
 	@include background-transition;
 
 	&:hover {
-		background-color: $opaque-blue;
+		background-color: $hover-blue;
 
 		& .arrow {
 			//Type
@@ -639,6 +639,23 @@
     		}
 
 		}
+
+}
+
+		&:active {
+			background-color: $hover-blue;
+
+			& .arrow {
+				//Type
+				color: $dark-blue;
+
+				&:after {
+					//Structure
+					background: $dark-blue;
+
+					}
+
+			}
 
 	}
 

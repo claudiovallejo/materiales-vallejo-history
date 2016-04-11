@@ -785,7 +785,7 @@ body {
   height: 400px;
   width: 300px;
   padding: 20px;
-  border: 1px solid rgba(0, 128, 255, 0.1);
+  border: 1px solid rgba(0, 128, 255, 0.5);
   border-radius: 5px;
   text-align: center;
   padding: 192px 0;
@@ -798,6 +798,12 @@ body {
     .link-card:hover .arrow {
       color: #0061c1; }
       .link-card:hover .arrow:after {
+        background: #0061c1; }
+  .link-card:active {
+    background-color: rgba(0, 128, 255, 0.1); }
+    .link-card:active .arrow {
+      color: #0061c1; }
+      .link-card:active .arrow:after {
         background: #0061c1; }
   .link-card p {
     font-family: "Lato", sans-serif;
@@ -829,5 +835,22 @@ body {
       clip-path: url("../imagenes/test.svg");
       -webkit-mask: url("../imagenes/test.svg");
       mask: url("../imagenes/test.svg"); }
+
+@media screen and (max-width: 1020px) {
+  .col-8 {
+    width: 100%; }
+
+  .product-card a {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .product-card a .link-card {
+      width: 100%; }
+
+  .card {
+    position: relative;
+    text-align: center; }
+    .card h1, .card h2, .card p {
+      text-align: left; } }
 
 /*# sourceMappingURL=materiales.css.map */
