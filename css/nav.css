@@ -114,35 +114,37 @@
         color: #0080ff; }
 
 @media screen and (max-width: 1020px) {
-  nav {
-    width: 100%;
+  .nav-bar nav {
+    max-width: 100%;
     padding: 0 !important;
     text-align: center !important; }
-    nav .logo-bar {
+    .nav-bar nav .nav-bar {
+      margin: 0 !important; }
+    .nav-bar nav .logo-bar {
       display: block;
       overflow: hidden;
       width: 100%;
-      padding: 10px 0 30px !important;
+      padding: 20px 0 20px !important;
       border-bottom: 1px solid #dadada; }
-    nav .logo {
+    .nav-bar nav .logo {
       position: static !important;
       padding: 0 auto; }
-    nav #logo {
+    .nav-bar nav #logo {
       position: static;
       padding: 0 auto; }
-    nav ul {
+    .nav-bar nav ul {
       display: block;
       overflow: hidden;
       float: none !important;
       text-align: center !important;
       margin-bottom: 8px;
       padding: 0; }
-    nav li {
+    .nav-bar nav li {
       float: none !important;
       display: inline;
       padding: 10px 30px;
       margin: 0 !important; }
-    nav a {
+    .nav-bar nav a {
       display: inline-block;
       text-align: center;
       font-size: 16px; } }
