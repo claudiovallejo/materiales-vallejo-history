@@ -23,22 +23,6 @@ body {
 
 }
 
-/* Hero Section */
-.hero {
-	// Structure
-	height: $hero-height;
-	// Imagery
-	background-image: url('../imagenes/headers/empresa.jpg');
-	background-position: 50% 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	// Typography
-	@include hero;
-
-}
-
 .content {
 	// Structure
 	text-align: center;
@@ -80,11 +64,11 @@ body {
 
 }
 
-.construrama {
+.construrama, .main-content {
 	//Structure
 	text-align: center;
 	padding: 125px 0;
-	@include standard-gradient;
+	background-color: $gradient-gray;
 
 	.title {
 		//Type
@@ -110,11 +94,6 @@ body {
 
 }
 
-.mobile-about-us {
-	display: none;
-
-}
-
 /* Tablet Version */
 @media screen and (max-width: $desktop) {
 	/* Grid */
@@ -137,43 +116,6 @@ body {
 
 	.about-us {
 		display: none;
-
-	}
-
-	.mobile-about-us {
-		// Structure
-		display: block;
-		padding: 125px 20px;
-		min-width: $desktop;
-		@include about-us;
-
-		.gallery {
-			padding: 0 10px;
-			overflow-x: scroll;
-			overflow-y: hidden;
-
-			img {
-				float: left;
-
-			}
-
-			.image-1 {
-				margin-right: 20px;
-				margin-bottom: 20px;
-
-			}
-
-			.image-2 {
-				margin-bottom: 20px;
-
-			}
-
-			.image-3 {
-				margin-right: 20px;
-
-			}
-
-		}
 
 	}
 

@@ -613,32 +613,6 @@ article.contact {
 body {
   background-color: #ffffff; }
 
-/* Hero Section */
-.hero {
-  height: 300px;
-  background-image: url("../imagenes/headers/empresa.jpg");
-  background-position: 50% 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .hero h1 {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 32px;
-    letter-spacing: 0.4px;
-    line-height: 32px;
-    color: #ffffff;
-    margin-bottom: 10px; }
-  .hero p {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.175px;
-    line-height: 1.5;
-    color: #ffffff;
-    padding: 0px 150px; }
-
 .content {
   text-align: center;
   padding: 135px; }
@@ -672,37 +646,28 @@ body {
     .about-us .gallery .image-3 {
       margin-right: 20px; }
 
-.construrama {
+.construrama, .main-content {
   text-align: center;
   padding: 125px 0;
-  background: #fbfbfb;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left bottom, #fbfbfb, #ffffff);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top right, #fbfbfb, #ffffff);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top right, #fbfbfb, #ffffff);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to top right, #fbfbfb, #ffffff);
-  /* Standard syntax */ }
-  .construrama .title {
+  background-color: #fbfbfb; }
+  .construrama .title, .main-content .title {
     padding: 0 280px;
     margin-bottom: 75px; }
-    .construrama .title h1 {
+    .construrama .title h1, .main-content .title h1 {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       font-size: 28px;
       letter-spacing: 0.35px;
       line-height: 1.5;
       color: #212121; }
-    .construrama .title p {
+    .construrama .title p, .main-content .title p {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       font-size: 16px;
       letter-spacing: 0.2px;
       line-height: 1.5;
       color: #4a4a4a; }
-  .construrama img {
+  .construrama img, .main-content img {
     margin-bottom: 125px; }
 
 .construrama-info {
@@ -722,9 +687,6 @@ body {
     line-height: 1.5;
     color: #4a4a4a; }
 
-.mobile-about-us {
-  display: none; }
-
 /* Tablet Version */
 @media screen and (max-width: 1020px) {
   /* Grid */
@@ -739,38 +701,6 @@ body {
       padding: 0 125px; }
 
   .about-us {
-    display: none; }
-
-  .mobile-about-us {
-    display: block;
-    padding: 125px 20px;
-    min-width: 1020px; }
-    .mobile-about-us h1 {
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      font-size: 18px;
-      letter-spacing: 0.225px;
-      line-height: 1.5;
-      color: #212121; }
-    .mobile-about-us p {
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      letter-spacing: 0.175px;
-      line-height: 1.5;
-      color: #4a4a4a; }
-    .mobile-about-us .gallery {
-      padding: 0 10px;
-      overflow-x: scroll;
-      overflow-y: hidden; }
-      .mobile-about-us .gallery img {
-        float: left; }
-      .mobile-about-us .gallery .image-1 {
-        margin-right: 20px;
-        margin-bottom: 20px; }
-      .mobile-about-us .gallery .image-2 {
-        margin-bottom: 20px; }
-      .mobile-about-us .gallery .image-3 {
-        margin-right: 20px; } }
+    display: none; } }
 
 /*# sourceMappingURL=nosotros.css.map */
