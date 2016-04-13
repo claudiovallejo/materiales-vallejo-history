@@ -750,18 +750,18 @@ body {
       float: left;
       font-family: "Lato", sans-serif;
       font-weight: 300;
-      font-size: 12px;
-      letter-spacing: 0.15px;
-      line-height: 12px;
+      font-size: 14px;
+      letter-spacing: 0.175px;
+      line-height: 14px;
       color: #000000; }
     .card .product-details p.detail-description {
       width: 50%;
       float: left;
       font-family: "Lato", sans-serif;
       font-weight: 300;
-      font-size: 12px;
-      letter-spacing: 0.15px;
-      line-height: 12px;
+      font-size: 14px;
+      letter-spacing: 0.175px;
+      line-height: 14px;
       color: #969696; }
 
 .detail-section {
@@ -903,6 +903,8 @@ body {
     height: 100%; }
     .product-card a .link-card {
       width: 100%; }
+  .product-card .product-details p.detail-title, .product-card .product-details p.detail-description {
+    font-size: 14px; }
 
   .card {
     position: relative;
