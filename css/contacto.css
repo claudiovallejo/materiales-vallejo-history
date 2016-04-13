@@ -614,17 +614,7 @@ body {
 .contact {
   width: 100%;
   padding: 125px 0 35px 0;
-  overflow: hidden;
-  background: #fbfbfb;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left bottom, #fbfbfb, #ffffff);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top right, #fbfbfb, #ffffff);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top right, #fbfbfb, #ffffff);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to top right, #fbfbfb, #ffffff);
-  /* Standard syntax */ }
+  overflow: hidden; }
 
 .contact-col {
   float: left;
