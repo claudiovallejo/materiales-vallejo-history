@@ -26,17 +26,27 @@ body {
 .content {
 	// Structure
 	text-align: center;
-	padding: $content-padding;
+	padding: 175px 0 50px 0;
+
+	.title {
+			//Type
+			@include title;
+			//Structure
+			padding: 0 280px;
+			margin-bottom: 75px;
+
+	}
 
 }
 
 /* About Us - - - - - - - - - */
 .about-us {
 	// Structure
-	padding: 125px 0;
+	padding: 0 0 125px 0;
 	@include about-us;
 
 	.gallery {
+		overflow: auto;
 		padding: 0 10px;
 
 		img {
@@ -57,6 +67,7 @@ body {
 
 		.image-3 {
 			margin-right: 20px;
+			margin-bottom: 0;
 
 		}
 
@@ -64,7 +75,7 @@ body {
 
 }
 
-.construrama, .main-content {
+.construrama {
 	//Structure
 	text-align: center;
 	padding: 125px 0;
@@ -99,23 +110,6 @@ body {
 	/* Grid */
 	.col-4 {
 		width: 33.33%;
-
-	}
-
-	/* Hero Section */
-	.hero {
-		// Structure
-		height: $hero-height;
-		margin-top: 75px;
-		// Typography
-		p {
-			padding: 0 125px;
-		}
-
-	}
-
-	.about-us {
-		display: none;
 
 	}
 

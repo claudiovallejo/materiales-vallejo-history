@@ -617,11 +617,28 @@ body {
 
 .content {
   text-align: center;
-  padding: 135px; }
+  padding: 175px 0 50px 0; }
+  .content .title {
+    padding: 0 280px;
+    margin-bottom: 75px; }
+    .content .title h1 {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 28px;
+      letter-spacing: 0.35px;
+      line-height: 1.5;
+      color: #212121; }
+    .content .title p {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+      line-height: 1.5;
+      color: #4a4a4a; }
 
 /* About Us - - - - - - - - - */
 .about-us {
-  padding: 125px 0; }
+  padding: 0 0 125px 0; }
   .about-us h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -637,6 +654,7 @@ body {
     line-height: 1.5;
     color: #4a4a4a; }
   .about-us .gallery {
+    overflow: auto;
     padding: 0 10px; }
     .about-us .gallery img {
       float: left; }
@@ -646,30 +664,31 @@ body {
     .about-us .gallery .image-2 {
       margin-bottom: 20px; }
     .about-us .gallery .image-3 {
-      margin-right: 20px; }
+      margin-right: 20px;
+      margin-bottom: 0; }
 
-.construrama, .main-content {
+.construrama {
   text-align: center;
   padding: 125px 0;
   background-color: #fbfbfb; }
-  .construrama .title, .main-content .title {
+  .construrama .title {
     padding: 0 280px;
     margin-bottom: 75px; }
-    .construrama .title h1, .main-content .title h1 {
+    .construrama .title h1 {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       font-size: 28px;
       letter-spacing: 0.35px;
       line-height: 1.5;
       color: #212121; }
-    .construrama .title p, .main-content .title p {
+    .construrama .title p {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       font-size: 16px;
       letter-spacing: 0.2px;
       line-height: 1.5;
       color: #4a4a4a; }
-  .construrama img, .main-content img {
+  .construrama img {
     margin-bottom: 125px; }
 
 .construrama-info {
@@ -693,16 +712,6 @@ body {
 @media screen and (max-width: 1020px) {
   /* Grid */
   .col-4 {
-    width: 33.33%; }
-
-  /* Hero Section */
-  .hero {
-    height: 300px;
-    margin-top: 75px; }
-    .hero p {
-      padding: 0 125px; }
-
-  .about-us {
-    display: none; } }
+    width: 33.33%; } }
 
 /*# sourceMappingURL=nosotros.css.map */
