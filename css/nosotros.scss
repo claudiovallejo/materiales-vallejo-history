@@ -40,6 +40,62 @@ body {
 }
 
 /* About Us - - - - - - - - - */
+//Grid
+.gc {
+	//Structure
+	width: 100%;
+	max-width: 960px;
+	box-sizing: border-box;
+
+}
+
+.gr:before, .gr:after {
+	//Structure
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+[class*='gc-'] {
+	//Structure
+	float: left;
+	padding: 0 10px;
+	min-height: 1px;
+
+}
+
+.gc-4 {
+	width: 33.33%;
+
+}
+
+.half:nth-child(1) {
+	padding-right: 10px;
+
+}
+
+.half:nth-child(2) {
+	padding-left: 10px;
+
+}
+
+.half {
+	float: left;
+	width: 50%;
+
+	img {
+		padding: 0 !important;
+
+	}
+
+}
+
+.gc-8 {
+	width: 66.66%;
+
+}
+
 .about-us {
 	// Structure
 	padding: 0 0 125px 0;
@@ -56,39 +112,17 @@ body {
 			overflow: hidden;
 			padding-bottom: 75px;
 
-		}
+			.image-1, .image-2, .image-3, .image-4 {
+				width: 100%;
+				height: 100%;
 
-		//Images
-		img {
-			//Structure
-			float: left;
+			}
 
-		}
-
-		.image-1 {
-			//Structure
-			padding-right: 10px;
-
-		}
-
-		.image-2 {
-			//Structure
-			padding-left: 10px;
-			padding-bottom: 10px;
-
-		}
-
-		.image-3 {
-			//Structure
-			padding-top: 10px;
-			padding-left: 10px;
-
-		}
-
-		.image-4 {
-			//Structure
-			padding-top: 10px;
-			padding-left: 20px;
+			.image-2 {
+				//Structure
+				margin-bottom: 15px;
+				
+			}
 
 		}
 
@@ -139,7 +173,7 @@ body {
 		overflow: scroll;
 
 		.scroll-area {
-			padding-left: 25px;
+			padding: 0 25px;
 			overflow-x: scroll;
 			overflow-y: hidden;
 			white-space: nowrap;
@@ -162,7 +196,7 @@ body {
 				//Type
 				@include title;
 				//Structure
-				padding: 0 280px;
+				padding: 0 25%;
 				margin-bottom: 75px;
 
 		}
