@@ -91,13 +91,11 @@ body {
 
 	.gallery {
 		//Structure
-		overflow: hidden;
 		max-width: 960px;
 		margin: 0 auto;
 
 		.scroll-area {
 			//Structure
-			overflow: hidden;
 			padding-bottom: 75px;
 
 			.image-1 {
@@ -165,29 +163,36 @@ body {
 
 }
 
-/* Tablet Version */
+/* Tablet Version - - - - - - - - - */
 @media screen and (max-width: $desktop) {
-	//Grid
 	.col-4 {
-		width: 33.33%;
+		width: 100%;
+		padding-left: 10px;
 
 	}
 
 	.gallery {
+		display: block;
 		width: 100%;
-		overflow: scroll;
+		overflow: auto;
 
 		.scroll-area {
-			padding: 0 25px;
+			display: block;
+			width: 960px;
+			overflow: auto;
 			overflow-x: scroll;
 			overflow-y: hidden;
 			white-space: nowrap;
 			-webkit-overflow-scrolling: touch;
+			padding: 0 25px;
+			margin-bottom: 100px;
 
 		}
 
 		.scroll-area::-webkit-scrollbar {
 			display: none;
+			width: 0px;
+			background: transparent;
 
 		}
 
@@ -203,6 +208,22 @@ body {
 				//Structure
 				padding: 0 25%;
 				margin-bottom: 75px;
+
+		}
+
+	}
+
+	.info {
+		margin-bottom: 75px;
+		text-align: center;
+		padding: 0 30%;
+
+	}
+
+	.construrama {
+
+		.title {
+			padding: 0 20%;
 
 		}
 

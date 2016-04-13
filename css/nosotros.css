@@ -85,10 +85,6 @@
   padding: 0 10px;
   min-height: 1px; }
 
-[class*='col-']:last-of-type {
-  padding: 0;
-  min-height: 1px; }
-
 .col-1 {
   width: 8.33%; }
 
@@ -679,11 +675,9 @@ body {
     line-height: 1.5;
     color: #4a4a4a; }
   .about-us .gallery {
-    overflow: hidden;
     max-width: 960px;
     margin: 0 auto; }
     .about-us .gallery .scroll-area {
-      overflow: hidden;
       padding-bottom: 75px; }
       .about-us .gallery .scroll-area .image-1 {
         height: 460px;
@@ -741,22 +735,30 @@ body {
     line-height: 1.5;
     color: #4a4a4a; }
 
-/* Tablet Version */
+/* Tablet Version - - - - - - - - - */
 @media screen and (max-width: 1020px) {
   .col-4 {
-    width: 33.33%; }
+    width: 100%;
+    padding-left: 10px; }
 
   .gallery {
+    display: block;
     width: 100%;
-    overflow: scroll; }
+    overflow: auto; }
     .gallery .scroll-area {
-      padding: 0 25px;
+      display: block;
+      width: 960px;
+      overflow: auto;
       overflow-x: scroll;
       overflow-y: hidden;
       white-space: nowrap;
-      -webkit-overflow-scrolling: touch; }
+      -webkit-overflow-scrolling: touch;
+      padding: 0 25px;
+      margin-bottom: 100px; }
     .gallery .scroll-area::-webkit-scrollbar {
-      display: none; }
+      display: none;
+      width: 0px;
+      background: transparent; }
 
   .content {
     padding: 250px 0 50px 0; }
@@ -776,6 +778,14 @@ body {
         font-size: 16px;
         letter-spacing: 0.2px;
         line-height: 1.5;
-        color: #4a4a4a; } }
+        color: #4a4a4a; }
+
+  .info {
+    margin-bottom: 75px;
+    text-align: center;
+    padding: 0 30%; }
+
+  .construrama .title {
+    padding: 0 20%; } }
 
 /*# sourceMappingURL=nosotros.css.map */
