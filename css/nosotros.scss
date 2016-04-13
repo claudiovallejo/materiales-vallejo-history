@@ -136,21 +136,20 @@ body {
 .construrama {
 	//Structure
 	text-align: center;
-	padding: 125px 0;
-	background-color: $gradient-gray;
+	padding: 0 0 125px;
 
 	.title {
 		//Type
 		@include title;
 		//Structure
 		padding: 0 280px;
-		margin-bottom: 75px;
+		margin: 150px 0;
 
 	}
 
 	img {
 		//Structure
-		margin-bottom: 125px;
+		margin-bottom: 200px;
 
 	}
 
