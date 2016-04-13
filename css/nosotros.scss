@@ -60,39 +60,27 @@ body {
 [class*='gc-'] {
 	//Structure
 	float: left;
-	padding: 0 10px;
-	min-height: 1px;
 
 }
 
 .gc-4 {
+	//Structure
 	width: 33.33%;
+	padding: 0 10px;
 
 }
 
-.half:nth-child(1) {
-	padding-right: 10px;
-
-}
-
-.half:nth-child(2) {
-	padding-left: 10px;
-
-}
-
-.half {
-	float: left;
+.gc-6 {
+	//Structure
 	width: 50%;
-
-	img {
-		padding: 0 !important;
-
-	}
+	padding-top: 20px;
 
 }
 
 .gc-8 {
+	//Structure
 	width: 66.66%;
+	padding: 0 10px;
 
 }
 
@@ -112,16 +100,33 @@ body {
 			overflow: hidden;
 			padding-bottom: 75px;
 
-			.image-1, .image-2, .image-3, .image-4 {
-				width: 100%;
-				height: 100%;
+			.image-1 {
+				height: 460px;
+				background-image: url('../imagenes/nosotros/servicio.jpg');
 
 			}
 
 			.image-2 {
-				//Structure
-				margin-bottom: 15px;
-				
+				height: 220px;
+				background-image: url('../imagenes/nosotros/montacargas.jpg')
+
+			}
+
+			.image-3, .image-4 {
+				height: 220px;
+
+			}
+
+			.image-3 {
+				margin-right: 10px;
+				background-image: url('../imagenes/nosotros/atencion.jpg');
+
+			}
+
+			.image-4 {
+				margin-left: 10px;
+				background-image: url('../imagenes/nosotros/arena.jpg');
+
 			}
 
 		}
