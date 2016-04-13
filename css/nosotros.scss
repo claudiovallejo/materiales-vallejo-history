@@ -46,28 +46,49 @@ body {
 	@include about-us;
 
 	.gallery {
-		overflow: auto;
-		padding: 0 10px;
+		//Structure
+		overflow: hidden;
+		max-width: 960px;
+		margin: 0 auto;
 
+		.scroll-area {
+			//Structure
+			overflow: hidden;
+			padding-bottom: 75px;
+
+		}
+
+		//Images
 		img {
+			//Structure
 			float: left;
 
 		}
 
 		.image-1 {
-			margin-right: 20px;
-			margin-bottom: 20px;
+			//Structure
+			padding-right: 10px;
 
 		}
 
 		.image-2 {
-			margin-bottom: 20px;
+			//Structure
+			padding-left: 10px;
+			padding-bottom: 10px;
 
 		}
 
 		.image-3 {
-			margin-right: 20px;
-			margin-bottom: 0;
+			//Structure
+			padding-top: 10px;
+			padding-left: 10px;
+
+		}
+
+		.image-4 {
+			//Structure
+			padding-top: 10px;
+			padding-left: 20px;
 
 		}
 
@@ -107,9 +128,44 @@ body {
 
 /* Tablet Version */
 @media screen and (max-width: $desktop) {
-	/* Grid */
+	//Grid
 	.col-4 {
 		width: 33.33%;
+
+	}
+
+	.gallery {
+		width: 100%;
+		overflow: scroll;
+
+		.scroll-area {
+			padding-left: 25px;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+
+		}
+
+		.scroll-area::-webkit-scrollbar {
+			display: none;
+
+		}
+
+	}
+
+	.content {
+		// Structure
+		padding: 250px 0 50px 0;
+
+		.title {
+				//Type
+				@include title;
+				//Structure
+				padding: 0 280px;
+				margin-bottom: 75px;
+
+		}
 
 	}
 
