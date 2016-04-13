@@ -3,7 +3,7 @@ var openContactInfo = {
 
 	image: {id: 'marcanos', srca: 'imagenes/iconos/marcanos.svg', srcb: '../imagenes/iconos/marcanos.svg'},
 	title: 'Márcanos',
-	description: 'Cotiza o cuéntanos en que te podemos ayudar, estamos para servirte.',
+	description: 'Cotiza o cuéntanos en que te podemos<br> ayudar, estamos para servirte.',
 	link: {class: 'call', href: 'tel:+52(868)8161353', content: '+52 (868) 816 1353'}
 
 };
