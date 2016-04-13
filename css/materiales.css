@@ -194,12 +194,12 @@
   display: block;
   padding-bottom: 25px;
   top: 0px;
-  border-bottom: 1px solid #dadada;
   z-index: 2; }
   .nav-bar nav {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 10px; }
+    padding: 0 10px 25px;
+    border-bottom: 1px solid #dadada; }
   .nav-bar .logo-bar {
     display: inline-block; }
   .nav-bar #logo {
@@ -244,12 +244,15 @@
         color: #0080ff; }
 
 @media screen and (max-width: 1020px) {
+  .nav-bar {
+    margin: 0;
+    border-bottom: 1px solid #dadada; }
+
   .nav-bar nav {
     max-width: 100%;
     padding: 0 !important;
-    text-align: center !important; }
-    .nav-bar nav .nav-bar {
-      margin: 0 !important; }
+    text-align: center !important;
+    border: none; }
     .nav-bar nav .logo-bar {
       display: block;
       overflow: hidden;

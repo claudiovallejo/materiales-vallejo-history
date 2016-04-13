@@ -9,13 +9,13 @@
 	display: block;
 	padding-bottom: 25px;
 	top: 0px;
-	border-bottom: 1px solid $separator-gray;
 	z-index: 2;
 
 	nav {
 		max-width: 960px;
 		margin: 0 auto;
-		padding: 0 10px;
+		padding: 0 10px 25px;
+		border-bottom: 1px solid $separator-gray;
 
 	}
 
@@ -60,15 +60,17 @@
 //Media Queries
 @media screen and (max-width: $desktop) {
 
+		.nav-bar {
+			margin: 0;
+			border-bottom: 1px solid $separator-gray;
+
+		}
+
 		.nav-bar nav {
 			max-width: 100%;
 			padding: 0 !important;
 			text-align: center !important;
-
-			.nav-bar {
-				margin: 0 !important;
-
-			}
+			border: none;
 
 			.logo-bar {
 				display: block;
