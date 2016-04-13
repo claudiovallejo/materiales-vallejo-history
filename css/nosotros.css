@@ -575,8 +575,9 @@ article.contact {
 @media screen and (max-width: 1020px) {
   footer {
     padding: 7.5px 0 !important;
-    margin: 0 !important;
-    overflow: hidden; }
+    margin-bottom: 10px; }
+    footer .footer {
+      overflow: hidden; }
 
   .copyright {
     display: inline-block;
@@ -586,8 +587,7 @@ article.contact {
     float: right; }
     .legal ul {
       float: right;
-      padding-top: 5px;
-      margin-bottom: 15px; }
+      padding-top: 10px; }
     .legal li {
       display: inline-block;
       padding: 0;
@@ -595,8 +595,7 @@ article.contact {
       .legal li a {
         padding: 0; }
       .legal li .separator {
-        position: relative;
-        top: 5px; } }
+        position: relative; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

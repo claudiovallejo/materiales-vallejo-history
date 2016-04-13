@@ -48,8 +48,12 @@
 
 	footer {
 		padding: 7.5px 0 !important;
-		margin: 0 !important;
-		overflow: hidden;
+		margin-bottom: 10px;
+
+		.footer {
+			overflow: hidden;
+
+		}
 
 	}
 
@@ -65,8 +69,7 @@
 
 		ul {
 			float: right;
-			padding-top: 5px;
-			margin-bottom: 15px;
+			padding-top: 10px;
 
 		}
 
@@ -82,7 +85,6 @@
 
 			.separator {
 				position: relative;
-				top: 5px;
 
 			}
 
