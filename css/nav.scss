@@ -129,12 +129,11 @@ header {
 @media screen and (max-width: $mobile) {
 	//Scrollable Navigation Bar
 	.scroll-bar {
-		display: block;
 		position: relative;
 		overflow: scroll;
+		width: 100%;
 
 		ul {
-			display: block;
 			overflow-x: scroll;
 			overflow-y: hidden;
 			white-space: nowrap;

@@ -153,9 +153,9 @@ header {
 /* Mobile Version - - - - - - - - - */
 @media screen and (max-width: 735px) {
   .scroll-bar {
-    display: block;
     position: relative;
-    overflow: scroll; }
+    overflow: scroll;
+    width: 100%; }
     .scroll-bar ul {
       display: block;
       overflow-x: scroll;
