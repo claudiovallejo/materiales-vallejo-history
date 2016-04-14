@@ -157,7 +157,6 @@ header {
     overflow: scroll;
     width: 100%; }
     .scroll-bar ul {
-      display: block;
       overflow-x: scroll;
       overflow-y: hidden;
       white-space: nowrap;

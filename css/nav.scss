@@ -59,7 +59,7 @@ header {
 }
 
 //Media Queries
-@media screen and (max-width: $desktop) {
+@media screen and (max-width: $tablet) {
 
 		.nav-bar {
 			margin: 0;
@@ -126,7 +126,7 @@ header {
 }
 
 /* Mobile Version - - - - - - - - - */
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $large-mobile) {
 	//Scrollable Navigation Bar
 	.scroll-bar {
 		position: relative;
