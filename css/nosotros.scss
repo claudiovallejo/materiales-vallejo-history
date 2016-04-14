@@ -229,3 +229,33 @@ body {
 	}
 
 }
+
+/* Phones - - - - - - - - - */
+@media screen and (max-width: $large-mobile) {
+
+	.about-us, .construrama {
+		padding-bottom: 50px;
+
+	}
+	.content .title, .construrama .title {
+		padding: 0 5%;
+
+	}
+
+	.gallery .scroll-area {
+		margin-bottom: 0;
+
+	}
+
+	.info {
+		margin-bottom: 35px;
+		padding: 10%;
+
+	}
+
+	.animation img {
+		width: 90%;
+
+	}
+
+}

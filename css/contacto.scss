@@ -147,3 +147,28 @@ body {
 	}
 
 }
+
+/* Large Phones - - - - - - - - */
+@media screen and (max-width: $large-mobile) {
+	.contact-col {
+		float: none;
+		width: 100%;
+
+		.link-wrapper {
+			overflow: auto;
+			height: 100%;
+			width: 100%;
+
+		}
+
+	}
+
+	.contact-col:nth-child(even) {
+		float: none;
+		width: 100%;
+		padding: 0 10px;
+
+	}
+
+
+}
