@@ -382,7 +382,19 @@ article.contact {
   background-color: #ffffff; }
 
 .icon-container {
-  position: relative; }
+  position: relative;
+  width: 35%;
+  margin: 0 auto; }
+
+#clock-hands {
+  position: absolute;
+  top: 5px;
+  left: 39.5%; }
+
+#clock-hands-contact {
+  position: absolute;
+  top: 5px;
+  left: 43%; }
 
 .border {
   border-top: 1px solid #eaeaea; }
