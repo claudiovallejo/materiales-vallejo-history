@@ -530,7 +530,7 @@
 			margin-right: 0;
 
 		}
-		
+
 	}
 
 }
@@ -604,7 +604,19 @@
 	}
 
 	img {
-		margin-bottom: 50px;
+		margin-bottom: 45px;
+
+	}
+
+	.detail-section {
+		//Structure
+		padding-bottom: 5px;
+
+	}
+
+	.detail-section:last-of-type {
+		//Structure
+		padding-bottom: 0;
 
 	}
 
@@ -619,9 +631,9 @@
 			// Typography
 			font-family: $lato;
 			font-weight: $light;
-			font-size: $size-14;
-			letter-spacing: $size-14 * $character;
-			line-height: $size-14;
+			font-size: $size-13;
+			letter-spacing: $size-13 * $character;
+			line-height: $size-13;
 			color: $black;
 
 		}
@@ -633,9 +645,9 @@
 			// Typography
 			font-family: $lato;
 			font-weight: $light;
-			font-size: $size-14;
-			letter-spacing: $size-14 * $character;
-			line-height: $size-14;
+			font-size: $size-13;
+			letter-spacing: $size-13 * $character;
+			line-height: $size-13;
 			color: $nav-gray;
 
 		}
