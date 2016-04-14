@@ -200,3 +200,37 @@ body {
 	}
 
 }
+
+@media screen and (max-width: $large-mobile) {
+	.content {
+		padding: 135px 0;
+
+	}
+
+	.brands {
+
+		p {
+			//Structure
+			padding: 0;
+
+		}
+
+		img {
+			//Structure
+			width: 100%;
+
+		}
+
+	}
+
+	.features {
+
+		p {
+			//Structure
+			padding: 0 25px;
+
+		}
+
+	}
+
+}

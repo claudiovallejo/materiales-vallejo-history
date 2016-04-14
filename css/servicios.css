@@ -815,5 +815,16 @@ body {
     text-align: center; }
     .features p {
       padding: 0 185px; } }
+@media screen and (max-width: 735px) {
+  .content {
+    padding: 135px 0; }
+
+  .brands p {
+    padding: 0; }
+  .brands img {
+    width: 100%; }
+
+  .features p {
+    padding: 0 25px; } }
 
 /*# sourceMappingURL=servicios.css.map */
