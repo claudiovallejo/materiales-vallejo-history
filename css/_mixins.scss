@@ -421,12 +421,22 @@
 
 /* Product Mixins - - - - - - - - - */
 /* Product Navigation */
+@mixin gray-gradient {
+	background: $gradient-gray; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(right, $gradient-gray, $transparent); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, $gradient-gray, $transparent); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, $gradient-gray, $transparent); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(left, $gradient-gray, $transparent); /* Standard syntax */
+
+}
+
 @mixin white-gradient {
 		background: $white; /* For browsers that do not support gradients */
 		background: -webkit-linear-gradient(right, $white, $transparent); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(left, $white, $transparent); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(left, $white, $transparent); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(left, $white, $transparent); /* Standard syntax */
+
 }
 
 @mixin product-nav {

@@ -270,8 +270,7 @@ header {
       overflow: hidden;
       float: none !important;
       text-align: center !important;
-      margin: 15px 0;
-      padding: 0; }
+      padding: 15px 0 !important; }
     .nav-bar nav li {
       float: none !important;
       display: inline;
@@ -281,6 +280,39 @@ header {
       display: inline-block;
       text-align: center;
       font-size: 16px; } }
+/* Mobile Version - - - - - - - - - */
+@media screen and (max-width: 735px) {
+  .scroll-bar {
+    display: block;
+    position: relative;
+    overflow: scroll; }
+    .scroll-bar ul {
+      display: block;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      text-align: center;
+      -webkit-overflow-scrolling: touch;
+      padding-right: 25px; }
+      .scroll-bar ul::-webkit-scrollbar {
+        display: none; }
+
+  .white-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    background: #ffffff;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #ffffff, rgba(255, 255, 255, 0));
+    /* Standard syntax */ } }
 /* Font Stacks */
 /* Font Weights */
 /* Media Query Screen Sizes */
@@ -855,7 +887,7 @@ body {
       padding: 15px 50px 15px 0; }
     .mobile-product-nav ul::-webkit-scrollbar {
       display: none; }
-    .mobile-product-nav .white-gradient {
+    .mobile-product-nav .gray-gradient {
       position: absolute;
       top: 0;
       right: 0;

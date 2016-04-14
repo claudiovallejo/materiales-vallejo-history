@@ -101,8 +101,7 @@ header {
 				overflow: hidden;
 				float: none !important;
 				text-align: center !important;
-				margin: 15px 0;
-				padding: 0;
+				padding: 15px 0 !important;
 
 			}
 
@@ -123,5 +122,43 @@ header {
 			}
 
 		}
+
+}
+
+/* Mobile Version - - - - - - - - - */
+@media screen and (max-width: $mobile) {
+	//Scrollable Navigation Bar
+	.scroll-bar {
+		display: block;
+		position: relative;
+		overflow: scroll;
+
+		ul {
+			display: block;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			white-space: nowrap;
+			text-align: center;
+			-webkit-overflow-scrolling: touch;
+			padding-right: 25px;
+
+			&::-webkit-scrollbar {
+				display: none;
+
+			}
+
+		}
+
+	}
+
+	.white-gradient {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 50px;
+		@include white-gradient;
+
+	}
 
 }
