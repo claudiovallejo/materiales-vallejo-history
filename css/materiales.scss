@@ -112,6 +112,7 @@ body {
 
 }
 
+/* Tablet Version - - - - - - - - - */
 @media screen and (max-width: $desktop) {
 	.col-8 {
 		width: 100%;
@@ -211,6 +212,21 @@ body {
 
 		h1, h2, p {
 			text-align: left;
+
+		}
+
+	}
+
+	/* Product Feature List */
+	.feature-list {
+
+		li {
+			margin-right: 50px;
+		}
+
+		li:last-of-type {
+			//Structure
+			float: left;
 
 		}
 

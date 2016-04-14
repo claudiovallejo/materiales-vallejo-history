@@ -823,6 +823,7 @@ body {
       -webkit-mask: url("../imagenes/test.svg");
       mask: url("../imagenes/test.svg"); }
 
+/* Tablet Version - - - - - - - - - */
 @media screen and (max-width: 1020px) {
   .col-8 {
     width: 100%; }
@@ -908,6 +909,12 @@ body {
     position: relative;
     text-align: center; }
     .card h1, .card h2, .card p {
-      text-align: left; } }
+      text-align: left; }
+
+  /* Product Feature List */
+  .feature-list li {
+    margin-right: 50px; }
+  .feature-list li:last-of-type {
+    float: left; } }
 
 /*# sourceMappingURL=materiales.css.map */
