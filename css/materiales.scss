@@ -221,12 +221,59 @@ body {
 	.feature-list {
 
 		li {
-			margin-right: 50px;
+			margin-right: 0;
+			width: 25%;
 		}
 
 		li:last-of-type {
 			//Structure
 			float: left;
+
+		}
+
+	}
+
+}
+
+/* Large Phone Version - - - - - - - - - */
+@media screen and (max-width: $large-mobile) {
+
+	/* Products Section */
+	.products {
+		padding: 225px 0;
+		background-color: $gradient-gray;
+
+	}
+
+	/* Card Column */
+	.category-title, .product-card {
+		float: none;
+		padding: 0 10px;
+		width: 75%;
+		margin: 0 auto 50px;
+
+	}
+
+	.category-title {
+		margin-bottom: 20px;
+
+	}
+
+	/* Product Feature List */
+	.feature-list {
+
+		ul {
+			padding: 0 10px;
+			width: 75%;
+			margin: 0 auto 35px;
+
+		}
+
+		li {
+
+			margin: 0;
+			padding-bottom: 25px;
+			width: 50%;
 
 		}
 
