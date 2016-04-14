@@ -131,6 +131,14 @@ body {
 
 }
 
+#clock-hands {
+	position: absolute;
+	top: 5px;
+	left: 150px;
+
+
+}
+
 /* Tablet Version */
 @media screen and (max-width: $tablet) {
 	.contact {

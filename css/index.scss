@@ -66,6 +66,14 @@ article.contact-sections {
 
 }
 
+#clock-hands {
+	position: absolute;
+	top: 5px;
+	left: 115px;
+
+
+}
+
 /* Tablets - - - - - - - - */
 @media screen and (max-width: $tablet) {
 	.slider {

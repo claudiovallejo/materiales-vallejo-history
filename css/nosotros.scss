@@ -162,6 +162,14 @@ body {
 
 }
 
+#clock-hands {
+	position: absolute;
+	top: 5px;
+	left: 124px;
+
+
+}
+
 /* Tablet Version - - - - - - - - - */
 @media screen and (max-width: $tablet) {
 	.col-4 {

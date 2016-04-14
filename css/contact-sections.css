@@ -60,6 +60,9 @@
 article.contact {
   background-color: #ffffff; }
 
+.icon-container {
+  position: relative; }
+
 .border {
   border-top: 1px solid #eaeaea; }
 

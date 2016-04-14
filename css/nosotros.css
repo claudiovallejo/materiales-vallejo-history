@@ -381,6 +381,9 @@ header {
 article.contact {
   background-color: #ffffff; }
 
+.icon-container {
+  position: relative; }
+
 .border {
   border-top: 1px solid #eaeaea; }
 
@@ -781,6 +784,11 @@ body {
     letter-spacing: 0.175px;
     line-height: 1.5;
     color: #4a4a4a; }
+
+#clock-hands {
+  position: absolute;
+  top: 5px;
+  left: 124px; }
 
 /* Tablet Version - - - - - - - - - */
 @media screen and (max-width: 1020px) {

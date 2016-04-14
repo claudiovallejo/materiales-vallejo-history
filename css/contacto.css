@@ -381,6 +381,9 @@ header {
 article.contact {
   background-color: #ffffff; }
 
+.icon-container {
+  position: relative; }
+
 .border {
   border-top: 1px solid #eaeaea; }
 
@@ -810,6 +813,11 @@ body {
   width: 31px;
   height: 21px;
   margin-top: 10px; }
+
+#clock-hands {
+  position: absolute;
+  top: 5px;
+  left: 150px; }
 
 /* Tablet Version */
 @media screen and (max-width: 1020px) {
