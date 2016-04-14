@@ -187,24 +187,24 @@
 /* Error - - - - - - - - - */
 /* Message Form - - - - - - - - - */
 /* Navigation */
-.nav-bar {
-  width: 100%;
-  background-color: #ffffff;
+header {
   position: fixed;
   display: block;
-  padding-bottom: 25px;
   top: 0px;
-  z-index: 2; }
+  z-index: 2;
+  width: 100%; }
+
+.nav-bar {
+  width: 100%;
+  background-color: #ffffff; }
   .nav-bar nav {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 10px 25px;
+    padding: 15px 0;
     border-bottom: 1px solid #dadada; }
   .nav-bar .logo-bar {
     display: inline-block; }
   .nav-bar #logo {
-    position: relative;
-    top: 13px;
     width: 236px;
     height: 24px;
     -webkit-transition: background ease-in-out 0.25s;
@@ -219,9 +219,8 @@
     .nav-bar #logo:hover {
       background: #000000; }
   .nav-bar ul {
-    position: relative;
-    top: 16px;
-    float: right; }
+    float: right;
+    padding-top: 4px; }
   .nav-bar li {
     float: left;
     list-style: none;
@@ -252,7 +251,8 @@
     max-width: 100%;
     padding: 0 !important;
     text-align: center !important;
-    border: none; }
+    border: none;
+    overflow: auto; }
     .nav-bar nav .logo-bar {
       display: block;
       overflow: hidden;
@@ -270,7 +270,7 @@
       overflow: hidden;
       float: none !important;
       text-align: center !important;
-      margin-bottom: 8px;
+      margin: 15px 0;
       padding: 0; }
     .nav-bar nav li {
       float: none !important;
@@ -617,16 +617,7 @@ body {
 .slider {
   width: 100%;
   margin-top: 53px;
-  background: #fbfbfb;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left bottom, #fbfbfb, #ffffff);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top right, #fbfbfb, #ffffff);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top right, #fbfbfb, #ffffff);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to top right, #fbfbfb, #ffffff);
-  /* Standard syntax */ }
+  margin-bottom: 50px; }
   .slider h1 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
