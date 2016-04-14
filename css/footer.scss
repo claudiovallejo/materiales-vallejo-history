@@ -44,6 +44,7 @@
 	}
 }
 
+/* Tablets - - - - - - - - - - */
 @media screen and (max-width: $tablet) {
 
 	footer {
@@ -92,5 +93,18 @@
 
 	}
 
+}
+
+/* Phones - - - - - - - - - */
+@media screen and (max-width: $large-mobile) {
+	footer {
+		padding: 15px 0 !important;
+
+	}
+
+	.legal li.separator, .legal li.author {
+		display: none;
+
+	}
 
 }

@@ -613,6 +613,7 @@ article.contact {
       position: relative;
       top: 15px; }
 
+/* Tablets - - - - - - - - - - */
 @media screen and (max-width: 1020px) {
   footer {
     padding: 7.5px 0 !important;
@@ -637,6 +638,13 @@ article.contact {
         padding: 0; }
       .legal li .separator {
         position: relative; } }
+/* Phones - - - - - - - - - */
+@media screen and (max-width: 735px) {
+  footer {
+    padding: 15px 0 !important; }
+
+  .legal li.separator, .legal li.author {
+    display: none; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
