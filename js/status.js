@@ -39,10 +39,6 @@ var contentSetter = function(contentObject) {
 
 };
 
-console.log(workDay);
-console.log(currentTime);
-console.log(lunchBreak);
-
 //Status Setter
 if (workDay) {
 

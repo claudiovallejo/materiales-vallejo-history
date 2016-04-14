@@ -66,7 +66,7 @@ article.contact-sections {
 
 }
 
-/* Tabler Version - - - - - - - - */
+/* Tablets - - - - - - - - */
 @media screen and (max-width: $tablet) {
 	.slider {
 		//Structure
@@ -91,4 +91,27 @@ article.contact-sections {
 	}
 
 }
- 
+
+/* Large Phones - - - - - - - - - */
+@media screen and (max-width: $large-mobile) {
+	.img {
+		//Structure
+		top: 5%;
+		right: 0;
+
+	}
+
+	.content {
+		//Structure
+		padding: 550px 0 25px 0;
+	}
+
+}
+
+@media screen and (max-width: $small-mobile) {
+	.img {
+		//Structure
+		right: -10%;
+	}
+
+}

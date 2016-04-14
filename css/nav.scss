@@ -28,12 +28,19 @@ header {
 
 	}
 
+	.scroll-bar {
+		display: inline-block;
+		float: right;
+		overflow: auto;
+
+	}
+
 	#logo {
 		width: 236px;
 		height: 24px;
+		background: $text-gray;
 		@include background-color-transition;
 		@include svg-clipping-mask('../imagenes/logo/logo.svg');
-		background: $text-gray;
 
 		&:hover {
 			background: $black;
@@ -65,59 +72,66 @@ header {
 			margin: 0;
 			border-bottom: 1px solid $separator-gray;
 
-		}
-
-		.nav-bar nav {
-			max-width: 100%;
-			padding: 0 !important;
-			text-align: center !important;
-			border: none;
-			overflow: auto;
-
-			.logo-bar {
+			.scroll-bar {
 				display: block;
-				overflow: hidden;
-				width: 100%;
-				padding: 20px 0 20px !important;
-				border-bottom: 1px solid $separator-gray;
+				float: none;
+				overflow: auto;
 
 			}
 
-			.logo {
-				position: static !important;
-				padding: 0 auto;
-
-			}
-
-
-			#logo {
-				position: static;
-				padding: 0 auto;
-
-			}
-
-			ul {
-				display: block;
-				overflow: hidden;
-				float: none !important;
-				text-align: center !important;
-				padding: 15px 0 !important;
-
-			}
-
-			li {
-				float: none !important;
-				display: inline;
-				padding: 10px 30px;
-				margin: 0 !important;
-
-			}
-
-			a {
-				display: inline-block;
+			nav {
+				max-width: 100%;
+				padding: 0;
 				text-align: center;
-				font-size: $size-16;
+				border: none;
+				overflow: auto;
 
+				.logo-bar {
+					display: block;
+					overflow: hidden;
+					width: 100%;
+					padding: 20px 0 20px;
+					border-bottom: 1px solid $separator-gray;
+
+				}
+
+				.logo {
+					position: static;
+					padding: 0 auto;
+
+				}
+
+
+				#logo {
+					position: static;
+					padding: 0 auto;
+
+				}
+
+				ul {
+					display: block;
+					overflow: hidden;
+					float: none;
+					text-align: center;
+					padding: 15px 0;
+
+				}
+
+				li {
+					float: none;
+					display: inline;
+					padding: 10px 30px;
+					margin: 0;
+
+				}
+
+				a {
+					display: inline-block;
+					text-align: center;
+					font-size: $size-16;
+
+
+				}
 
 			}
 

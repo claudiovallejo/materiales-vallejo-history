@@ -74,9 +74,14 @@ header {
     border-bottom: 1px solid #dadada; }
   .nav-bar .logo-bar {
     display: inline-block; }
+  .nav-bar .scroll-bar {
+    display: inline-block;
+    float: right;
+    overflow: auto; }
   .nav-bar #logo {
     width: 236px;
     height: 24px;
+    background: #4a4a4a;
     -webkit-transition: background ease-in-out 0.25s;
     -moz-transition: background ease-in-out 0.25s;
     -o-transition: background ease-in-out 0.25s;
@@ -84,8 +89,7 @@ header {
     -webkit-clip-path: url("../imagenes/logo/logo.svg");
     clip-path: url("../imagenes/logo/logo.svg");
     -webkit-mask: url("../imagenes/logo/logo.svg");
-    mask: url("../imagenes/logo/logo.svg");
-    background: #4a4a4a; }
+    mask: url("../imagenes/logo/logo.svg"); }
     .nav-bar #logo:hover {
       background: #000000; }
   .nav-bar ul {
@@ -116,40 +120,43 @@ header {
   .nav-bar {
     margin: 0;
     border-bottom: 1px solid #dadada; }
-
-  .nav-bar nav {
-    max-width: 100%;
-    padding: 0 !important;
-    text-align: center !important;
-    border: none;
-    overflow: auto; }
-    .nav-bar nav .logo-bar {
+    .nav-bar .scroll-bar {
       display: block;
-      overflow: hidden;
-      width: 100%;
-      padding: 20px 0 20px !important;
-      border-bottom: 1px solid #dadada; }
-    .nav-bar nav .logo {
-      position: static !important;
-      padding: 0 auto; }
-    .nav-bar nav #logo {
-      position: static;
-      padding: 0 auto; }
-    .nav-bar nav ul {
-      display: block;
-      overflow: hidden;
-      float: none !important;
-      text-align: center !important;
-      padding: 15px 0 !important; }
-    .nav-bar nav li {
-      float: none !important;
-      display: inline;
-      padding: 10px 30px;
-      margin: 0 !important; }
-    .nav-bar nav a {
-      display: inline-block;
+      float: none;
+      overflow: auto; }
+    .nav-bar nav {
+      max-width: 100%;
+      padding: 0;
       text-align: center;
-      font-size: 16px; } }
+      border: none;
+      overflow: auto; }
+      .nav-bar nav .logo-bar {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        padding: 20px 0 20px;
+        border-bottom: 1px solid #dadada; }
+      .nav-bar nav .logo {
+        position: static;
+        padding: 0 auto; }
+      .nav-bar nav #logo {
+        position: static;
+        padding: 0 auto; }
+      .nav-bar nav ul {
+        display: block;
+        overflow: hidden;
+        float: none;
+        text-align: center;
+        padding: 15px 0; }
+      .nav-bar nav li {
+        float: none;
+        display: inline;
+        padding: 10px 30px;
+        margin: 0; }
+      .nav-bar nav a {
+        display: inline-block;
+        text-align: center;
+        font-size: 16px; } }
 /* Mobile Version - - - - - - - - - */
 @media screen and (max-width: 735px) {
   .scroll-bar {
