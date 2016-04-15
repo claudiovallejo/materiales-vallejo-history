@@ -54,7 +54,7 @@ body {
 .contact-card {
 	//Structure
 	text-align: center;
-	padding: 80px 65px;
+	padding: 65px 65px;
 	width: 450px;
 	height: 323px;
 	margin-bottom: 20px;
@@ -106,21 +106,17 @@ body {
 }
 
 //Icons
-#horarios {
-	width: 23px;
-	height: 31px;
-
-}
-
 #marcanos {
 	width: 17px;
 	height: 31px;
+	margin-bottom: 15px
 
 }
 
 #direccion {
 	width: 21px;
 	height: 31px;
+	margin-bottom: 15px
 
 }
 
@@ -128,6 +124,7 @@ body {
 	width: 31px;
 	height: 21px;
 	margin-top: 10px;
+	margin-bottom: 15px
 
 }
 
@@ -141,7 +138,7 @@ body {
 
 	.contact-card {
 		width: 100%;
-		padding: 80px 45px;
+		padding: 65px 45px;
 		margin-bottom: 10px;
 
 	}

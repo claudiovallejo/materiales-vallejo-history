@@ -191,7 +191,7 @@ header {
   position: fixed;
   display: block;
   top: 0px;
-  z-index: 2;
+  z-index: 30;
   width: 100%; }
 
 .nav-bar {
@@ -383,18 +383,31 @@ article.contact {
 
 .icon-container {
   position: relative;
-  width: 35%;
-  margin: 0 auto; }
+  width: 22px;
+  height: 30px;
+  margin: 5px auto 20px;
+  text-align: center; }
+
+.top-strap, .bottom-strap {
+  position: absolute;
+  left: 4px;
+  height: 7.5px;
+  width: 16px;
+  background-color: white;
+  border: 1px solid #b3b3b3; }
+
+.top-strap {
+  top: -4px; }
+
+.bottom-strap {
+  bottom: 2px; }
 
 #clock-hands {
-  position: absolute;
-  top: 5px;
-  left: 39.5%; }
-
-#clock-hands-contact {
-  position: absolute;
-  top: 5px;
-  left: 43%; }
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #b3b3b3;
+  background-color: white;
+  z-index: 2; }
 
 .border {
   border-top: 1px solid #eaeaea; }

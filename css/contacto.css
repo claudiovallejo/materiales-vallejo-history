@@ -191,7 +191,7 @@ header {
   position: fixed;
   display: block;
   top: 0px;
-  z-index: 2;
+  z-index: 30;
   width: 100%; }
 
 .nav-bar {
@@ -383,18 +383,31 @@ article.contact {
 
 .icon-container {
   position: relative;
-  width: 35%;
-  margin: 0 auto; }
+  width: 22px;
+  height: 30px;
+  margin: 5px auto 20px;
+  text-align: center; }
+
+.top-strap, .bottom-strap {
+  position: absolute;
+  left: 4px;
+  height: 7.5px;
+  width: 16px;
+  background-color: white;
+  border: 1px solid #b3b3b3; }
+
+.top-strap {
+  top: -4px; }
+
+.bottom-strap {
+  bottom: 2px; }
 
 #clock-hands {
-  position: absolute;
-  top: 5px;
-  left: 39.5%; }
-
-#clock-hands-contact {
-  position: absolute;
-  top: 5px;
-  left: 43%; }
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #b3b3b3;
+  background-color: white;
+  z-index: 2; }
 
 .border {
   border-top: 1px solid #eaeaea; }
@@ -697,7 +710,7 @@ body {
 
 .contact-card {
   text-align: center;
-  padding: 80px 65px;
+  padding: 65px 65px;
   width: 450px;
   height: 323px;
   margin-bottom: 20px;
@@ -809,22 +822,21 @@ body {
   .contact-card:active .call {
     color: #008027; }
 
-#horarios {
-  width: 23px;
-  height: 31px; }
-
 #marcanos {
   width: 17px;
-  height: 31px; }
+  height: 31px;
+  margin-bottom: 15px; }
 
 #direccion {
   width: 21px;
-  height: 31px; }
+  height: 31px;
+  margin-bottom: 15px; }
 
 #mensajes {
   width: 31px;
   height: 21px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 15px; }
 
 /* Tablet Version */
 @media screen and (max-width: 1020px) {
@@ -834,7 +846,7 @@ body {
 
   .contact-card {
     width: 100%;
-    padding: 80px 45px;
+    padding: 65px 45px;
     margin-bottom: 10px; } }
 /* Large Phones - - - - - - - - */
 @media screen and (max-width: 735px) {

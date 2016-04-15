@@ -61,7 +61,7 @@ header {
   position: fixed;
   display: block;
   top: 0px;
-  z-index: 2;
+  z-index: 30;
   width: 100%; }
 
 .nav-bar {
