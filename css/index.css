@@ -479,10 +479,10 @@ article.contact {
         -moz-transition: background ease-in-out 0.25s;
         -o-transition: background ease-in-out 0.25s;
         transition: background ease-in-out 0.25s;
-        -webkit-clip-path: url("../imagenes/test.svg");
-        clip-path: url("../imagenes/test.svg");
-        -webkit-mask: url("../imagenes/test.svg");
-        mask: url("../imagenes/test.svg"); }
+        -webkit-clip-path: url("../imagenes/iconos/arrow.svg");
+        clip-path: url("../imagenes/iconos/arrow.svg");
+        -webkit-mask: url("../imagenes/iconos/arrow.svg");
+        mask: url("../imagenes/iconos/arrow.svg"); }
       #hours a.arrow:hover:after, #contact a.arrow:hover:after, #address a.arrow:hover:after {
         background: #0061c1; }
   #hours .store-status, #contact .store-status, #address .store-status {
@@ -737,10 +737,10 @@ body {
         -moz-transition: background ease-in-out 0.25s;
         -o-transition: background ease-in-out 0.25s;
         transition: background ease-in-out 0.25s;
-        -webkit-clip-path: url("../imagenes/test.svg");
-        clip-path: url("../imagenes/test.svg");
-        -webkit-mask: url("../imagenes/test.svg");
-        mask: url("../imagenes/test.svg"); }
+        -webkit-clip-path: url("../imagenes/iconos/arrow.svg");
+        clip-path: url("../imagenes/iconos/arrow.svg");
+        -webkit-mask: url("../imagenes/iconos/arrow.svg");
+        mask: url("../imagenes/iconos/arrow.svg"); }
       .slider a.arrow:hover:after {
         background: #0061c1; }
 
