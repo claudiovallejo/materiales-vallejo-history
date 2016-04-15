@@ -381,12 +381,15 @@ header {
 article.contact {
   background-color: #ffffff; }
 
-.icon-container {
+.icon-container, .icon-contact-container {
   position: relative;
   width: 22px;
   height: 30px;
-  margin: 5px auto 20px;
+  margin: 5px auto 0;
   text-align: center; }
+
+.icon-contact-container {
+  margin-bottom: 20px; }
 
 .top-strap, .bottom-strap {
   position: absolute;
