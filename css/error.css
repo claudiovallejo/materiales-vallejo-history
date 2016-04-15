@@ -385,11 +385,11 @@ article.contact {
   position: relative;
   width: 22px;
   height: 30px;
-  margin: 5px auto 0;
+  margin: 0 auto;
   text-align: center; }
 
 .icon-contact-container {
-  margin-bottom: 20px; }
+  margin: 5px auto 20px; }
 
 .top-strap, .bottom-strap {
   position: absolute;
