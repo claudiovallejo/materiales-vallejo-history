@@ -865,5 +865,12 @@ body {
     float: none;
     width: 100%;
     padding: 0 10px; } }
+/* Tiny Mobiles - - - - - - - - */
+@media screen and (max-width: 500px) {
+  /* Contact Section */
+  .contact-card p {
+    font-size: 14px;
+    letter-spacing: 0.175px;
+    line-height: 1.5; } }
 
 /*# sourceMappingURL=contacto.css.map */
