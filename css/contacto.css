@@ -420,7 +420,7 @@ article.contact {
   text-align: center; }
   #hours h2, #contact h2, #address h2 {
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 18px;
     letter-spacing: 0.225px;
     line-height: 18px;
@@ -428,7 +428,7 @@ article.contact {
     padding: 15px 0 7.5px 0; }
   #hours p, #contact p, #address p {
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.175px;
     line-height: 1.5;
@@ -726,7 +726,7 @@ body {
   transition: box-shadow ease-in-out 0.25s; }
   .contact-card h1 {
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 22px;
     letter-spacing: 0.275px;
     line-height: 1.5;

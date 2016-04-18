@@ -140,7 +140,7 @@
 	h2 {
 		//Type
 		font-family: $lato;
-		font-weight: $hairline;
+		font-weight: $light;
 		font-size: $size-18;
 		letter-spacing: $size-18 * $character;
 		line-height: $size-18;
@@ -153,7 +153,7 @@
 	p {
 		//Type
 		font-family: $lato;
-		font-weight: $hairline;
+		font-weight: $light;
 		font-size: $size-14;
 		letter-spacing: $size-14 * $character;
 		line-height: $default-line;
@@ -875,7 +875,7 @@
 @mixin card-type {
 	h1 {
 		font-family: $lato;
-		font-weight: $hairline;
+		font-weight: $light;
 		font-size: $size-22;
 		letter-spacing: $size-22 * $character;
 		line-height: $default-line;
