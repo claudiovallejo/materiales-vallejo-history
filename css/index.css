@@ -793,5 +793,25 @@ article.contact-sections {
 @media screen and (max-width: 650px) {
   .img {
     right: -10%; } }
+/* Tiny Mobiles - - - - - - - - - */
+@media screen and (max-width: 650px) {
+  .content {
+    left: 25px;
+    bottom: 75px;
+    width: 100%;
+    padding: 450px 0 25px 0; }
+
+  .img {
+    position: absolute;
+    top: 50px;
+    left: -35%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; }
+    .img img {
+      top: 50px;
+      left: 25px;
+      right: 0;
+      max-width: 500px; } }
 
 /*# sourceMappingURL=index.css.map */

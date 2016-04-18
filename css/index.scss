@@ -116,3 +116,36 @@ article.contact-sections {
 	}
 
 }
+
+/* Tiny Mobiles - - - - - - - - - */
+@media screen and (max-width: $small-mobile) {
+
+	.content {
+		//Structure
+		left: 25px;
+		bottom: 75px;
+		width: 100%;
+		padding: 450px 0 25px 0;
+
+	}
+
+	.img {
+		//Structure
+		position: absolute;
+		top: 50px;
+		left: -35%;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+
+		img {
+			top: 50px;
+			left: 25px;
+			right: 0;
+			max-width: 500px;
+
+		}
+
+	}
+
+}
