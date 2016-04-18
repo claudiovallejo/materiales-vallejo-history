@@ -642,7 +642,7 @@ article.contact {
       background-color: #dadada; }
     .footer footer .copyright {
       position: relative;
-      top: 15px; }
+      top: 16px; }
 
 /* Tablets - - - - - - - - - - */
 @media screen and (max-width: 1020px) {
@@ -660,7 +660,7 @@ article.contact {
     float: right; }
     .legal ul {
       float: right;
-      padding-top: 10px; }
+      padding-top: 12px; }
     .legal li {
       display: inline-block;
       padding: 0;
@@ -1024,5 +1024,14 @@ body {
     margin: 0;
     padding-bottom: 25px;
     width: 50%; } }
+/* Tiny Phones - - - - - - - - - */
+@media screen and (max-width: 500px) {
+  /* Products Section */
+  .products {
+    padding: 225px 0 100px; }
+
+  /* Card Column */
+  .category-title, .product-card {
+    width: 100%; } }
 
 /*# sourceMappingURL=materiales.css.map */

@@ -234,3 +234,36 @@ body {
 	}
 
 }
+
+/* Tiny Mobiles - - - - - - - - - */
+@media screen and (max-width: $tiny-mobile) {
+
+	/* Hero Section */
+	.hero {
+		// Structure
+		height: $hero-height;
+		margin-top: 75px;
+		// Typography
+		p {
+			padding: 0;
+		}
+
+	}
+
+	/* Brands Section */
+	.brands {
+		padding: 100px 0;
+		text-align: center;
+		p {
+			padding: 0;
+
+		}
+
+		.col-4 {
+			width: 100%;
+
+		}
+
+	}
+
+}

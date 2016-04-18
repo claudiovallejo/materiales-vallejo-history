@@ -280,3 +280,20 @@ body {
 	}
 
 }
+
+/* Tiny Phones - - - - - - - - - */
+@media screen and (max-width: $tiny-mobile) {
+
+	/* Products Section */
+	.products {
+		padding: 225px 0 100px;
+
+	}
+
+	/* Card Column */
+	.category-title, .product-card {
+		width: 100%;
+
+	}
+
+}

@@ -106,7 +106,7 @@
       background-color: #dadada; }
     .footer footer .copyright {
       position: relative;
-      top: 15px; }
+      top: 16px; }
 
 /* Tablets - - - - - - - - - - */
 @media screen and (max-width: 1020px) {
@@ -124,7 +124,7 @@
     float: right; }
     .legal ul {
       float: right;
-      padding-top: 10px; }
+      padding-top: 12px; }
     .legal li {
       display: inline-block;
       padding: 0;
