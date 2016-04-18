@@ -142,20 +142,27 @@ header {
 /* Mobile Version - - - - - - - - - */
 @media screen and (max-width: $large-mobile) {
 	//Scrollable Navigation Bar
-	.scroll-bar {
-		position: relative;
-		overflow: scroll;
-		width: 100%;
+	.nav-bar {
 
-		ul {
-			overflow-x: scroll;
-			overflow-y: hidden;
-			white-space: nowrap;
-			text-align: center;
-			-webkit-overflow-scrolling: touch;
-			padding-right: 25px;
+		.scroll-bar {
+			display: block;
+			position: relative;
+			overflow: scroll;
+			width: 100%;
+			height: auto;
 
-			&::-webkit-scrollbar {
+			ul {
+				display: block;
+				overflow-x: scroll;
+				overflow-y: hidden;
+				white-space: nowrap;
+				text-align: center;
+				-webkit-overflow-scrolling: touch;
+				padding-right: 25px;
+
+			}
+
+			ul::-webkit-scrollbar {
 				display: none;
 
 			}
@@ -169,6 +176,7 @@ header {
 		top: 0;
 		right: 0;
 		height: 100%;
+		margin: auto 0;
 		width: 50px;
 		@include white-gradient;
 
