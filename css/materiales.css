@@ -389,7 +389,7 @@ article.contact {
   position: relative;
   width: 22px;
   height: 30px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
   text-align: center; }
 
 .icon-contact-container {
