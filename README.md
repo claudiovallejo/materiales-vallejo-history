@@ -15,9 +15,9 @@ I'm responsible for everything about this website: photography, content, icon de
 
 ## Version History
 ### v2.0
-First commit: June 6, 2016
-Last commit: June 23, 2016
-Hosted on: AWS S3
+First commit: _June 6, 2016_  |  
+Last commit: _June 23, 2016_  |  
+Hosted on: _AWS S3_
 #### Design tools —
   + Wireframing: _Moleskine + pencil_
   + Experience / Visual Design: _Sketch_
@@ -29,8 +29,8 @@ Hosted on: AWS S3
   + Interactivity: _JavaScript_
 
 ### v1.0
-First commit: _March 20, 2016_
-Last commit: _April 18, 2016_
+First commit: _March 20, 2016_  |
+Last commit: _April 18, 2016_  |
 Hosted on: _AWS S3_
 #### Design Tools —
   + Wireframing: _Moleskine + pencil_
