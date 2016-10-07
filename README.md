@@ -25,7 +25,7 @@ This is the first web project I designed and developed from scratch. Before this
   + Icon Design: [Figma](https://www.figma.com/)
 
 #### Development Tools —
-  + Text Editor: [Atom](https://atom.io/)
+  + Text Editor: [Vim](http://www.vim.org/)
   + Terminal: [HyperTerm](https://hyper.is/)
   + Markup: [HTML/CSS](https://developer.mozilla.org/en-US/)
   + CSS Framework: [Tachyons](http://tachyons.io/)
