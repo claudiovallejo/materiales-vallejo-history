@@ -1,20 +1,23 @@
 # Materiales Vallejo — Website
 
+You can view v2.0 of the site [here](http://materialesvallejo.com/).
+
 ## Introduction
-Materiales Vallejo is a small business in [Matamoros, Tamaulipas](https://www.google.com.mx/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=matamoros%2C%20tamaulipas) that sells construction materials. You can view v2.0 of the site [here](http://materialesvallejo.com/).
+Materiales Vallejo is a small business in [Matamoros, Tamaulipas](https://www.google.com.mx/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=matamoros%2C%20tamaulipas) that sells construction materials.
 
 Materiales Vallejo was looking for a basic website to display
   + the products they sell
   + services they offer
-  + and contact information
+  + contact information
+  + a snippet of who the company is
 
-This is the first web project I designed and developed from scratch. Before this project I had basic experience building websites with Webflow, Squarespace and Adobe Muse. I've learned a lot about web design and development through this project. I've been responsible for everything about this website: photography, image editing, content, icon design, visual design, and front-end development. It's a very small site, but it's been challenging and fun nonetheless. As of today I've designed and built two versions of the site and am currently working on building the third version. Here are several reasons why I think v3.0 is necessary —
-  + __Single-page Experience:__ The main point of the website is to display product, service, and contact information. Condensing the experience into a single page will create a unified, continuous experience for the user and will reduce the time it takes for them to find the information they are looking for.
-  + __Product Gallery:__ v2.0's interactive product gallery is not optimized for IE browsers (due to incompatibility with `.addEventListener`) and it doesn't offer a continuous experience. The user has to click through each category individually to navigate the business's catalogue. v3.0 will provide a fluid product navigation by providing an interactive, responsive, continuous swimlane that will increase the rate at which users can navigate through products.
-  + __Asset Optimization:__ v3.0 will deliver minified, gzipped assets and optimized images to minimize loading time.
-  + __CSS Optimization:__ v3.0 will be developed with [Tachyons](http://tachyons.io/), a CSS library of responsive, reusable classes. Even though I don't have to worry about scalability for this website, I do want to ensure the site is built with the least amount of CSS as possible to optimize loading time.
-  + __Faster Development:__ For v1.0 and v2.0 I built the site without any framework. For this site I'd like to use [Middleman](https://middlemanapp.com/), a static site generator. One of the things I love about Middleman is how I can use `.json` files to create and structure data models. I have access to those data models on my HTML templates and I can easily automate the creation of project cards with a series of loops and if statements.
-  + __Practice:__ Besides building a faster experience (technically and structurally) I want to build v3.0 because I want to learn more about how I can improve my previous work to create better work in other future projects.
+This is the first web project I designed and developed from scratch. Before this project I had basic experience building websites with Webflow, Squarespace and Adobe Muse. I've been responsible for everything about this website: photography, image editing, content, icon design, visual design, and front-end development, and every bug you encounter :). It's a very small site, but it's been challenging and fun nonetheless. As of today I've designed and built two versions of the site and am currently working on building v3.0. Here are several reasons why I think v3.0 is necessary —
+  + __Single-page Experience:__ The main point of the website is to display product, service, and contact information. Condensing the site into a single page will create a unified, continuous experience for the user and will reduce the time it takes for them to find the information they are looking for.
+  + __Product Gallery:__ v2.0's interactive product gallery is not optimized for IE browsers and it doesn't have continous navigation. The user has to click through each category individually to navigate the product catalogue. v3.0 will have a redesigned product experience and it will have two interactive, responsive, continuous swimlanes to make product navigation continuous and faster.
+  + __Asset Optimization:__ v2.0's assets weren't optimized or minified (wasn't aware of such a thing existed.) v3.0 will deliver minified, gzipped assets and optimized images to minimize loading time and the optimization will be automated with Gulp.js
+  + __CSS Optimization:__ For v2.0 I did my best to manage my CSS classes, my classes were sometimes overly specific, which mean CSS styles weren't as reusable as possible. For v3.0 I will design with [Tachyons](http://tachyons.io/), a CSS library of modular, responsive classes. I'll be using Tachyons to minimize the amount of CSS I write and maximize the reusability of my CSS classes.
+  + __Faster Development:__ For v1.0 and v2.0 I built the site without any framework. v3.0 will be built with [Middleman](https://middlemanapp.com/), a Ruby static site generator. One of the things I love about Middleman is how I can use `.json` files to create and structure data models. What's so great about data models is that I create dynamic HTML/CSS layouts and structures based on the content.
+  + __Practice:__ Other than building a faster experience (technically and structurally) I want to build v3.0 because I want to learn more about how I can improve my previous work to create better work in future projects.
 
 
 ## Version History
@@ -26,7 +29,7 @@ This is the first web project I designed and developed from scratch. Before this
 
 #### Development Tools —
   + Text Editor: [Atom](https://atom.io/)
-  + Terminal: [HyperTerm](https://hyper.is/)
+  + Terminal: [Hyperapp](https://hyper.is/)
   + Markup: [HTML/CSS](https://developer.mozilla.org/en-US/)
   + CSS Framework: [Tachyons](http://tachyons.io/)
   + Static Site Generator: [Middleman](https://middlemanapp.com/)
