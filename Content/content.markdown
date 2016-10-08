@@ -1,16 +1,28 @@
 # Website Content
+_This website will be in Spanish by default, but I'll translate the content to English to the best of my ability. Although the users of this site very likely don't speak English, I'd like for English-speaking users to navigate and understand the site as I'm interested in finding a job in the US and would love for potential employers to be able to evaluate my work._
 
-### Hero Section
-- __Title__: _Materiales para tu Obra_
-- __Subtitle__: _Encuentra los materiales que necesitas y obten servicios de un miembro oficial de Construrama._
-- __Primary Button__: _Ver Materiales_
-- __Secondary Button__:  _Contactar_
+## Inicio
+### Encabezado
+- __Título:__ _Materiales para tu Obra_
+- __Subtítulo:__ _Encuentra los materiales que necesitas y obtén servicios de un miembro oficial de Construrama._
+- __Botón Principal:__ _Ver Materiales_
+- __Botón Secundario:__  _Contactar_
 
-### Products Section
-- __Title__: _Materiales_
-- __Subtitle__: _Encuentra las mejores marcas en materiales para construccion para tu siguiente obra._
+### Anuncio (Chico) de Oportunidad de Trabajo
+_Este anuncio solamente va a salir cuando haya una vacante de empleo._
+__Título:__ Puesto de { nombre_de_puesto } disponible
+__Enlace:__ Ver Puesto
 
-#### Product List:
+### Anuncio (Chico) de Oportunidades de Trabajo
+_Este anuncio solamente va a salir cuando haya mas de una vacante de empleo disponible._
+__Título:__ Se solicitan { nombre_de_puesto } y { nombre_de_puesto }
+__Enlace:__ Ver Empleos
+
+### Sección de Productos
+- __Título:__ _Materiales_
+- __Subtítulo:__ _Encuentra las mejores marcas en materiales para construcción para tu siguiente obra._
+
+#### Lista de Productos
 1. __Cementos__
   1.  Cemento Gris
     - Marca: _Cemex_
@@ -131,27 +143,73 @@
     - Calibres disponibles: _#6_, _#8_
     - Se venden por: _Kilo_
 
-### Services Section
-- __Title__: Servicios
-- __Subtitle__: Recibe atención especializada para mayoristas, menudistas y constructoras
+### Servicios
+- __Título:__ Servicios
+- __Subtítulo:__ Recibe atención especializada para mayoristas, menudistas y constructoras
 
-- __Planes de Pago__: Revende material con nosotros y obtén planes de pago flexibles diseñados para complementar tu historial crediticio.
-- __Pagos con Crédito__: Compra los materiales que necesitas con tu tarjeta Coppel, Crédito Infonavit, Visa o Mastercard.
-- __Asesoría de Materiales__: Recibe atención personalizada para encontrar el tipo y cantidad de materiales que necesitas para tu obra.
-- __Entregas Gratuitas__: Recibe tus materiales sin costo a domicilio o en tu punto de venta en menos de 24 horas.
+- __Planes de Pago:__ Revende material con nosotros y obtén planes de pago flexibles diseñados para complementar tu historial crediticio.
+- __Pagos con Crédito:__ Compra los materiales que necesitas con tu tarjeta Coppel, Crédito Infonavit, Visa o Mastercard.
+- __Asesoría de Materiales:__ Recibe atención personalizada para encontrar el tipo y cantidad de materiales que necesitas para tu obra.
+- __Entregas Gratuitas:__ Recibe tus materiales sin costo a domicilio o en tu punto de venta en menos de 24 horas.
 
-### Contact Section
-__Title__: Contact
-  __Subtitles__:
-  - _Open_ -> Estamos abiertos, márcanos y dínos en que te podemos servir hoy.
-  - _Lunch_ -> Estamos en la comida, envíanos un mensaje y te responderemos lo antes posible. Regresamos a las X:00pm.
-  - _Closed (Weekday morning)_ -> Abrimos a las X:00, envíanos un mensaje y te responderemos lo antes posible.
-  - _Closed (Weekday afternoon)_ -> Cerramos por el día, envíanos un mensaje y te responderemos mañana a primer hora.
-  - _Closed (Saturday morning)_ -> Abrimos a las X:00, envíanos un mensaje y te responderemos lo antes posible.
-  - _Closed (Weekend afternoon)_ -> Cerramos por el fin de semana, déjanos un mensaje y el XYC a primera hora te responderemos.
-  - _Closed (Holiday)_ -> !Felíz XYC¡ Cerramos por el día, pero déjanos un mensaje y te responderemos el XYC a primera hora.
+### Contacto
+__Título:__ Contact
+  __Subtítulos:__
+  - _Abierto_ -> Estamos abiertos, márcanos y dínos en que te podemos servir hoy.
+  - _En la comida_ -> Estamos en la comida, envíanos un mensaje y te responderemos lo antes posible. Regresamos a las X:00pm.
+  - _Cerrado (Entre semana por la mañana)_ -> Abrimos a las X:00, envíanos un mensaje y te responderemos lo antes posible.
+  - _Cerrado (Entre semana por la tarde)_ -> Cerramos por el día, envíanos un mensaje y te responderemos mañana a primer hora.
+  - _Cerrado (Sábados en la mañana)_ -> Abrimos a las X:00, envíanos un mensaje y te responderemos lo antes posible.
+  - _Cerrado (Fin de semana por la tarde)_ -> Cerramos por el fin de semana, déjanos un mensaje y el XYC a primera hora te responderemos.
+  - _Cerrado (Día Festivo)_ -> !Felíz XYC¡ Cerramos por el día, pero déjanos un mensaje y te responderemos el XYC a primera hora.
 
-- __Number__: +52 (868) 816 1354
-- __Email__: matvallejo@outlook.com
-- __Address__: Calle 18 y Francisco González Villarreal, Colonia Buenavista, Matamoros, Tams.
-- __Office Hours__: Entre semana 8:00am - 1:00pm | 2:30pm - 6:00pm. Sábados de 8:00 - 2:00pm
+- __Botón de Teléfono:__ +52 (868) 816 1354
+- __Botón de Email:__ matvallejo@outlook.com
+- __Horarios de Oficina:__ Entre semana 8:00am - 1:00pm | 2:30pm - 6:00pm. Sábados de 8:00 - 2:00pm
+- __Botón de Dirección:__ Calle 18 y Francisco González Villarreal, Colonia Buenavista, Matamoros, Tams.
+
+## Empresa
+__Título:__ Somos de Matamoros.
+__Subtítulo:__ Tenemos mas de 30 años sirviendo y ayudando al desarrollo y crecimiento de nuestra comunidad.
+
+Formamos parte de Construrama, la cadena mas grande de materialistas para construcción en México. Somos de los principales distribuidores de Cemento Monterrey en Matamoros. Servimos a materialistas, constructoras y al público en general y tenemos la capacidad de suplir pedidos de cualquier volúmen.
+
+Estamos a tus ordenes en la Colonia Buenavista en la Calle 18 y Francisco González Villarreal.
+- __Botón de Teléfono:__ +52 (868) 816 1354
+- __Botón de Email:__ matvallejo@outlook.com
+- __Horarios de Oficina:__ Entre semana 8:00am - 1:00pm | 2:30pm - 6:00pm. Sábados de 8:00 - 2:00pm
+- __Botón de Dirección:__ Calle 18 y Francisco González Villarreal, Colonia Buenavista, Matamoros, Tams.
+
+### Anuncio (Grande) de Empleo Disponible
+_Esta sección solamente aparecerá cuando haya un empleo disponible._
+__Título:__ Puesto de { nombre_de_puesto } disponible
+__Subtítulo:__ { resumen_de_descripcion_de_puesto }
+__Botón:__ Ver Puesto
+
+### Anuncio (Grande) de Empleos Disponibles
+_Esta sección solamente aparecerá cuando haya varios empleos disponibles._
+__Título:__ Se solicitan { nombre_de_puesto } y { nombre_de_puesto }
+__Subtítulo:__ { descripcion_hecha_a_la_medida }
+__Botón:__ Ver Empleos
+
+## Aviso de Privacidad
+__Título:__ Aviso de Privacidad
+__Subtítulo:__ Detalles de datos que recabamos de tu visita
+
+Este Aviso de Privacidad siempre estará actualizado con información relacionada a todas las funcionalidades de nuestra página que recaben datos de tu visita.
+
+__Sección:__ Datos Recabados
+- Usamos [Google Analytics](https://analytics.google.com/), un servicio gratuito ofrecido por Google que obtiene información de tu visita a nuestro sitio. Los datos que recabamos no nos permiten saber tu nombre, sexo, número de teléfono, email o algun otro dato personal que nos permita identificarte. Algunos datos recabados por Google Analytics incluyen —
+  + Fecha de tu visita
+  + Tiempo total de tu visita
+  + Secciones visitadas en nuestro sitio
+  + Sitio de donde nos visitas
+  + Navegador utilizado
+  + Dispositivo utilizado
+
+__Sección:__ Para Que Recabamos tus Datos
+- Recabamos datos de tu visita para que tu estancia en nuestra página te sea agradable, cómoda, y útil. Queremos que fácilmente encuentres la información que busques y que lo puedas hacer de cualquier dispositivo y navegador.
+
+- Si acaso no quieres que Google Analytics nos envíe datos acerca de tu visita, entra a [ésta página](https://tools.google.com/dlpage/gaoptout?hl=es), donde Google te permite descargar un widget que deshabilita Google Analytics en tu navegador.
+
+Si tienes algun comentario acerca de este aviso, o te gustaría saber mas acerca de nuestra página, envíanos un mensaje a [matvallejo@outlook.com](mailto:matvallejo@outlook.com).
