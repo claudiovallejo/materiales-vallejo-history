@@ -3,30 +3,25 @@
 Live version: [v2.0](http://materialesvallejo.com/)
 
 ## Introduction
-Materiales Vallejo is a small business in [Matamoros, Tamaulipas](https://www.google.com.mx/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=matamoros%2C%20tamaulipas) that sells construction materials to wholesellers, construction firms, and retail. This is Materiales Vallejo's first online presence, and coincidentally, it's also the first time I build a website from scratch. Before this project I had basic experience building websites with Webflow, Squarespace and Adobe Muse. I've been responsible for everything about this website: content, photography, image editing, icon design, experience design, visual design, front-end development, and every bug you encounter. It's a very small site and it's been a fun and challenging learning experience.
+Materiales Vallejo is a small business in [Matamoros, Tamaulipas](https://www.google.com.mx/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=matamoros%2C%20tamaulipas) that sells construction materials to wholesellers, construction firms, and for retail. This is Materiales Vallejo's first online presence, and coincidentally, it's also the first time I build a website from scratch. It's a very small site and it's been a fun and challenging learning experience. Before this project I had basic experience building websites with Webflow, Squarespace and Adobe Muse. 
 
-I started designing v1.0 late January 2016 and finished building it on April 18th, 2016. I redesigned the site May 2016 and finished building it on June 23rd 2016. I started designing v3.0 on October 5th, 2016 and will hopefully finish developing the website by October 9th, 2016. 
+I started working on _v1.0_ late Jan 2016 and finished on April 18th, 2016. _v2.0_ was started on May 2016 and finished on June 23rd, 2016. _v3.0_ started October 5th, 2016 and will _hopefully_ end October 9th, 2016.
 
 ## Current Site Structure
-| Index
-| | Products
-| | Services
-| | Contact
-| About
-| | Brief History
-| | Contact
-| Privacy Policy
-| | Data tracking details
-| 404
+- Index
+- About
+- Privacy Policy
+- 404
+- Jobs _(v3.1)_
+- Job Detail _(v3.1)_
+- Job application form _(v3.1)_
 
 _Note:_ The site will also have an English version.
 
-_Note:_ There are a couple of new sections that will be added to the site which will display available jobs, job details, and a job application form. These sections will be added after publishing v3.0.
-
-
-v3.0 will include/improve on v2.0 in the following ways —
+## v3.0 vs. v2.0
+v3.0 will include/improve upon v2.0 in the following ways —
   + __Single-page Experience:__ Placing the most important content on the index page will help users find the content they are looking for much faster.
-  + __Product Gallery:__ v2.0's interactive product gallery is not optimized for IE browsers and navigation between product categories is slow.  The user has to click through each category individually to navigate the product catalogue. v3.0 will have a redesigned product experience by featuring a simple responsive product carrousel that doesn't require the user to click on specific product categories to view the products they're interested in.
+  + __Product Navigation:__ v2.0's interactive product gallery is not optimized for IE browsers and navigation between product categories is slow.  The user has to click through each category individually to navigate the product catalogue. v3.0 will have a redesigned product experience by featuring a simple responsive product carrousel that doesn't require the user to click on specific product categories to view the products they're interested in.
   + __Asset Optimization:__ v2.0's assets weren't optimized or minified. v3.0 will deliver minified, gzipped assets and optimized images to minimize loading time. Asset optimization will be automated with [Gulp.js](http://gulpjs.com/).
   + __CSS Optimization:__ For v2.0 I did my best to manage CSS classes. My classes were usually overly specific, which prevented me from creating reusable classes. For v3.0 I will design with [Tachyons](http://tachyons.io/), a CSS library of modular, responsive classes. I'll be using Tachyons to minimize the amount of CSS I write and maximize the reusability of my CSS classes. If you haven't had the chance to work with Tachyons, I highly recommend it. It makes web development fun (it feels like building Legos) because things just work and don't break. If you think it's intimidating, don't worry, I did too. It took me about a day to get used to it, and it's been one of the best investments of my time this year. If you want to develop websites faster and have fun while doing it, give Tachyons a try.
   + __Faster Development:__ For v1.0 and v2.0 I built the site without any framework. v3.0 will be built with [Middleman](https://middlemanapp.com/), a Ruby static site generator. One of the things I love about Middleman is how I can use `.json` files to create and structure data models. What's so great about data models is that you can create dynamic HTML/CSS layouts and structures. This is another tool I've really enjoyed working with and would highly recommend diving into Middleman or Jekyll or any other static site generator.
