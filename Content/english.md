@@ -1,7 +1,7 @@
 ## Index
 ### Header
-- __Title:__ _Building Materials for your upcoming Project_
-- __Subtitle:__ _Find the construction materials and the services you need from an official Construrama distributor._
+- __Title:__ _Everything you need for your next project_
+- __Subtitle:__ _Find the construction materials and services you need from an official Construrama concessionaire._
 - __Primary Button:__ _View Products_
 - __Secondary Button:__ _Get in Touch_
 
