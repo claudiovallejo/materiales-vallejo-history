@@ -19,7 +19,6 @@ This is the first web project I designed and developed from scratch. Before this
   + __Faster Development:__ For v1.0 and v2.0 I built the site without any framework. v3.0 will be built with [Middleman](https://middlemanapp.com/), a Ruby static site generator. One of the things I love about Middleman is how I can use `.json` files to create and structure data models. What's so great about data models is that I create dynamic HTML/CSS layouts and structures based on the content.
   + __Practice:__ Other than building a faster experience (technically and structurally) I want to build v3.0 because I want to learn more about how I can improve my previous work to create better work in future projects.
 
-
 ## Version History
 ### v3.0
 #### Design Tools —
@@ -36,6 +35,10 @@ This is the first web project I designed and developed from scratch. Before this
   + Build tool: [Gulp](http://gulpjs.com/)
   + Host: TBD (Either [GitHub Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/))
 
+#### Notes
+Yesterday I had a brief meeting with my father and mentioned he was currently looking for a Secretary for Materiales Vallejo. I proposed creating dynamic job sections so that whenever there was a job opening, I could easily add some partials (or change some values in the database files) and render job banner ads, job detail pages, and a footer job link. My father also requested for me to recreate a virtual version of a "Solicitud de Empleo." A "Solicitud de Empleo" is a generic Mexican job application form you can find in any Mexican supply store. He would like for each job detail page to have a job application form with the "Solicitud de Empleo" fields so that the applicant can apply online. I told him I've never worked with HTML forms but that I need to learn how to build and integrate them. 
+
+On another note, I've been working on translating the site into English. It's hard. The English version I'll publish for v3.0 will have not very polished content, but I'll keep proof-reading and editing the content after publication. With the small amount of time I've worked on translations I got a small glimpse to the challenges and problems content managers and strategists face in creating universal content. On top of that, I can also see how designers who work with multi-language websites/apps face design issues regarding text size, aligment, spacing... It's hard. 
 
 ### v2.0
 First commit: _June 6, 2016_  |  Last commit: _June 23, 2016_  |  Hosted on: [AWS S3](https://aws.amazon.com/s3/)
