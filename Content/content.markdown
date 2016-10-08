@@ -213,3 +213,28 @@ __Sección:__ Para Que Recabamos tus Datos
 - Si acaso no quieres que Google Analytics nos envíe datos acerca de tu visita, entra a [ésta página](https://tools.google.com/dlpage/gaoptout?hl=es), donde Google te permite descargar un widget que deshabilita Google Analytics en tu navegador.
 
 Si tienes algun comentario acerca de este aviso, o te gustaría saber mas acerca de nuestra página, envíanos un mensaje a [matvallejo@outlook.com](mailto:matvallejo@outlook.com).
+
+## Index
+### Header
+- __Title:__ _Building Materials for your upcoming Project_
+- __Subtitle:__ _Find the construction materials and the services you need from an official Construrama distributor._
+- __Primary Button:__ _View Products_
+- __Secondary Button:__ _Get in Touch_
+
+### Available Job Ad (Small)
+_This ad will only be displayed when there's a job opening._
+__Title:__ We are looking for our next { job_title }.
+__Link:__ See Job Details
+
+### Multiple Jobs Available Ad (Small)
+_This add will only be displayed when there are multiple jobs available._
+__Title:__ We are looking for a { job_title } and a { job_title } to join our team.
+__Link:__ View Jobs
+
+### Products
+- __Title:__ _Products_
+- __Subtitle:__ _Find the best construction material brands in the industry._
+
+#### Product List
+1. __Cement__
+  1.  Gray Cement
