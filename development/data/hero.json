@@ -1,16 +1,12 @@
 {
   "title": "Materiales para tu Obra",
   "subtitle": "Encuentra los materiales que necesitas y obtén servicios de un miembero oficial de Construrama.",
-  "buttons": [
-    {
-      "type": "primary",
-      "title": "Ver Materiales",
-      "link": "#products"
-    },
-    {
-      "type": "secondary",
-      "title": "Contactar",
-      "link": "#contact"
-    }
-  ]
-}
+  "primary_button": {
+    "title": "Ver Materiales",
+    "link": "#products"
+  },
+  "secondary_button": {
+    "title": "Contactar",
+    "link": "#contact"
+  }
+ } 
