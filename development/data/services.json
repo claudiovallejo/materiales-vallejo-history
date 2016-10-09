@@ -1,0 +1,26 @@
+{
+  "title": "Servicios",
+  "subtitle": "Recibe atención personalizada para mayoristas, menudistas y constructoras",
+  "list": [
+    {
+      "icon_path": "",
+      "title": "Planes de Pago",
+      "subtitle": "Revende material con nosotros y obtén planes de pago flexibles diseñados para complementar tu historial crediticio."
+    },
+    {
+      "icon_path": "",
+      "title": "Pagos con Crédito",
+      "subtitle": "Compra los materiales que necesitas con tu tarjeta Coppel, Crédito Infonavit, Visa o Mastercard."
+    },
+    {
+      "icon_path": "",
+      "title": "Asesoría de Materiales",
+      "subtitle": "Recibe atención personalizada para encontrar el tipo y cantidad de materiales que necesitas para tu obra."
+    },
+    {
+      "icon_path": "",
+      "title": "Entregas Gratuitas",
+      "subtitle": "Recibe tus materiales sin costo a domicilio o en tu punto de venta en menos de 24 horas."
+    },
+  ]
+}
