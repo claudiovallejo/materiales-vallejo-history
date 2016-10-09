@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Nosotros",
+    "path": "/nosotros",
+    "target": false
+  },
+  {
+    "title": "View English Site",
+    "path": "",
+    "target": false
+  },
+  {
+    "title": "Aviso de Privacidad",
+    "path": "/aviso",
+    "target": false
+  },
+  {
+    "title": "Ver Código Fuente",
+    "path": "https://github.com/claudiovallejo/materiales-vallejo/tree/master/development",
+    "target": true
+  }
+]
