@@ -18,3 +18,9 @@ page '/*.txt', layout: false
 ###
 
 activate :livereload
+
+###
+# Directory Indexes
+###
+
+activate :directory_indexes
