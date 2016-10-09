@@ -18,7 +18,7 @@ Development started @ 17:00 CDT on October 8th, 2016
 
 ### Check-in #2
 - **Date**: October 8th, 2016 @ 21:54 CDT
-- **Updated**:
+- **Update**:
   - Fixed `policy.json` and `services.json` syntax errors.
   - Worked on `_menu.erb` and centered logo vertically and horizontally in `<nav>`
 - **Notes**:
@@ -31,3 +31,9 @@ Development started @ 17:00 CDT on October 8th, 2016
   - Created responsive hero section in `index.html.erb`
 - **Notes**:
   - Continued working with Vim.
+
+### Check-in #4
+- **Date**: October 9th, 2016 @ 7:50 CDT
+- **Update**:
+  - Created mobile products section in `index.html.erb`
+
