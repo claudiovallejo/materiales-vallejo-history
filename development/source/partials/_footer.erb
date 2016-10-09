@@ -1,10 +1,10 @@
-<footer>
+<footer class="mw60 center">
   <% footer = data.footer %>
   <% l = footer.length - 1 %>
   <ul class="list ma0 pa0 tc">
     <% footer.each_with_index do |footer, f| %>
-      <li class="<% if f != l %>bb b--silver<% end %>">
-        <a class="dib pv15 lato fw4 f1 gray no-underline" href="<%= footer.path %>" <% if footer.target %>target="_blank"<% end %>><%= footer.title %></a>
+      <li class="dib-ns <% if f != l %>mr3-ns bb bn-ns b--silver<% end %>">
+        <a class="dib pv15 pv1-ns lato fw4 f1 gray no-underline" href="<%= footer.path %>" <% if footer.target %>target="_blank"<% end %>><%= footer.title %></a>
       </li>
     <% end %>
   </ul>
