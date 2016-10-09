@@ -37,3 +37,8 @@ Development started @ 17:00 CDT on October 8th, 2016
 - **Update**:
   - Created mobile products section in `index.html.erb`
 
+### Check-in #6
+- **Date**: October 9th, 2016 @ 8:20 CDT
+- **Update**:
+  - Created mobile Services section in `index.html.erb` and started working on Contact section.
+
