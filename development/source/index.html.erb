@@ -3,56 +3,103 @@ layout: main
 title: Materiales para Construcción | Construrama Materiales Vallejo
 ---
 <%# Hero %>
+<% hero = data.hero %>
 <article class="pv6 ph15 bg-dark-gray tc">
   <header class="mw20 center">
-    <h1 class="mb1 lato fw7 f15 white"><%= data.hero.title %></h1>
-    <p class="mb2 lato fw4 f1 white lh-copy"><%= data.hero.subtitle %></p>
+    <h1 class="mb1 lato fw7 f15 white"><%= hero.title %></h1>
+    <p class="mb2 lato fw4 f1 white lh-copy"><%= hero.subtitle %></p>
   </header>
   <a class="center db dib-ns w9 mb1 mb0-ns mr15-ns pv05 ph1 lato fw4 f1 white br0125 bg-blue ba b--blue no-underline" href="<%= data.hero.primary_button.link %>">
-    <%= data.hero.primary_button.title %>
+    <%= hero.primary_button.title %>
   </a>
   <a class="center db dib-ns w9 pv05 ph1 lato fw4 f1 white br0125 ba b--white no-underline" href="<%= data.hero.secondary_button.link %>">
-    <%= data.hero.secondary_button.title %>
+    <%= hero.secondary_button.title %>
   </a>
 </article>
 <%# Products %>
+<% products = data.products %>
 <article class="pv3 bb b--silver">
   <header class="mw20 center tc">
-    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= data.products.title %></h1>
-    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= data.products.subtitle %></p>
+    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= products.title %></h1>
+    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= products.subtitle %></p>
   </header>
   <div class="ph15 overflow-x-auto overflow-scrolling scrollbar-dn nowrap">
-   <% l = data.products.list.length - 1 %>
-   <% data.products.list.each_with_index do |product, r|  %> 
+   <% l = products.list.length - 1 %>
+   <% products.list.each_with_index do |product, r|  %>
      <div class="dib w15 pt2 ba b--silver br0125 <% if r != l %>mr15<% end %>">
       <!-- Replace div with image -->
-      <div class="w-100 bg-silver" style="height: 180px;"></div> 
+      <div class="w-100 bg-silver" style="height: 180px;"></div>
       <header class="pv15 ph1">
         <h4 class="ma0 mb05 lato fw4 f1 light-gray"><%= product.brand %></h4>
         <h3 class="ma0 lato fw4 f1 dark-gray"><%= product.name %></h3>
-      </header>      
+      </header>
      </div>
    <% end %>
-  </div>  
+  </div>
 </article>
 <%# Services %>
+<% services = data.services %>
 <article class="pv3 ph15 bb b--silver">
   <header class="mw20 center tc">
-    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= data.services.title  %></h1>
-    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= data.services.subtitle %></p>
+    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= services.title  %></h1>
+    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= services.subtitle %></p>
   </header>
-  <% l = data.services.list.length - 1 %>
-  <% data.services.list.each_with_index do |service, s| %>
-    <!-- Replace div with icon -->
-    <div class="mb1 ba b--silver br0125" style="width: 1rem; height: 1rem;"></div>
+  <% l = services.list.length - 1 %>
+  <% services.list.each_with_index do |service, s| %>
+    <%= image_tag "#{ service.icon_path }", :class => "mb1", :alt => "#{ service.title }" %>
     <h3 class="ma0 mb1 lato fw4 dark-gray"><%= service.title %></h3>
     <p class="ma0 lato fw4 gray lh-copy <% if s != l %>mb3<% end %>"><%= service.subtitle %></p>
-  <% end %> 
+  <% end %>
 </article>
 <%# Contact %>
+<% contact = data.contact %>
 <article class="pv3 ph15 bb b--silver">
   <header class="mw20 center tc">
-    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= data.contact.title  %></h1>
-    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= data.contact.subtitle %></p>
+    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= contact.title %></h1>
+    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= contact.subtitle %></p>
   </header>
+  <%# Phone Number %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.phone.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <p class="ma0 lato fw4 f1 dark-gray"><%= contact.phone.number %></p>
+    </div>
+  </a>
+  <%# Email Address %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.email.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <p class="ma0 lato fw4 f1 dark-gray"><%= contact.email.address %></p>
+    </div>
+  </a>
+  <%# Hours of Operation %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.office_hours.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <%# Weekdays %>
+      <p class="ma0 mb05 lato fw4 f1 light-gray">Entre semana</p>
+      <p class="ma0 lato mb025 fw4 f1 dark-gray">8:00am — 1:00pm</p>
+      <p class="ma0 lato mb1 fw4 f1 dark-gray">2:30pm — 6:00pm</p>
+      <%# Saturdays %>
+      <p class="ma0 mb05 lato fw4 f1 light-gray">Sábados</p>
+      <p class="ma0 lato fw4 f1 dark-gray">8:00am — 2:00pm</p>
+    </div>
+  </a>
+  <%# Address %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.address.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <p class="ma0 lato mb025 fw4 f1 dark-gray"><%= contact.address.street %></p>
+      <p class="ma0 lato mb025 fw4 f1 dark-gray"><%= contact.address.sector %></p>
+      <p class="ma0 lato mb025 fw4 f1 dark-gray"><%= contact.address.city %>, <%= contact.address.state %> <%= contact.address.zip_code %></p>
+    </div>
+  </a>
 </article>
