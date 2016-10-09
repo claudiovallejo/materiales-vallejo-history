@@ -29,3 +29,40 @@ Development started @ 17:00 CDT on October 8th, 2016
   - Created `_contact.erb` and included in `index.html.erb`
   - Created `_footer.erb` and included in `main.erb`
   - Imported icons into `images/icons`
+- **Notes**:
+  - For the contact section, I'm unsure what's the best way to go about building the button components. I found two different ways of building the buttons.
+    1. Floats and vertical align middle (wrapped by an `<a>` tag)
+    ```html
+    <a class="db cf center mb1 pv1 ba b--silver br0125" style="max-width: 17rem;">
+      <div class="fl w-20 h-100 tc">
+        <%= image_tag "#{ contact.phone.icon_path }" %>
+      </div>
+      <div class="fl w-80">
+        <p class="relative top-025 ma0 lato fw4 f1 dark-gray"><%= contact.phone.number %></p>
+      </div>
+    </a>
+    ```
+    2. Table with one table row (wrapped by an `<a>` tag)
+    ```html
+    <a class="db cf center mb1 pv1 ba b--silver br0125" style="max-width: 17rem;">
+      <table class="w-100">
+        <tbody>
+          <tr>
+            <td class="tc w-20">
+              <%= image_tag "#{ contact.phone.icon_path }", :class => "v-mid" %>
+            </td>
+            <td class="w-80">
+              <p class="ma0 lato fw4 f1 dark-gray"><%= contact.phone.number %></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </a>
+    ```
+    **Note,** read that `<a>` tags shouldn't wrap block elements because its a **Web Crime.** It doesn't offer any valid reasons why block level elements should be wrapped by inline elements and it doesn't offer any workarounds.
+
+    ...Airbnb nests block elements in an `<a>` tag to create home cards...
+    ...Apple nests block elements in an `<a>` for their index slideshow...
+    ...Stripe does it as well in their new homepage redesign for the footer cards...
+
+    So? Are the companies I look up to wrong? This is one of the things I find challenging about web dev, there are so many *opinions* on how to build things *correctly*. If you happen to have read this, let me know [@claudiovallejop](https://twitter.com/claudiovallejop), would love to chat and listen to your opinion on this.
