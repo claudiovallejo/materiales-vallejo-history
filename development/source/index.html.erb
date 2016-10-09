@@ -2,17 +2,36 @@
 layout: main
 title: Materiales para Construcción | Construrama Materiales Vallejo
 ---
-<article class="pv6 bg-dark-gray tc pv6">
+<%# Hero %>
+<article class="pv6 ph15 bg-dark-gray tc">
   <header class="mw20 center">
     <h1 class="mb1 lato fw7 f15 white"><%= data.hero.title %></h1>
-    <p class="mb2 lato fw4 f1 white lh-copy "><%= data.hero.subtitle %></p>
+    <p class="mb2 lato fw4 f1 white lh-copy"><%= data.hero.subtitle %></p>
   </header>
-  <div class="">
-    <a class="center db dib-ns w9 mb1 mb0-ns mr15-ns pv05 ph1 lato fw4 f1 white br0125 bg-blue ba b--blue no-underline" href="<%= data.hero.primary_button.link %>">
-      <%= data.hero.primary_button.title %>
-    </a>
-    <a class="center db dib-ns w9 pv05 ph1 lato fw4 f1 white br0125 ba b--white no-underline" href="<%= data.hero.secondary_button.link %>">
-      <%= data.hero.secondary_button.title %>
-    </a>
-  </div>
+  <a class="center db dib-ns w9 mb1 mb0-ns mr15-ns pv05 ph1 lato fw4 f1 white br0125 bg-blue ba b--blue no-underline" href="<%= data.hero.primary_button.link %>">
+    <%= data.hero.primary_button.title %>
+  </a>
+  <a class="center db dib-ns w9 pv05 ph1 lato fw4 f1 white br0125 ba b--white no-underline" href="<%= data.hero.secondary_button.link %>">
+    <%= data.hero.secondary_button.title %>
+  </a>
+</article>
+<%# Products %>
+<article class="pv3 bb b--silver">
+  <header class="mw20 center tc">
+    <h1 class="mb1 lato fw7 f15 dark-gray"><%= data.products.title %></h1>
+    <p class="mb3 lato fw4 f1 dark-gray lh-copy"><%= data.products.subtitle %></p>
+  </header>
+  <div class="ph15 overflow-x-auto overflow-scrolling scrollbar-dn nowrap">
+   <% l = data.products.list.length - 1 %>
+   <% data.products.list.each_with_index do |product, r|  %> 
+     <div class="dib w15 pt2 ba b--silver br0125 <% if r != l %>mr15<% end %>">
+      <!-- Replace div with image -->
+      <div class="w-100 bg-silver" style="height: 180px;"></div> 
+      <header class="pv15 ph1">
+        <h4 class="ma0 mb05 lato fw4 f1 light-gray"><%= product.brand %></h4>
+        <h3 class="ma0 lato fw4 f1 dark-gray"><%= product.name %></h3>
+      </header>      
+     </div>
+   <% end %>
+  </div>  
 </article>
