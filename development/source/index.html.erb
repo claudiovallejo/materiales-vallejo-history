@@ -31,6 +31,7 @@ title: Materiales para Construcción | Construrama Materiales Vallejo
     <div class="ph15 ph3-m ph10-l overflow-x-auto overflow-scrolling scrollbar-dn nowrap">
      <% l = products.list.length - 1 %>
      <% products.list.each_with_index do |product, r|  %>
+       <!-- <%= product.category %>: <%= product.name %> (<%= r + 1 %>/<%= l + 1 %>) -->
        <div class="dib w15 pt2 ba b--silver br0125 <% if r != l %>mr15<% end %>">
         <!-- Replace div with image -->
         <div class="w-100 bg-silver" style="height: 180px;"></div>
