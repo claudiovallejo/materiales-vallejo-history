@@ -2,19 +2,21 @@
   "title": "Contacto",
   "subtitle": "Lorem ipsum dolor sit amet, contactenus y nomenclatura.",
   "phone": {
-    "icon_path": "",
+    "icon_path": "icons/phone.svg",
     "number": "+52 (868) 816 1354"
   },
   "email": {
-    "icon_path": "",
+    "icon_path": "icons/envelope.svg",
     "address": "matvallejo@outlook.com"
   },
   "office_hours": {
+    "icon_path": "icons/clock.svg",
     "weekdays": [[8, 13], [14.5, 18]],
     "saturdays": [[8, 14]]
   },
   "address": {
-    "street": "Calle 18 y Francisco González Villarreal",
+    "icon_path": "icons/pin.svg",
+    "street": "Francisco González Villarreal",
     "sector": "Colonia Buenavista",
     "city": "Matamoros",
     "state": "Tams.",
