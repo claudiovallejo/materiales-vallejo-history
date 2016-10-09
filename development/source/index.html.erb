@@ -4,7 +4,8 @@ title: Materiales para Construcción | Construrama Materiales Vallejo
 ---
 <%# Hero %>
 <% hero = data.hero %>
-<article class="pv6 ph15 bg-dark-gray tc">
+<!-- Hero -->
+<article class="pv6 ph15 ph3-m ph0-l bg-dark-gray tc">
   <header class="mw20 center">
     <h1 class="mb1 lato fw7 f15 white"><%= hero.title %></h1>
     <p class="mb2 lato fw4 f1 white lh-copy"><%= hero.subtitle %></p>
@@ -18,37 +19,52 @@ title: Materiales para Construcción | Construrama Materiales Vallejo
 </article>
 <%# Products %>
 <% products = data.products %>
+<!-- <%= products.title %> -->
 <article class="pv3 bb b--silver">
   <header class="mw20 center tc">
     <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= products.title %></h1>
-    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= products.subtitle %></p>
+    <p class="ma0 mb3 lato fw4 f1 gray lh-copy"><%= products.subtitle %></p>
   </header>
-  <div class="ph15 overflow-x-auto overflow-scrolling scrollbar-dn nowrap">
-   <% l = products.list.length - 1 %>
-   <% products.list.each_with_index do |product, r|  %>
-     <div class="dib w15 pt2 ba b--silver br0125 <% if r != l %>mr15<% end %>">
-      <!-- Replace div with image -->
-      <div class="w-100 bg-silver" style="height: 180px;"></div>
-      <header class="pv15 ph1">
-        <h4 class="ma0 mb05 lato fw4 f1 light-gray"><%= product.brand %></h4>
-        <h3 class="ma0 lato fw4 f1 dark-gray"><%= product.name %></h3>
-      </header>
-     </div>
-   <% end %>
+  <div class="relative mw80 center">
+    <div class="dn db-l absolute z-1 top-0 right-0 w10 h-100 bg-clear--white"></div>
+    <div class="dn db-l absolute z-1 top-0 left-0 w10 h-100 bg-white--clear"></div>
+    <div class="ph15 ph3-m ph10-l overflow-x-auto overflow-scrolling scrollbar-dn nowrap">
+     <% l = products.list.length - 1 %>
+     <% products.list.each_with_index do |product, r|  %>
+       <div class="dib w15 pt2 ba b--silver br0125 <% if r != l %>mr15<% end %>">
+        <!-- Replace div with image -->
+        <div class="w-100 bg-silver" style="height: 180px;"></div>
+        <header class="pv15 ph1">
+          <h4 class="ma0 mb05 lato fw4 f1 light-gray"><%= product.brand %></h4>
+          <h3 class="ma0 lato fw4 f1 dark-gray"><%= product.name %></h3>
+        </header>
+       </div>
+     <% end %>
+    </div>
   </div>
 </article>
 <%# Services %>
 <% services = data.services %>
-<article class="pv3 ph15 bb b--silver">
+<!-- <%= services.title %> -->
+<article class="pv3 ph15 ph3-m ph0-l bb b--silver">
   <header class="mw20 center tc">
     <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= services.title  %></h1>
-    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= services.subtitle %></p>
+    <p class="ma0 mb3 lato fw4 f1 gray lh-copy"><%= services.subtitle %></p>
   </header>
-  <% l = services.list.length - 1 %>
+  <% n = services.list.length - 1 %> <%# Index value of last service, i.e. 'n' %>
+  <% n_minus_2 = (l / 2).ceil %> <%# Index value of second-to-last service, i.e. 'n - 2' %>
   <% services.list.each_with_index do |service, s| %>
-    <%= image_tag "#{ service.icon_path }", :class => "mb1", :alt => "#{ service.title }" %>
-    <h3 class="ma0 mb1 lato fw4 dark-gray"><%= service.title %></h3>
-    <p class="ma0 lato fw4 gray lh-copy <% if s != l %>mb3<% end %>"><%= service.subtitle %></p>
+    <% if s % 2 === 0 %>
+      <div class="cf">
+    <% end %>
+        <div class="fl-ns w-50-ns <% if s % 2 === 0 %>pr15-ns<% else %>pl15-ns<% end %>">
+          <img class="mb1" src="/images/<%= service.icon_path %>" alt="<%= service.title %>">
+          <h3 class="ma0 mb1 lato fw4 dark-gray"><%= service.title %></h3>
+          <p class="ma0 lato fw4 gray lh-copy <% if s != n %>mb3<% end %> <% if s > n_minus_2 %>mb0-l<% end %>"><%= service.subtitle %></p>
+        </div>
+    <% if s % 2 != 0 %>
+      </div>
+    <% end %>
   <% end %>
 </article>
 <%# Contact %>
