@@ -1,0 +1,51 @@
+<% contact = data.contact %>
+<article class="pv3 ph15 bb b--silver">
+  <header class="mw20 center tc">
+    <h1 class="ma0 mb1 lato fw4 f15 dark-gray"><%= contact.title %></h1>
+    <p class="ma0 mb3 lato fw4 f1 dark-gray lh-copy"><%= contact.subtitle %></p>
+  </header>
+  <%# Phone Number %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.phone.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <p class="ma0 lato fw4 f1 dark-gray"><%= contact.phone.number %></p>
+    </div>
+  </a>
+  <%# Email Address %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.email.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <p class="ma0 lato fw4 f1 dark-gray"><%= contact.email.address %></p>
+    </div>
+  </a>
+  <%# Hours of Operation %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.office_hours.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <%# Weekdays %>
+      <p class="ma0 mb05 lato fw4 f1 light-gray">Entre semana</p>
+      <p class="ma0 lato mb025 fw4 f1 dark-gray">8:00am — 1:00pm</p>
+      <p class="ma0 lato mb1 fw4 f1 dark-gray">2:30pm — 6:00pm</p>
+      <%# Saturdays %>
+      <p class="ma0 mb05 lato fw4 f1 light-gray">Sábados</p>
+      <p class="ma0 lato fw4 f1 dark-gray">8:00am — 2:00pm</p>
+    </div>
+  </a>
+  <%# Address %>
+  <a class="db cf mb1 pv1 ba b--silver br0125">
+    <div class="fl w-20 tc">
+      <%= image_tag "#{ contact.address.icon_path }" %>
+    </div>
+    <div class="fl w-80">
+      <p class="ma0 lato mb025 fw4 f1 dark-gray"><%= contact.address.street %></p>
+      <p class="ma0 lato mb025 fw4 f1 dark-gray"><%= contact.address.sector %></p>
+      <p class="ma0 lato mb025 fw4 f1 dark-gray"><%= contact.address.city %>, <%= contact.address.state %> <%= contact.address.zip_code %></p>
+    </div>
+  </a>
+</article>
