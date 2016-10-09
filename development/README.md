@@ -24,3 +24,10 @@ Development started @ 17:00 CDT on October 8th, 2016
 - **Notes**:
   - During my break I watched several Vim YouTube videos. Still struggling to navigate between files, but managed to make previous edits in Vim.
   - Struggled to center logo vertically and horizontally. What I was struggling with was in determining what classes to use (`.dt`, `.v-mid`) to achieve that. Googled around for a bit and inspected several Navigation components in the Tachyons Docs. Figured it out. Will finish building partial tomorow.
+
+### Check-in #3
+- **Date**: October 9th, 2016 @ 5:31 CDT
+- **Update**:
+  - Created responsive hero section in `index.html.erb`
+- **Notes**:
+  - Continued working with Vim.
