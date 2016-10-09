@@ -145,7 +145,7 @@ __Enlace:__ Ver Empleos
 
 ### Servicios
 - __Título:__ Servicios
-- __Subtítulo:__ Recibe atención especializada para mayoristas, menudistas y constructoras
+- __Subtítulo:__ Recibe atención personalizada para mayoristas, menudistas y constructoras
 
 - __Planes de Pago:__ Revende material con nosotros y obtén planes de pago flexibles diseñados para complementar tu historial crediticio.
 - __Pagos con Crédito:__ Compra los materiales que necesitas con tu tarjeta Coppel, Crédito Infonavit, Visa o Mastercard.
@@ -172,9 +172,11 @@ __Título:__ Contact
 __Título:__ Somos de Matamoros.
 __Subtítulo:__ Tenemos mas de 30 años sirviendo y ayudando al desarrollo y crecimiento de nuestra comunidad.
 
-Formamos parte de Construrama, la cadena mas grande de materialistas para construcción en México. Somos de los principales distribuidores de Cemento Monterrey en Matamoros. Servimos a materialistas, constructoras y al público en general y tenemos la capacidad de suplir pedidos de cualquier volúmen.
+Formamos parte de Construrama, la cadena mas grande de materialistas para construcción en México y somos de los principales distribuidores de Cemento Monterrey en Matamoros.
 
-Estamos a tus ordenes en la Colonia Buenavista en la Calle 18 y Francisco González Villarreal.
+Servimos a materialistas, constructoras y al público en general y tenemos la capacidad de suplir pedidos de cualquier volúmen.
+
+Estamos a tus ordenes en la Colonia Buena vista en la Calle 18 y Francisco González Villarreal.
 - __Botón de Teléfono:__ +52 (868) 816 1354
 - __Botón de Email:__ matvallejo@outlook.com
 - __Horarios de Oficina:__ Entre semana 8:00am - 1:00pm | 2:30pm - 6:00pm. Sábados de 8:00 - 2:00pm
