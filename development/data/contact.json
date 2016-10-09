@@ -1,0 +1,24 @@
+{
+  "title": "Contacto",
+  "subtitle": "Lorem ipsum dolor sit amet, contactenus y nomenclatura.",
+  "phone": {
+    "icon_path": "",
+    "number": "+52 (868) 816 1354"
+  },
+  "email": {
+    "icon_path": "",
+    "address": "matvallejo@outlook.com"
+  },
+  "office_hours": {
+    "weekdays": [[8, 13], [14.5, 18]],
+    "saturdays": [[8, 14]]
+  },
+  "address": {
+    "street": "Calle 18 y Francisco González Villarreal",
+    "sector": "Colonia Buenavista",
+    "city": "Matamoros",
+    "state": "Tams.",
+    "zip_code": "87380",
+    "google_path": "https://www.google.com.mx/maps/place/Materiales+Vallejo/@25.864853,-97.515281,15z/data=!4m2!3m1!1s0x0:0x646c317ec47c08db?sa=X&ved=0ahUKEwjTv97x7bzNAhVJxoMKHXb_DJUQ_BIIbjAK"
+  }
+}
