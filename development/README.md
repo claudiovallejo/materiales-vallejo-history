@@ -66,3 +66,13 @@ Development started @ 17:00 CDT on October 8th, 2016
     ...Stripe does it as well in their new homepage redesign for the footer cards...
 
     So? Are the companies I look up to wrong? This is one of the things I find challenging about web dev, there are so many *opinions* on how to build things *correctly*. If you happen to have read this, let me know [@claudiovallejop](https://twitter.com/claudiovallejop), would love to chat and listen to your opinion on this.
+
+### Day #3
+- **Date**: October 10th, 2016 @ 13:26 CDT
+- **Update**:
+  - Created responsive `about.html.erb`
+  - Created a local variable for `_contact.erb` to display/hide the header.
+  - Added a new image data model in `about.json`.
+- **Notes**:
+  - For `_contact.erb` I created a local variables that shows/hides the `<article>`'s `<header>`. I've read that it is not ok to create an article that doesn't have a header.
+  - Will not have a lot of time this week to work on this project. I'll be travelling and working on another client project. But I'll work on it whenever I have a small break.
