@@ -73,6 +73,7 @@ Development started @ 17:00 CDT on October 8th, 2016
   - Created responsive `about.html.erb`
   - Created a local variable for `_contact.erb` to display/hide the header.
   - Added a new image data model in `about.json`.
+  - Created `error.erb` and `error.html.erb`. Still need to work on centering content vertically within page (I'll use Adam Morse's `<table>`). I will think about whether or not its necessary to add (and create) a new logo partial just for the error page.
 - **Notes**:
   - For `_contact.erb` I created a local variables that shows/hides the `<article>`'s `<header>`. I've read that it is not ok to create an article that doesn't have a header.
   - Will not have a lot of time this week to work on this project. I'll be travelling and working on another client project. But I'll work on it whenever I have a small break.
