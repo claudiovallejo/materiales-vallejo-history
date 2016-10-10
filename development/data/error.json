@@ -1,0 +1,14 @@
+{
+  "title": "La Pagina que buscas no existe",
+  "subtitle": "La página que buscas no existe. Si estas batallando en encontrar lo que buscas envíanos un mensaje, nos encantaría ayudarte a encontrar lo que buscas.",
+  "primary_button": {
+    "title": "Ir a Inicios",
+    "link": "/"
+  },
+  "secondary_button": {
+    "title": "Contactar",
+    "link": "#contact"
+  },
+  "icon_path": "icons/magnify.svg",
+  "alt": "Magnifying glass with question mark icon."
+}
