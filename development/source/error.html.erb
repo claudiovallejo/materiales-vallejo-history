@@ -1,0 +1,20 @@
+---
+layout: error
+title: Materiales Vallejo | La Pagina no Existe
+---
+<%# Error Message %>
+<!-- Error Message -->
+<% error = data.error %>
+<article class="pv6 ph15 ph3-m ph0-l tc">
+  <%= image_tag "#{ error.icon_path }", :alt => "#{ error.alt }" %>
+  <header class="mw20 center">
+    <h1 class="mb1 lato fw7 f15 dark-gray"><%= error.title %></h1>
+    <p class="mb2 lato fw4 f1 gray lh-copy"><%= error.subtitle %></p>
+  </header>
+  <a class="center db dib-ns w9 mb1 mb0-ns mr15-ns pv05 ph1 lato fw4 f1 white br0125 bg-blue ba b--blue no-underline" href="<%= error.primary_button.link %>">
+    <%= error.primary_button.title %>
+  </a>
+  <a class="center db dib-ns w9 pv05 ph1 lato fw4 f1 dark-gray br0125 ba b--silver no-underline" href="<%= error.secondary_button.link %>">
+    <%= error.secondary_button.title %>
+  </a>
+</article>
