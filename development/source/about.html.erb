@@ -1,0 +1,43 @@
+---
+layout: main
+title: Materiales Vallejo | Nosotros
+---
+<% about = data.about %>
+<div class="mw20 center pv6 tc">
+  <h1 class="mb1 lato fw7 f15 dark-gray"><%= about.title %></h1>
+  <p class="mb2 lato fw4 f1 gray lh-copy"><%= about.subtitle %></p>
+</div>
+<div class="mw60 center ph3-ns">
+  <%# Image Gallery %>
+  <!-- Image Gallery -->
+  <% about.images.each_with_index do |image, i| %>
+    <% if i === 0 %>
+      <div class="aspect-ratio aspect-ratio--6x4 mb0125 mb3-ns">
+        <div class="aspect-ratio--object bg-silver"></div>
+      </div>
+    <% elsif i > 0 %>
+      <% if i === 1 %>
+	<div class="cf">
+      <% end %>
+           <div class="<% if i === 1 %>fl-ns<% else %>fr-ns<% end %> w-50-ns mb0125 mb0-ns <% if i === 1 %>pr15-ns<% else %>pl15-ns<% end %>"> 
+	     <div class="aspect-ratio aspect-ratio--6x4 aspect-ratio--1x1-ns">
+               <div class="aspect-ratio--object bg-silver"></div>
+             </div>
+           </div>
+       <% if i === 2 %>
+         </div>
+       <% end %>
+    <% end %>
+  <% end %>
+  <%# Business Details %>
+  <!-- Business Details -->
+  <div class="mw20 center pv4 tc">
+    <% n = about.details.length - 1 %>
+    <% about.details.each_with_index do |detail, d| %>
+      <p class="ma0 <% if d != n %>mb4<% end %> lato fw4 f1 dark-gray lh-copy"><%= detail %></p>
+    <% end %>
+  </div>
+</div>
+<%# Contact %>
+<%= partial "partials/contact", :locals => { :header => false } %>
+
