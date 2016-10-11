@@ -77,3 +77,8 @@ Development started @ 17:00 CDT on October 8th, 2016
 - **Notes**:
   - For `_contact.erb` I created a local variables that shows/hides the `<article>`'s `<header>`. I've read that it is not ok to create an article that doesn't have a header.
   - Will not have a lot of time this week to work on this project. I'll be travelling and working on another client project. But I'll work on it whenever I have a small break.
+
+### Day #4
+- **Date**: October 11th, 2016 @ 8:02 CDT
+- **Update**:
+  - Created `policy.html.erb`
