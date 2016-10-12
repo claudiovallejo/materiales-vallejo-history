@@ -86,4 +86,6 @@ Development started @ 17:00 CDT on October 8th, 2016
 ### Day #5
 - **Date**: October 12th, 2016 @ ??:?? CDT
 - **Update**:
-  - Created responsive `policy.html.erb`
+  - Started working on `policy.html.erb`.
+- **Notes**:
+  - Will be out of town today through Friday, so will put in as much work as possible. 
