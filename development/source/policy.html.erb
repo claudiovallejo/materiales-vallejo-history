@@ -1,0 +1,28 @@
+---
+layout: main
+title: Materiales Vallejo | Privacy Policy
+---
+<% policy = data.policy %>
+<article class="pv4 ph15 mw35 center">
+  <header class="">
+    <h1 class="mb1 lato fw7 f15 dark-gray"><%= policy.title %></h1>
+    <p class="ma0 mb3 lato fw4 f1 gray lh-copy"><%= policy.intro %></p>
+  </header>
+  <% policy.sections.each do |section| %>
+    <h3 class="ma0 mb1 lato fw4 dark-gray"><%= section.title %></h3>
+    <% n = section.details.length - 1 %>
+    <% section.details.each_with_index do |detail, d| %>
+      <% if detail.type === "text" %>
+        <% detail.list.each do |text| %>
+          <p class="ma0 <% if d != n %>mb3<% else %>mb4<% end %> lato fw4 f1 gray lh-copy"><%= text %></p>
+        <% end %>
+      <% else %>
+        <ul class="list pa0">
+          <% detail.list.each do |point| %>
+            <li><p class="lato fw4 f1 gray lh-copy"><%= point %></p></li>
+          <% end %>
+        </ul>
+      <% end %>
+    <% end %>    
+  <% end %>
+</article>>
